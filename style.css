@@ -35,7 +35,7 @@ main.container{
   left: 50%;
   transform: translate(-50%, -50%);  /*vertically aligns the main section*/
   overflow: auto ;
-  box-shadow: 0 5px 10px 0 rgba(82, 125, 256, 0.6), 0 7px 21px 0 rgba(82, 125, 256, 0.70);
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.6), 0 7px 21px 0 rgba(0, 0, 0, 0.70);
 }
 
 h1.container_head{

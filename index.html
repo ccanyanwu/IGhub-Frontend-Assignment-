@@ -1,67 +1,44 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
+
+<head>
+  <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>SIGN UP PAGE</title>
+  <title>SIGN UP PAGE</title>
   <meta name="author" content="ccanyanwu">
-  <meta name="description" content="A SIMPLE REGISTRATION PAGE ">
+  <meta name="description" content="A SIMPLE SIGN UP PAGE ">
   <meta name="keywords" content="SIGN UP PAGE ">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css " title="font-awesome" type="text/css" />
   <link rel="stylesheet" href="style.css" type="text/css">
-  </head>
-  <body>
-    
-    <!--CENTERED DIV-->
-    <main class="container">
-      <h1 class="container_head">WELCOME</h1>
-      <p class="container_paragraph">Already have an account? <a href="#" class="container_paragraph-link">Log in</a> </p>
-      <form id="form" action="submit" method="get" accept-charset="utf-8" autocomplete="on">
-       <label for="username">Firstname </label>
-       <div class="form_input_container">
-          <input class="form_input_field" type="text"  name="username" required>
-       </div> 
-       <label for="username">Lastname </label>
-       <div class="form_input_container">
-          <input class="form_input_field" type="text"  name="username" required>
-       </div> 
-       <label for="username">Country </label>
-       <div class="form_input_container">
-          <input class="form_input_field" type="text" name="username" required>
-       </div> 
-       <label for="email">State of Origin </label>
-       <div class="form_input_container">
-          <input class="form_input_field" type="text" name="password" required>
-       </div>
-       <label for="password">LGA</label>
-       <div class="form_input_container">
-          <input class="form_input_field" type="text" name="password" required>
-       </div>
-       <label for="">Age</label>
-       <div class="form_input_container">
-          
-          <input class="form_input_field" type="number"  name="password" required>
-       </div>
-       <label for="username"style="margin-bottom :2rem ">SEX </label>
-       <input type="radio" id="male" name="gender" value="male" style="margin-bottom :0">
-<label for="male" style="margin-top :0">Male</label><br>
-<input type="radio" id="female" name="gender" value="female">
-<label for="female" style="margin-top :0">Female</label><br>
-<input type="radio" id="other" name="gender" value="other">
-<label for="other"style="margin-top:0">Other</label>
-       
-       <label for="username">Date of Birth </label>
-       <div class="form_input_container">
-          <input class="form_input_field" type="date" placeholder="Username" name="username" required>
-       </div> 
-       <!--terms and conditions section-->
-       <span class="form_input_terms">
-         <input type="checkbox" name="terms" id="terms" value="" /> I agree to the <a href="" class="form_input_terms-link">terms and conditions</a>
-       </span>
-       <input type="submit" name="submit" id="submit" value="GET STARTED" />
-      </form>
-    </main>
-    
-  </body>
+</head>
+
+<body>
+  <!--CENTERED DIV-->
+  <main class="container">
+    <h1 class="container_head">WELCOME</h1>
+    <p class="container_paragraph">Already have an account? <a href="#" class="container_paragraph-link">Log in</a> </p>
+    <form id="form" action="submit" method="get" accept-charset="utf-8" autocomplete="on">
+      
+      <label for="email">EMAIL</label>
+      <div class="form_input_container">
+        <i class="fa  fa-1x form_input_icon">@</i>
+        <input class="form_input_field" type="email" placeholder="Email" name="password" required>
+      </div>
+      <label for="password">PASSWORD</label>
+      <div class="form_input_container">
+        <i class="fa fa-unlock-alt fa-1x form_input_icon"></i>
+        <input class="form_input_field" type="text" placeholder="Password" name="password" required>
+      </div>
+      
+      <!--terms and conditions section-->
+      <span class="form_input_terms">
+        <input type="checkbox" name="terms" id="terms" value="" /> I agree to the <a href="" class="form_input_terms-link">terms and conditions</a>
+      </span>
+      <input type="submit" name="submit" id="submit" value="Log in" />
+    </form>
+  </main>
+  
+</body>
+
 </html>
