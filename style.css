@@ -3,125 +3,96 @@
   margin :0 ;
   box-sizing :border-box ;
 }
+html,
 body{
-  min-height :100vh ;
+  height :100vh ;
   background :#F3F3F4;
-}
-
-header.header{
-  background :#3b5998;
-  display :grid ;
-  grid-template-columns :1fr ;
+  background-image: url("Background Image.png");
+  background-size: cover;
+  background-position: center ;
+  background-repeat: no-repeat ;
+  font-size :16px ;
+  display:flex;
+  flex-direction :row ;
   justify-content :center ;
-  align-items :center ;
-  grid-gap :4rem ;
-  padding: 2rem ;
-  color :#fff ;
+  align-items: center ;
+  color:#fff ;
+  font-family: 'Roboto', sans-serif;
 }
-div.logo{
-  justify-self: start ;
+header{
+  position :fixed;
+  top:2%;
+  display: flex ;
+  justify-content :space-between;
+  align-items: center ;
+  width :100%;
+  font-size :0.75rem ;
+  padding :0 0.5rem ;
 }
-
+div.figma i{
+  font-size:8px;
+}
 /*main section */
-main.main{
-  display :grid ;
-  grid-template-columns :1fr ;
-  justify-content :center ;
-  align-items :center ;
-  padding: 2rem ;
+main.main {
+  max-width: 20rem;
+  background :transparent ;
+  border :0;
+}
+
+p.heading_para{
+  font-size: 0.75rem ;
+  margin:1rem 0;
+}
+input,
+button{
+  display :block ;
+  width :16rem;
+  height :3rem ;
+  border :0;
+  outline :none ;
+}
+input{
+  padding-left :1rem;
+}
+input[name="email"]{
+  border-bottom:1px solid #000 ;
+}
+input::placeholder{
+  color: #000;
+}
+p.forgot,
+p.dont{
+  display :block ;
+  width: 16rem ;
+  font-size :0.7rem ;
+  padding-top:0.5rem ;
+}
+p.forgot{
+  text-align :right;
+}
+button{
+ margin-top:2rem;
+ background :#FA4747;
+ padding :auto ;
+ color:#fff;
 }
 
 /*media query */
 /*tablet*/
 @media (min-width :768px ){
-  header.header{
-    grid-template-columns :3fr 2fr;
+ header {
+   font-size:1.5rem ;
+   align-items :flex-start;
+ }
+ div.figma i{
+  font-size:1rem!important ;
   }
-  input {
-    border :0;
-    outline :none;
-  }
-  div.sign_in{
-    display: flex;
-    flex-basis: 100%;
-    justify-content :space-around ;
-    align-items: flex-start ;
-  }
-  label[for="email"],
-  label[for="password"]{
-    display:block ;
-    padding-bottom: 0.5rem ;
-    font-size :0.75rem ;
-    border:0;
-    outline :0;
-  }
-  a.forgot {
-    text-decoration: none ;
-    font-size: 0.5rem ;
-    color:#e5e5e5;
-    opacity: 0.5;
-  }
-  button.login{
-    width: 3rem ;
-    height :1.4rem;
-    background:#39569c;
-    border:0.1px solid #000 ;
-    padding :0 0.5rem;
-    color:#fff;
-    font-size:0.75rem ;
-    margin-top:1.4rem  ;
-  }
-  
   main.main{
-    grid-template-columns :1fr 100fr ;
-    justify-content :start ;
-    align-items :start ;
-    grid-gap :1rem ;
+    max-width: auto ;
+    border :0;
+    outline :none ;
   }
-  p.world_para,
-  p.birthday{
-    margin-top: 2rem ;
-  }
-  p.world_para{
-    color: #3C449F;
-  }
-  h2.create_header{
-    margin-bottom: 1rem ;
-  }
-  p.create_para{
-    margin-bottom: 2rem;
-  }
-  p.birthday{
-    margin-bottom: 0.5rem ;
-  }
-  select{
-    width:15%;
-    background :#fff ;
-    height :30px;
-    border :0 ;
-  }
-  p.tiny{
-    margin-top: 2rem ;
-    font-size:10px;
-    display :block ;
-    text-align: left ;
-    line-height: 1.5 ;
-    width :75%;
-  }
-  p.tiny a{
-    text-decoration: none ;
-    color: #3C449F ;
-  }
-  input#signup{
-    width :50%;
-    height :40px;
-    border: 0;
-    outline: none ;
-    margin-top :2rem ;
-    color :#fff ;
-    font-size :20px;
-    font-weight :bold ;
-    background: #1A8B17;
-    padding: 2px auto;
+  h1{
+    font-size :2rem;
   }
 }

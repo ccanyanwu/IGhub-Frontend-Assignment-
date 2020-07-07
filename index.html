@@ -1,67 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>thrive's Assignment</title>
+    <title>Log In with background </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" title="styling" type="text/css" />
 </head>
 
 <body>
   <!--header to hold logo and input-->
-  <header class ="header">
-   <div class="logo">
-     <h1>facebook</h1>
-   </div>
-   <!--input section -->
-   <div class="sign_in">
-     <div class="sign_in-email">
-       <label for="email">Email or phone</label>
-       <input type="email" name="email" id="email" value="" />
-     </div>
-     <div class="sign_in-password">
-       <label for="password">Password</label>
-       <input type="password" name="password" id="password" value="" /><br>
-       <a class="forgot" href="#">Forgotten account? </a>
-     </div>
-     <button class="login" type="submit"> Log In</button>
-   </div>
+  <header>
+    <div class="figma">
+    <i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="far fa-circle"></i><i class="far fa-circle"></i>   Figma <i class="fas fa-wifi" style="font-size :10px"></i>
+    </div>
+    <p class="time">9:42am</p>
+    <div class="battery"><i class="fab fa-bluetooth-b"></i> 42% <i class="fas fa-battery-half" ></i> </div>
   </header>
   <!--world map and registration section-->
   <main class="main">
-    <section class="world">
-      <p class="world_para">Facebook helps you connect and share  with the people in your life</p>
-      <img src="fb.png" alt="connect " />
-    </section>
-    <!--create an account section -->
-    <section class="create" style="color:#888">
-      <h2 class="create_header">Create an account </h2>
-      <p class="create_para">It's quick and easy</p>
-      <input type="text" name="firstname" id="firstname" placeholder="Firstname" style="width:45%;padding:0.5rem" />
-      <input type="text" name="firstname" id="firstname" placeholder="Surname" style="width:45%;margin-left:1rem;padding :0.5rem" />
-      <input type="text" name="firstname" id="firstname" placeholder="Mobile number or email address" style="width:95%;padding:0.5rem;margin:1rem 0" />
-      <input type="text" name="firstname" id="firstname" placeholder="New password" style="width:95%;padding:0.5rem" />
-      <p class="birthday">Birthday</p>
-      <select name="date" id="date">
-        <option value="4">4</option>
-      </select>
-      <select name="month" id="month">
-        <option value="jul">Jul</option>
-      </select>
-      <select name="year" id="year">
-        <option value="2004">2004</option>
-      </select>
-      <p class="gender"style="margin:1rem 0">Gender</p>
-      <input type="radio" name="female" id="female" />
-      <label for="female">Female</label>
-      <input type="radio" name="Male" id="male" style="margin-left:0.5rem" />
-      <label for="male">Male</label>
-      <input type="radio" name="custom" id="custom" style="margin-left:0.5rem "/>
-      <label for="custom">Custom</label>
-      <p class="tiny">By clicking Sign Up, you agree to our <a href="#">Terms, Data Policy</a> and <a href="#">Cookie Policy</a>. You may receive SMS notifications from us and can opt out at any time.</p>
-      <input type="button" name="signup" id="signup" value="Sign Up " />
-      
-    </section>
+   <h1 class="heading"> YOUR<br>ART <br>MUSEUM</h1>
+   <p class="heading_para">151 3rd St <br>San Francisco. CA 94103</p>
+   <form action="#" class="form">
+     <input type="text" name="email" id="email" placeholder="Email address" />
+     <input type="text" name="password " id="password" placeholder="Password" />
+     <p class="forgot">Forgot your password?</p>
+     <button type="submit">Log In</button>
+      <p class="dont">Don't have an account?</p>
+   </form>
   </main>
 </body>
 </html>
+<!--
+   <i class="fas fa-wifi"></i>
+   <i class="fal fa-wifi-1"></i>
+   <i class="fab fa-bluetooth-b"></i>
+   <i class="fal fa-wifi-1"></i>hhh-->
