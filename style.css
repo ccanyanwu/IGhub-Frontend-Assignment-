@@ -37,6 +37,7 @@ main.main {
   max-width: 20rem;
   background :transparent ;
   border :0;
+  outline :none;
 }
 
 p.heading_para{
