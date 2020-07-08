@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 *{
   padding: 0;
   margin :0 ;
@@ -5,95 +6,165 @@
 }
 html,
 body{
-  height :100vh ;
-  background :#F3F3F4;
-  background-image: url("Background Image.png");
-  background-size: cover;
-  background-position: center ;
-  background-repeat: no-repeat ;
-  font-size :16px ;
-  display:flex;
-  flex-direction :row ;
+ width:1446px;
+ font-family: 'Lato', sans-serif;
+} 
+/*nav bar */
+nav.nav{
+  background :#FF2400;
+  width:100%;
+  position :fixed ;
+  top: 0;
+  left :0;
+  padding :0  ;
+  height :3.2rem ;
+  box-shadow :0 2px 2px #747474;
+}
+ol.nav_list{
+  list-style-type: none;
+  display :inline-block ;
+  height :100%;
+}
+ol.nav_list li{
+  display :inline-block ;
+  align-self: center ;
+  padding: 1rem ;
+}
+ol.nav_list li a{
+  text-decoration: none ;
+  color:#fff ;
+  cursor: pointer;
+}
+ol.nav_list li:first-child{
+  background :#fff ;
+  height :3.2rem ;
+}
+
+article.start{
+  width: 100%;
+  background:#FF2400;
+  margin-top :3.2rem ;
+  height :25rem;
+  display :flex ;
+  flex-direction :column ;
   justify-content :center ;
   align-items: center ;
-  color:#fff ;
-  font-family: 'Roboto', sans-serif;
+  color: #fff ;
 }
-header{
-  position :fixed;
-  top:2%;
-  display: flex ;
-  justify-content :space-between;
-  align-items: center ;
-  width :100%;
-  font-size :0.75rem ;
-  padding :0 0.5rem ;
+h1.start_head{
+  font-size :2.75rem ;
 }
-div.figma i{
-  font-size:8px;
+p.start_para{
+  margin:2rem auto ;
 }
-/*main section */
-main.main {
-  max-width: 20rem;
-  background :transparent ;
-  border :0;
-  outline :none;
-}
-
-p.heading_para{
-  font-size: 0.75rem ;
-  margin:1rem 0;
-}
-input,
-button{
-  display :block ;
-  width :16rem;
-  height :3rem ;
-  border :0;
+button.start_btn{
+  width:7.2rem ;
+  height :2.7rem;
+  color :#fff ;
+  background :#000;
   outline :none ;
+  border :0;
 }
-input{
-  padding-left :1rem;
+article.img_right,
+article.img_left{
+  display :grid;
+  grid-template-columns :1fr ;
+  grid-gap :2rem ;
+  padding :3rem;
+  justify-content: center ;
 }
-input[name="email"]{
-  border-bottom:1px solid #000 ;
+h2.lorem_header,
+p.lorem_p1,
+p.lorem_p2{
+  margin-bottom :3rem ;
 }
-input::placeholder{
-  color: #000;
+p.lorem_p1{
+  font-weight: bold ;
+  text-align :justify ;
+  font-size :0.5rem;
 }
-p.forgot,
-p.dont{
-  display :block ;
-  width: 16rem ;
-  font-size :0.7rem ;
-  padding-top:0.5rem ;
+p.lorem_p2{
+  color:#555;
+  text-align :justify ;
+  font-size :0.5rem ;
 }
-p.forgot{
-  text-align :right;
-}
-button{
- margin-top:2rem;
- background :#FA4747;
- padding :auto ;
- color:#fff;
+i.fa-anchor,
+i.fa-coffee{
+  text-align :center ;
+  padding-left: auto ;
+  font-size :14rem ;
 }
 
+article.img_left{
+  background: #e5e5e5;
+}
+div.quote{
+  height :13rem ;
+  background :#626262;
+  color :#fff;
+  padding :6rem 5rem ; 
+}
+footer{
+  display :flex ;
+  justify-content :space-around ;
+  align-items :center ;
+  height :12rem ;
+  width : 40%;
+  margin :0 auto ;
+}
+a.power {
+  text-align: center ;
+  color:#555;
+  width :100%;
+  display :block ;
+  padding-bottom: 6rem ;
+}
 /*media query */
 /*tablet*/
 @media (min-width :768px ){
- header {
-   font-size:1.5rem ;
-   align-items :flex-start;
+ h1.start_head{
+   font-size :4rem;
  }
- div.figma i{
-  font-size:1rem!important ;
+ p.start_para{
+   font-size:1.25rem ;
+ }
+ article.img_right{
+   grid-template-columns :7fr 3fr;
+   align-self :center ;
+   margin-top :6rem ;
+   padding-left :12rem;
+ }
+ p.lorem_p1,
+ p.lorem_p2{
+   text-align :left ;
+   font-size :0.3rem;
+   line-height: 1.8;
+ }
+ i.fa-anchor,
+ i.fa-coffee{
+  font-size :18rem ;
+  padding-top: 6rem ;
   }
-  main.main{
-    max-width: auto ;
-    border :0;
-    outline :none ;
+  article.img_left{
+    grid-template-columns :3fr 7fr;
+   align-self :center ;
+   margin-top :6rem ;
+   padding-left :8rem;
+   padding-right: 4rem ;
   }
-  h1{
-    font-size :2rem;
+  div.quote{
+  height :13rem ;
+  background :#626262;
+  color :#fff;
+  width :100%;
+  margin: 0 auto ;
+  text-align :center ;
+  } 
+  footer{
+  width : 10%;
+}
+  a.power {
+    text-decoration: none ;
+    font-size:0.4rem ;
   }
 }
