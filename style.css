@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+/*Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700;900&display=swap');
 *{
   padding: 0;
   margin :0 ;
@@ -6,165 +7,93 @@
 }
 html,
 body{
- width:1446px;
- font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 } 
-/*nav bar */
-nav.nav{
-  background :#FF2400;
-  width:100%;
-  position :fixed ;
-  top: 0;
-  left :0;
-  padding :0  ;
-  height :3.2rem ;
-  box-shadow :0 2px 2px #747474;
-}
-ol.nav_list{
-  list-style-type: none;
-  display :inline-block ;
-  height :100%;
-}
-ol.nav_list li{
-  display :inline-block ;
-  align-self: center ;
-  padding: 1rem ;
-}
-ol.nav_list li a{
-  text-decoration: none ;
-  color:#fff ;
-  cursor: pointer;
-}
-ol.nav_list li:first-child{
-  background :#fff ;
-  height :3.2rem ;
-}
 
-article.start{
-  width: 100%;
-  background:#FF2400;
-  margin-top :3.2rem ;
-  height :25rem;
-  display :flex ;
-  flex-direction :column ;
-  justify-content :center ;
-  align-items: center ;
-  color: #fff ;
-}
-h1.start_head{
-  font-size :2.75rem ;
-}
-p.start_para{
-  margin:2rem auto ;
-}
-button.start_btn{
-  width:7.2rem ;
-  height :2.7rem;
-  color :#fff ;
+/*header */
+header.header{
   background :#000;
-  outline :none ;
-  border :0;
+  display :flex ;
+  flex-direction :row;
+  justify-content: space-between;
+  align-items :center ;
+  color:#fff ;
+  font-size :0.75rem ;
+  padding :0.25rem 0.25rem 0.5rem 0.25rem ;
 }
-article.img_right,
-article.img_left{
-  display :grid;
-  grid-template-columns :1fr ;
-  grid-gap :2rem ;
-  padding :3rem;
-  justify-content: center ;
+div.signal{
+  align-self: center ;
 }
-h2.lorem_header,
-p.lorem_p1,
-p.lorem_p2{
-  margin-bottom :3rem ;
-}
-p.lorem_p1{
-  font-weight: bold ;
-  text-align :justify ;
-  font-size :0.5rem;
-}
-p.lorem_p2{
-  color:#555;
-  text-align :justify ;
-  font-size :0.5rem ;
-}
-i.fa-anchor,
-i.fa-coffee{
-  text-align :center ;
-  padding-left: auto ;
-  font-size :14rem ;
+p.time{
+  padding-right: 1.75rem ;
 }
 
-article.img_left{
-  background: #e5e5e5;
-}
-div.quote{
-  height :13rem ;
-  background :#626262;
-  color :#fff;
-  padding :6rem 5rem ; 
-}
-footer{
+/*shop */
+section.shop{
   display :flex ;
-  justify-content :space-around ;
-  align-items :center ;
-  height :12rem ;
-  width : 40%;
-  margin :0 auto ;
+  flex-direction :row ;
+  justify-content: space-between ;
+  align-items: center ;
+  padding :0.25rem 0.25rem 0.5rem 0.25rem ;
 }
-a.power {
+p.shop-header{
+  font-size :10px;
+  font-weight: normal;
+  line-height :12px ;
+}
+p.shop-shop{
+  color:#ff473a;
+  font-size :18px;
+  font-weight: normal ;
+  padding-right: 2rem ;
+}
+
+div.carousel {
   text-align: center ;
-  color:#555;
-  width :100%;
-  display :block ;
-  padding-bottom: 6rem ;
+  margin-bottom :1rem ;
 }
-/*media query */
-/*tablet*/
-@media (min-width :768px ){
- h1.start_head{
-   font-size :4rem;
- }
- p.start_para{
-   font-size:1.25rem ;
- }
- article.img_right{
-   grid-template-columns :7fr 3fr;
-   align-self :center ;
-   margin-top :6rem ;
-   padding-left :12rem;
- }
- p.lorem_p1,
- p.lorem_p2{
-   text-align :left ;
-   font-size :0.3rem;
-   line-height: 1.8;
- }
- i.fa-anchor,
- i.fa-coffee{
-  font-size :18rem ;
-  padding-top: 6rem ;
-  }
-  article.img_left{
-    grid-template-columns :3fr 7fr;
-   align-self :center ;
-   margin-top :6rem ;
-   padding-left :8rem;
-   padding-right: 4rem ;
-  }
-  div.quote{
-  height :13rem ;
-  background :#626262;
-  color :#fff;
-  width :100%;
-  margin: 0 auto ;
-  text-align :center ;
-  } 
-  footer{
-  width : 10%;
+
+/*classic*/
+p.classic{
+  font-size :1.5rem ;
+  padding-left: 0.25rem ;
+  margin-bottom :1.5rem;
 }
-  a.power {
-    text-decoration: none ;
-    font-size:0.4rem ;
-  }
+p.classic-para{
+  font-size:10px;
+  font-weight :300 ;
+  color:#979797;
+  padding-left: 0.25rem ;
+}
+img.down{
+  padding-left: 21rem ;
+}
+
+/*price*/
+section.price{
+  display :flex ;
+  flex-direction :row ;
+  justify-content: space-between ;
+  align-items: center ;
+  padding :0.25rem 0.25rem 0.5rem 0.25rem ;
+}
+p.price1-header{
+  font-size: 14px ;
+  padding-top: 1rem ;
+}
+p.price1-para{
+  font-size :10px;
+  font-weight: 300 ;
+  color :#979797;
+}
+
+button{
+  width:70%;
+  outline :none ;
+  border: 0;
+  margin: 1rem 15% ;
+  color :#fff ;
+  height :3rem ;
+  background: #FF473A; 
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }

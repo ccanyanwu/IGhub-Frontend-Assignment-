@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Log In with background </title>
+    <title>wristwatch display</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
@@ -9,51 +9,45 @@
 </head>
 
 <body>
-  <!--navigation menu-->
-  <nav class="nav">
-    <ol class="nav_list">
-      <li><a href="#" style="color :#000 ;">Home</a></li>
-      <li><a href="#">Link1</a></li>
-      <li><a href="#">Link2</a></li>
-      <li><a href="#">Link3</a></li>
-      <li><a href="#">Link4</a></li>
-    </ol>
-  </nav>
-  <!--hero text-->
-  <article class="start">
-    <h1 class="start_head" >START PAGE</h1>
-    <p class="start_para" >Template by w3.css</p>
-    <button class="start_btn" type="submit">Get Started </button>
-  </article>
-  <article class="img_right">
-    <section class="lorem">
-      <h2 class="lorem_header">Lorem Ipsum</h2>
-      <p class="lorem_p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla architecto quia sint, assumenda odio. Provident repellendus repudiandae, praesentium amet, aliquid ex accusamus corrupti autem, eligendi architecto voluptas quibusdam beatae saepe eveniet sint dolore blanditiis aliquam, doloribus nisi quos a! Nulla sequi accusantium aut aliquid sapiente quis necessitatibus reprehenderit atque provident.</p>
-      <p class="lorem_p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam error ea aliquid iste quaerat eveniet veritatis id, doloribus maiores nesciunt repellat at doloremque omnis ex minus veniam quibusdam iusto eos amet! Accusantium temporibus officia modi perspiciatis voluptatum dolores molestias, omnis eius aspernatur eaque dolore sequi quod explicabo veniam possimus sunt repellat illo, aut quasi voluptatibus nam voluptatem. Itaque quasi harum, asperiores sint accusamus non porro neque eos assumenda quas, amet excepturi rerum ducimus. Assumenda, reprehenderit neque autem tempore totam! Doloremque alias itaque repudiandae minima incidunt neque quidem fugit eius, nobis delectus ex tempore eum, rem aut esse doloribus et repellendus.</p>
-    </section>
-    <i class="fas fa-anchor" style="color:#ff2400"></i>
-  </article>
-  <!--second lorem-->
-  <article class="img_left">
-    <i class="fas fa-coffee" style="color:#ff2400"></i>
-    <section class="lorem">
-      <h2 class="lorem_header">Lorem Ipsum</h2>
-      <p class="lorem_p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla architecto quia sint, assumenda odio. Provident repellendus repudiandae, praesentium amet, aliquid ex accusamus corrupti autem, eligendi architecto voluptas quibusdam beatae saepe eveniet sint dolore blanditiis aliquam, doloribus nisi quos a! Nulla sequi accusantium aut aliquid sapiente quis necessitatibus reprehenderit atque provident.</p>
-      <p class="lorem_p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam error ea aliquid iste quaerat eveniet veritatis id, doloribus maiores nesciunt repellat at doloremque omnis ex minus veniam quibusdam iusto eos amet! Accusantium temporibus officia modi perspiciatis voluptatum dolores molestias, omnis eius aspernatur eaque dolore sequi quod explicabo veniam possimus sunt repellat illo, aut quasi voluptatibus nam voluptatem. Itaque quasi harum, asperiores sint accusamus non porro neque eos assumenda quas, amet excepturi rerum ducimus. Assumenda, reprehenderit neque autem tempore totam! Doloremque alias itaque repudiandae minima incidunt neque quidem fugit eius, nobis delectus ex tempore eum, rem aut esse doloribus et repellendus.</p>
-    </section>
-  </article>
-  <div class="quote">
-    <p class="quote_para">Quote of the day :live life </p>
+  <!--header-->
+  <header class="header">
+    <div class="signal">
+      <img src="images/signal.png" alt="signal " />
+      <p style="display:inline">Figma</p> 
+      <img src="images/wifi.png" alt="" />
+    </div>
+    <p class="time">9:42am</p>
+    <div class="battery">
+      <img src="images/bluetooth.png" alt="Bluetooth" />
+      <p style="display:inline">42%</p> 
+      <img src="images/battery.png" alt="battery" />
+    </div>
+  </header>
+  <!--shop-->
+  <section class="shop">
+    <p class="shop-header">THE <br>ART<br>MUSEUM</p> 
+    <p class="shop-shop">Shop </p>
+    <img src="images/hamburger.png" alt="toggle " />
+  </section>
+  <!--main image -->
+  <img src="images/main.png" alt="wristwatch" style="margin-top:0.75rem "/>
+  <div class="carousel">
+    <img src="images/carousel.png" alt="indicator" />
   </div>
-  <footer>
-    <i class="fab fa-facebook-square"></i>
-    <i class="fab fa-instagram"></i>
-    <i class="fab fa-snapchat"></i>
-    <i class="fab fa-pinterest-p"></i>
-    <i class="fab fa-twitter"></i>
-    <i class="fab fa-linkedin-in"></i>
-  </footer>
-  <a class="power" href="#">Powered by w3.css</a>
+  <!--classic-->
+  <p class="classic">Braun Classic Watch</p>
+  <p class="classic-para">This Braun watch is a reissue of the original 1970's design from renowned design team Dietrich Lubs and Dieter Rams, both of whom have work featured in the Museum’s collection. The large watch features a numbered face, and the smaller watch has only index lines. Made of a matte stainless-steel case, black dial, mineral glass, a three-hand quartz movement, and a leather band. Water-resistant.<img
+  class="down" src="images/down.png" alt="down arrow" /></p>
+  <!--amount -->
+  <section class="price">
+    <div class="price1">
+      <p class="price1-header">$160.00</p>
+      <p class="price1-para">$140.00 Member Price</p>
+    </div>
+    <img src="images/positiveO.jpg" alt="increase or decrease price" />
+  </section>
+  <!--add to cart-->
+  <button type="submit">Add to Cart</button>
 </body>
 </html>
 
