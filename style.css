@@ -85,63 +85,71 @@ p.trainers2{
 
 /*schedule*/
 section.schedule{
-  margin-right: 10rem ;
+  margin-right: 14rem ;
 }
 p.schedule-header{
   font-size :28px;
   font-weight :bold;
   margin-bottom: 2rem ;
-}
-p.schedule-instruction{
-  font-size: 24px;
-  margin-bottom :2rem ;
+  padding-left: 2rem ;
 }
 /*schedule list */
-article.schedule-list{
+article.schedule-form{
   background: #fff ;
   padding: 2rem ;
   margin-bottom :2rem ;
   border-radius :0.25rem ;
 }
-ol li{
+p.schedule-instruction{
+  font-size :18px ;
+  word-spacing: 0.03em;
   line-height :28px;
-  font-size :1rem ;
+  color :#4c4c4c;
+  text-align :center ;
+  margin-bottom :2rem ;
+}
+input#name,
+select,
+input#time{
+  background :#f2f2f2;
+  border-radius :5.6249px;
+  outline :none ;
+  border :0;
+  padding-left: 1.5rem ;
+  margin-bottom :2rem ;
+  margin-right: 1rem ;
+}
+input#name,
+select{
+  width :294.54px;
+  height: 69.82px;
+}
+input#time{
+  width :616px;
+  height :70px;
+}
+input::placeholder,
+select,
+input#time{
+  color:#4c4c4c;
+  opacity :0.6;
+  letter-spacing: 0.03em;
+  font-size :16px ;
+  line-height :21px;
 }
 a.schedule-submit{
   text-decoration :none ;
   color :#fff;
   display :block ;
   height: 3.5rem;
-  width :70%;
+  width :616px;
   background :var(--primary);
   font-weight :bold ;
   font-size :24px ;
-  margin: 1rem ;
+  
   border-radius :0.3rem ;
   text-align :center ;
   padding-top: 0.87rem;
-}
-p.schedule-statistics{
-  color: #333;
-  font-size :1.5rem ;
-  margin-bottom: 1rem ;
-}
-section.schedule-figures{
-  display :grid ;
-  grid-template-columns :repeat(3, 1fr);
-  
-  justify-content :center ;
-  
-}
-div.schedule-figures1{
-  background :#fff;
-  width:16rem ;
-  height:6rem ;
-  border-radius :0.3rem ;
-  line-height :0.5px;
-  color :#333;
-  padding-top :2rem ;
-  padding-left: 0.5rem ;
 }
 
 /*footet*/
