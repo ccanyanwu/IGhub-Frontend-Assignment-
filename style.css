@@ -1,5 +1,9 @@
-/*Google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700;900&display=swap');
+/*font*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,700;1,900&display=swap'); 
+:root{
+  --primary:#1e73eb;
+}
+
 *{
   padding: 0;
   margin :0 ;
@@ -7,93 +11,151 @@
 }
 html,
 body{
-  font-family: 'Montserrat', sans-serif;
+  width :90rem;
+  font-family: 'Lato', sans-serif ;
 } 
 
 /*header */
 header.header{
-  background :#000;
   display :flex ;
-  flex-direction :row;
-  justify-content: space-between;
-  align-items :center ;
-  color:#fff ;
-  font-size :0.75rem ;
-  padding :0.25rem 0.25rem 0.5rem 0.25rem ;
+  flex-direction:row ; 
+  justify-content :space-between ;
+  background :var(--primary);
+  color:#fff;
+  height:3.2rem ;
+  padding:0 10rem ;
+  
 }
-div.signal{
-  align-self: center ;
+p.header-left_byb{
+  font-size :1.5rem;
+  height :60%;
+  display :inline-block ;
+  margin-top :0.5rem;
+  font-weight:bold;
+  border-right :1.40597px solid #fff;
+  padding-right:2rem ;
+  margin-right:2rem;
 }
-p.time{
-  padding-right: 1.75rem ;
-}
-
-/*shop */
-section.shop{
-  display :flex ;
-  flex-direction :row ;
-  justify-content: space-between ;
-  align-items: center ;
-  padding :0.25rem 0.25rem 0.5rem 0.25rem ;
-}
-p.shop-header{
-  font-size :10px;
-  font-weight: normal;
-  line-height :12px ;
-}
-p.shop-shop{
-  color:#ff473a;
-  font-size :18px;
-  font-weight: normal ;
-  padding-right: 2rem ;
-}
-
-div.carousel {
-  text-align: center ;
-  margin-bottom :1rem ;
-}
-
-/*classic*/
-p.classic{
+p.header-left_with{
+  display :inline ;
+  font-weight :normal ;
   font-size :1.5rem ;
-  padding-left: 0.25rem ;
-  margin-bottom :1.5rem;
 }
-p.classic-para{
-  font-size:10px;
-  font-weight :300 ;
-  color:#979797;
-  padding-left: 0.25rem ;
+div.header-right{
+  display :inline ;
 }
-img.down{
-  padding-left: 21rem ;
+div.gear{
+  height:100%;
+  background :#78abf1;
+  padding: 0.4rem 0.5rem;
+  display :inline-block ;
+  margin-right: 1rem ;
 }
 
-/*price*/
-section.price{
+/*main section */
+main.main{
+  display :grid;
+  grid-template-columns :1fr 5fr;
+  justify-content: center;
+  background :#e5e5e5;
+  padding-top :10rem;
+  padding-bottom: 6rem ;
+}
+section.trainers{
+  padding:0rem 3rem  0 10rem;
+}
+section.trainers p{
+  font-size :1rem ;
+  padding-top :0.8rem;
+  padding-left: 0.75rem ;
+}
+p.trainers1, 
+p.trainers2{
+  width :15rem;
+  height:3.2rem ;
+}
+p.trainers1{
+  color: #fff;
+  background :var(--primary);
+}
+p.trainers2{
+  color :#000;
+  border-top :1px solid #444 ;
+}
+
+/*schedule*/
+section.schedule{
+  margin-right: 10rem ;
+}
+p.schedule-header{
+  font-size :28px;
+  font-weight :bold;
+  margin-bottom: 2rem ;
+}
+p.schedule-instruction{
+  font-size: 24px;
+  margin-bottom :2rem ;
+}
+/*schedule list */
+article.schedule-list{
+  background: #fff ;
+  padding: 2rem ;
+  margin-bottom :2rem ;
+  border-radius :0.25rem ;
+}
+ol li{
+  line-height :28px;
+  font-size :1rem ;
+}
+a.schedule-submit{
+  text-decoration :none ;
+  color :#fff;
+  display :block ;
+  height: 3.5rem;
+  width :70%;
+  background :var(--primary);
+  font-weight :bold ;
+  font-size :24px ;
+  margin: 1rem ;
+  border-radius :0.3rem ;
+  text-align :center ;
+  padding-top: 0.87rem;
+}
+p.schedule-statistics{
+  color: #333;
+  font-size :1.5rem ;
+  margin-bottom: 1rem ;
+}
+section.schedule-figures{
+  display :grid ;
+  grid-template-columns :repeat(3, 1fr);
+  
+  justify-content :center ;
+  
+}
+div.schedule-figures1{
+  background :#fff;
+  width:16rem ;
+  height:6rem ;
+  border-radius :0.3rem ;
+  line-height :0.5px;
+  color :#333;
+  padding-top :2rem ;
+  padding-left: 0.5rem ;
+}
+
+/*footet*/
+footer.footer{
+  background: var(--primary);
   display :flex ;
   flex-direction :row ;
-  justify-content: space-between ;
+  justify-content: space-around ;
   align-items: center ;
-  padding :0.25rem 0.25rem 0.5rem 0.25rem ;
+  height: 3.2rem ;
 }
-p.price1-header{
-  font-size: 14px ;
-  padding-top: 1rem ;
-}
-p.price1-para{
-  font-size :10px;
-  font-weight: 300 ;
-  color :#979797;
-}
-
-button{
-  width:70%;
-  outline :none ;
-  border: 0;
-  margin: 1rem 15% ;
+p.footer-left{
+  font-size :16px;
   color :#fff ;
-  height :3rem ;
-  background: #FF473A; 
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  word-spacing: 0.03rem;
+  line-height :25px;
 }
