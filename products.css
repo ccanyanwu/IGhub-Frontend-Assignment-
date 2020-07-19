@@ -103,10 +103,10 @@ p.arrivals{
 /*watches displayed */
 section.watches{
   display :grid ;
-  grid-template-rows:1fr ;
+  grid-template-columns:1fr ;
   justify-content :center ;
   align-items :center ;
-  grid-row-gap: 1rem ;
+  grid-gap: 1rem ;
   margin-bottom :3rem ;
 }
 div.watches-card{
@@ -114,6 +114,7 @@ div.watches-card{
   border-radius :0.5rem;
   background :#7B7C76;
   height :20rem;
+  margin: 0 auto ;
 }
 img.watches-image{
   width :100%;
@@ -134,7 +135,7 @@ button.buy{
   margin-left: 1rem ;
 }
 
-/**see more*/
+/*see more*/
 a.seeMore{
   color:#fff;
   display: block ;
@@ -194,3 +195,37 @@ p.footer-copyright{
   color: #555;
   font-size :0.875rem ;
 } 
+
+/*tablet */
+@media (min-width :768px) {
+  body{
+    border :1px solid #02507F ;
+  }
+  h1.blink{
+    width:60%;
+    text-align :center ;
+    display :block ;
+    margin-right: auto;
+    margin-left: auto ;
+  }
+  p.arrivals {
+    margin-bottom :2rem;
+  }
+  section.watches{
+    grid-template-columns :1fr 1fr 1fr 1fr ;
+    justify-content :center ;
+    align-items:center ;
+    align-content: center ;
+    grid-gap: 2rem  0;
+  }
+  div.watches-card{
+    justify-self: center ;
+    align-self: center ;
+  }
+}
+/*large screen */
+@media all and (min-width:992px) {
+  section.watches{
+    grid-template-columns :repeat(3, 1fr);
+  }
+}

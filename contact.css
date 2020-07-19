@@ -1,8 +1,6 @@
 /*Google text*/
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-
-
 /*basic css reset*/
 *{
   padding :0;
@@ -100,11 +98,6 @@ button{
 footer.footer{
   border-top: 1px solid #555;
   padding-bottom : 0.5rem ;
-  /*position :fixed ;
-  width :100%;
-  bottom :0;
-  left :0;
-  */
 }
 p.footer-header{
   display :block ;
@@ -137,3 +130,18 @@ p.footer-copyright{
   color: #555;
   font-size :0.875rem ;
 } 
+
+/*tablet view */
+@media (orientation :landscape), (orientation :portrait), (min-width:768px){
+  input,
+  textarea{
+    width:40%;
+  }
+  footer.footer{
+  position :fixed ;
+  width :100%;
+  bottom :0;
+  left :0;
+  background :#313134 ;
+  }
+}
