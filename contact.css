@@ -48,7 +48,8 @@ a.header-menu_item:active{
 
 h1.contact-header{
   padding:3rem 1rem ;
-  color: #555;
+  color: #888;
+ 
 }
 
 /*contact form */
@@ -90,6 +91,7 @@ button{
   font-size :1rem;
   text-transform: uppercase ;
   border :0;
+  cursor: pointer;
   outline :none ;
   box-shadow:  -14px -14px 29px #222, 14px 14px 29px #38383c;
   color :green;
@@ -127,12 +129,12 @@ div.footer-social a {
   box-shadow : -5px -5px 3px #222;
 }
 p.footer-copyright{
-  color: #555;
+  color: #888;
   font-size :0.875rem ;
 } 
 
 /*tablet view */
-@media (orientation :landscape), (orientation :portrait), (min-width:768px){
+@media (min-width:768px){
   input,
   textarea{
     width:40%;
@@ -144,4 +146,20 @@ p.footer-copyright{
   left :0;
   background :#313134 ;
   }
+}
+
+@media all and (min-width:1200px) {
+  header{
+    height: 3.2rem;
+  }
+  h1.header-logo{
+    font-size: 2rem;
+  }
+  div.header-menu{
+    font-size: 1.5rem;
+  }
+  p.hero-header{
+    font-size: 3rem;
+  }
+
 }

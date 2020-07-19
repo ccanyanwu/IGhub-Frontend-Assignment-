@@ -31,6 +31,7 @@ header{
   width :100%;
   top:0;
   left:0;
+  z-index: 2;
 }
 h1.header-logo{
   font-size: 0.875rem;
@@ -127,12 +128,13 @@ p.watches-desc{
 }
 button.buy{
   background: #FEC925;
-  width: 4rem;
+  width: 6rem;
   height: 2rem;
   border :0;
   border-radius :0.25rem ;
   outline :none;
   margin-left: 1rem ;
+  cursor: pointer;
 }
 
 /*see more*/
@@ -192,15 +194,12 @@ div.footer-social a {
   box-shadow : -5px -5px 3px #222;
 }
 p.footer-copyright{
-  color: #555;
+  color: #888;
   font-size :0.875rem ;
 } 
 
 /*tablet */
 @media (min-width :768px) {
-  body{
-    border :1px solid #02507F ;
-  }
   h1.blink{
     width:60%;
     text-align :center ;
@@ -212,9 +211,7 @@ p.footer-copyright{
     margin-bottom :2rem;
   }
   section.watches{
-    grid-template-columns :1fr 1fr 1fr 1fr ;
-    justify-content :center ;
-    align-items:center ;
+    grid-template-columns :1fr 1fr;
     align-content: center ;
     grid-gap: 2rem  0;
   }
@@ -225,6 +222,18 @@ p.footer-copyright{
 }
 /*large screen */
 @media all and (min-width:992px) {
+  header{
+    height: 3.2rem;
+  }
+  h1.header-logo{
+    font-size: 2rem;
+  }
+  div.header-menu{
+    font-size: 1.5rem;
+  }
+  p.hero-header{
+    font-size: 3rem;
+  }
   section.watches{
     grid-template-columns :repeat(3, 1fr);
   }

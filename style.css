@@ -17,8 +17,6 @@ body{
   background :#313134;
   color:#c4c4c4;
   font-size :16px ;
-  width:768px;
-  height :1024px;
 }
 
 /*header*/
@@ -31,6 +29,7 @@ header{
   background :#333;
   position:fixed ;
   width :100%;
+  z-index: 2;
 }
 h1.header-logo{
   font-size: 0.875rem;
@@ -87,11 +86,10 @@ section.intro{
 p.intro-para{
   padding :3rem 0;
   font-size :2rem ;
-  color:#555;
+  color:#888;
 }
 span.timex{
-  text-shadow: 1px 1px 3px #38ff14;
-  font-style: italic;
+  color:green
 }
 img.intro-img{
   width:100%;
@@ -153,15 +151,57 @@ div.footer-social a {
   box-shadow : -5px -5px 3px #222;
 }
 p.footer-copyright{
-  color: #555;
+  color: #888;
   font-size :0.875rem ;
 } 
 
 /*tablet view */
-@media (orientation :landscape), (min-width:768px){
-  section.hero{
+@media (min-width:768px){
+  p.hero-para,
+  p.intro-para,
+  img.intro-img{
     width:60%;
     display: block ;
-    background: #02507F ;
+  }
+  p.intro-para,
+  img.intro-img{
+    line-height: 1.8;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/*laptop view */
+@media (min-width:1200px){
+  header{
+    height: 3.2rem;
+  }
+  h1.header-logo{
+    font-size: 2rem;
+  }
+  div.header-menu{
+    font-size: 1.5rem;
+  }
+  p.hero-header{
+    font-size: 3rem;
+  }
+  section.hero{
+    height: 70vh;
+  }
+  p.hero-para{
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+  p.hero-para,
+  p.intro-para,
+  img.intro-img{
+    width:40%;
+    display: block ;
+  }
+  p.intro-para,
+  img.intro-img{
+    line-height: 1.8;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

@@ -134,6 +134,36 @@ div.footer-social a {
   box-shadow : -5px -5px 3px #222;
 }
 p.footer-copyright{
-  color: #555;
+  color: #888;
   font-size :0.875rem ;
 } 
+
+/*large screen */
+@media all and (min-width:1200px) {
+  header{
+    height: 3.2rem;
+  }
+  h1.header-logo{
+    font-size: 2rem;
+  }
+  div.header-menu{
+    font-size: 1.5rem;
+  }
+  p.hero-header{
+    font-size: 3rem;
+  }
+
+  p.collective-header{
+    font-size: 3.5rem;
+    padding-top: 5rem;
+  }
+  p.collective-para{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    padding-bottom: 5rem;
+  }
+  section.ceo{
+    padding: 8rem 2rem;
+    grid-template-columns :1fr auto;
+  }
+}
