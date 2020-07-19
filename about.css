@@ -50,16 +50,57 @@ a.header-menu_item:active{
 
 /*collective */
 section.collective{
-  margin :3rem 0;
-  background :linear-gradient(rgba(49,49,52,0.7), rgba(49,49,52,0.7)), url(../images/Something.jpg);
+  padding: 3rem 1rem 3rem 1rem;
+  background :linear-gradient(rgba(49,49,52,0.9), rgba(49,49,52,0.9)), url(../images/Something.jpg);
   background-size: cover ;
   background-position: center ;
   background-repeat: no-repeat ;
+  color :#aaa;
 }
-p.collective-header{
-  
+p.collective-header,
+p.ceo-story-header{
+  font-size :3rem ;
+}
+p.collective-para{
+  font-size :0.75rem ;
 }
 
+/*ceo*/
+section.ceo{
+  display :grid;
+  grid-template-rows: 1fr ;
+  justify-content :center ;
+  align-items:center ;
+  align-content: center ;
+  grid-row-gap: 2rem ;
+  padding :2rem 0 3rem 0;
+}
+div.ceo-card{
+  width :16rem;
+  margin :0 auto ;
+}
+img.ceo-image{
+  width :100%;
+  height :auto ;
+}
+p.ceo-title{
+  font-weight: bold ;
+  font-size :0.875rem ;
+  padding-top :0.875rem ;
+}
+div.ceo-story{
+  margin :0 auto ;
+  text-align: justify ;
+  width: 90% ;
+}
+p.ceo-story-header{
+  color:green;
+}
+p.ceo-story-para{
+  line-height :1.8;
+  color :#888;
+  font-size: 1.5rem ;
+}
 /*footer */
 footer.footer{
   border-top: 1px solid #555;

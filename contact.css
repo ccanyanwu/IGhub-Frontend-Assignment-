@@ -48,12 +48,63 @@ a.header-menu_item:active{
   color :#9AAAEE;
 } 
 
-/*search 
+h1.contact-header{
+  padding:3rem 1rem ;
+  color: #555;
+}
 
+/*contact form */
+input,
+textarea{
+  width: 80%;
+  display:block ;
+  margin :0 auto ;
+  border :2px solid green;
+  border-radius :0.7rem;
+  background :transparent ;
+  padding-left: 1rem ;
+  outline :none ;
+  color :#888;
+  margin-bottom :1rem ;
+  box-shadow:  -14px -14px 29px #222, 14px 14px 29px #38383c;
+}
+input::placeholder{
+  font-size :1.25rem;
+  color: #888;
+}
+input.contact-name{
+  height:3.2rem ;
+}
+textarea{
+  font-size :1.25rem ;
+  color: #888;
+  padding-top :1rem ;
+}
+button{
+  display:block ;
+  width :12rem;
+  margin :3rem auto ;
+  height :3rem ;
+  background: #000;
+  text-decoration: none ;
+  text-align :center ;
+  border-radius :1.4rem ;
+  font-size :1rem;
+  text-transform: uppercase ;
+  border :0;
+  outline :none ;
+  box-shadow:  -14px -14px 29px #222, 14px 14px 29px #38383c;
+  color :green;
+}
 /*footer */
 footer.footer{
   border-top: 1px solid #555;
   padding-bottom : 0.5rem ;
+  /*position :fixed ;
+  width :100%;
+  bottom :0;
+  left :0;
+  */
 }
 p.footer-header{
   display :block ;
