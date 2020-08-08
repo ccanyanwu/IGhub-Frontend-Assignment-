@@ -1,55 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>INTIME TIME PIECES</title>
+    <title>Heavyweight - Intuitive Interfaces for Tech</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <link rel="stylesheet" href="style.css" title="styling" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" title="landing page" type="text/css" />
 </head>
 
-<body>
-  <!--header-->
-  <header class="header" data-aos="fade-down" data-aos-duration="3000">
-    <h1 class="header-logo">INTIME</h1>
-    <div class="header-menu">
-      <a href="index.html" class="header-menu_item" style="text-decoration:underline;color :#fff">HOME</a>
-      <a href="products.html" class="header-menu_item">PRODUCTS</a>
-      <a href="about.html" class="header-menu_item">ABOUT</a>
-      <a href="contact.html" class="header-menu_item">CONTACT</a>
+<body class="container-fluid ">
+  <!----------
+  hero section
+  ------------>
+  <section class="row hero">
+    <img src="" alt="" class="hero-logo col-12 text-left">
+    <h1 class="hero-header font-weight-bold">Is design growing<br> your product? </h1>
+    <h2 class="hero-para d-block">Create an interface that drives value by teaming up with our studio to rethink and design it.</h2>
+    <!--mobile input-->
+    <input type="email" class="hero-input d-block form-control form-control-lg" placeholder="Your email address ">
+    <button class="hero-btn shadow-lg btn font-weight-bold text-white btn-lg d-block">
+      Get in touch <span class="hero-arrow"><i class="fas fa-arrow-right"></i></span>
+    </button>
+    <div class="hero-sponsors_mobile col-12 mx-auto d-flex flex-row justify-content-center ">
+      <img class="img-fluid col-4" src="images/yc.svg" alt="y combinator" />
+      <img class="img-fluid col-4" src="images/heineken.svg" alt="y combinator" />
+      <img class="img-fluid col-4" src="images/elsevier.svg" alt="y combinator" />
     </div>
-  </header>
-  
-  <!--hero section -->
-  <section class="hero">
-    <p class="hero-header" data-aos="zoom-out-down" data-aos-duration="2000">MOTION IS LIFE</p>
-    <p class="hero-para" data-aos="fade-up" data-aos-duration="2000">Since the invention in 15th century Europe,time pieces have connected Man to infinity by measuring solar and moon movement, months to give us an understanding of our universe. Here at <mark>INTIME</mark>, We believe that in the 21st century, time pieces should reach another level and connect us to ourselves, to our body and its natural rhythms. </p>
   </section>
-  
-  <!--intro-->
-  <section class="intro">
-    <p class="intro-para" data-aos="fade-right" data-aos-duration="2000">INTIME introduces our latest brand,<span class="timex">TIMEX</span>.A new generation watch  combining time and activity tracking</p>
-    <img class="intro-img" src="images/intro.jpg" alt="timex time piece"  data-aos="fade-up" data-aos-duration="2000"/>
-  </section>
-  <a href="products.html" class="shopping" data-aos="fade-up" data-aos-duration="3000">start shopping</a>
-  
-  <!--footer-->
-  <footer class="footer" data-aos="fade-up" data-aos-duration="3000">
-    <p class="footer-header">follow up</p>
-    <div class="footer-flex">
-      <div class="footer-social">
-        <a href=""><i class="fab fa-facebook-f"></i></a>
-        <a href=""><i class="fab fa-linkedin-in"></i></a>
-        <a href=""><i class="fab fa-github"></i></a>
+  <!----------
+  INTERFACE 1 
+  ----------->
+  <section class="interfaces">
+    <img src="images/interface1.svg" alt="analytics" class="interface1-img">
+    <div class="interface1-description ">
+      <h5 class="interface1-description_header  font-weight-bold">Great interfaces set your business up for growth</h5>
+      <p class="interface1-description_para">The numbers are in. Digital products with great user experience far outperform those without. That is why successful tech startups are investing in top-notch user interfaces. Here’s why you should too.</p>
+      <!--boost productivity-->
+      <div class="interface1-boost">
+        <img class="img-fluid" src="images/boost-productivity (1).svg" alt="boost productivity" />
+        <div>
+          <h6 class="font-weight-bold ">Boost productivity </h6>
+          <p>Make your product more valuable to your users by boosting their productivity through optimised UX.</p>
+        </div>
+        <img class="img-fluid" src="images/increase-confidence (1).svg" alt="increase confidence " />
+        <div>
+          <h6 class="font-weight-bold ">Increase confidence</h6>
+          <p>Seamless UX and sleek UI increases customers' confidence in your application's ability as a whole.</p>
+        </div>
+        <img class="img-fluid" src="images/scale-your-product (1).svg" alt="scale your product " />
+        <div>
+          <h6 class="font-weight-bold ">Scale your product</h6>
+          <p>Rapidly scale up your product without sacrificing quality by implementing a design system.</p>
+        </div>
       </div>
-      <p class="footer-copyright">&copy; THRIVE TECH 2020</p>
     </div>
-  </footer>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+  </section>
+  <!----------
+  INTERFACE2
+  ------------>
+  <section class="interfaces">
+    <img src="images/Try.webp" alt="analytics" class="interface1-img">
+    <div class="interface2-description ">
+      <h5 class="interface2-description_header  font-weight-bold">We design great user interfaces that empower people and drive value</h5>
+      <p class="interface2-description_para">We know what makes interfaces great: seamless journeys. Our team merges expertise in CX, UX, and UI design to craft seamless processes and products. Even when users interact with your product across devices, applications, and (real-world) touchpoints. That’s how we empower people and drive value.</p>
+      <!--bubbly triangle-->
+      <div class=" interface2-bubble">
+        <p>Making complex applications seemingly simple is what we do best</p>
+      </div>
+  </section>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </body>
 </html>
-
