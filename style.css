@@ -17,17 +17,19 @@ variables
 basic css reset
 ------------*/
 *{
+  box-sizing: border-box ;
   padding :0;
   margin: 0;
-  box-sizing:border-box ;
 }
 
 html{
   scroll-behavior :smooth ;
 }
 body{
+  background :#f7f9fc ;
   color: var(--secondaryFontColor);
   font-family:var(--headFontFamily);
+  line-height: 1.5;
 }
 
 /*----------
@@ -217,7 +219,7 @@ INTERFACES
 PRODUCT DESIGN 
 **************/
 .design{
-  background :#fafcfd ;
+  
   padding: 3rem 0;
 }
 .design img{
@@ -242,8 +244,61 @@ li {
 .fa-li i{
   color:var(--deepBlue);
   font-size :1.4rem ;
-  
 }
 li{
   font-size :0.775rem!important ;
+}
+/**********
+THREE CARDS
+**********/
+.info{
+  align-items :center;
+  background:#fff;
+  border-radius :0.75rem ;
+  display :flex;
+  flex-direction :row ;
+  flex-wrap: wrap ;
+  margin:2rem auto ;
+  padding :0
+}
+.info img{
+  border-top-left-radius :0.75rem ;
+  border-top-right-radius:0.75rem ;
+}
+.info div{
+  padding :1rem ;
+}
+.info div p span{
+  opacity :0.3 ;
+}
+.info-bubble{
+	background: #f7f9fc;
+	border-radius: .5rem;
+	position :relative ;
+	font-size :0.75rem ;
+	line-height: 1.5 ;
+}
+.info-bubble:after{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 10%;
+	width: 0;
+	height: 0;
+	border: 0.8rem solid transparent;
+	border-top-color: #f7f9fc;
+	border-bottom: 0;
+	margin-left: -0.8rem;
+	margin-bottom: -0.8rem;
+}
+#info-founder img{
+  border-radius :100%;
+  height :3.5rem ;
+  width :3.5rem ;
+}
+#info-founder div {
+  padding-top:.5rem;
+}
+#info-founder div p{
+  font-size :0.75rem ;
 }
