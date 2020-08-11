@@ -54,16 +54,24 @@ HERO SECTION
   margin :0 auto 0.75rem ;
   width :85%;
 }
-.hero-input::placeholder {
+.hero-input::placeholder, 
+.design-input::placeholder{
   color: var(--secondaryFontColor) ;
   font-size: var(--minorFontSize);
 }
-.hero-btn{
+.hero-btn,
+.design-btn{
   background :var(--deepBlue);
   font-size :var(--minorFontSize);
   position :relative ;
-  width: 85%;
   margin: 0 auto 1rem ;
+}
+.hero-btn{
+  width:85%;
+}
+.design-btn{
+  margin-top :1rem ;
+  width: 100%;
 }
 .hero-arrow{
   position :absolute ;
@@ -91,7 +99,8 @@ INTERFACES
   width:100%;
 }
 .interface1-description_header,
-.interface2-description_header{
+.interface2-description_header,
+.design-desc h5{
   color:var(--primaryFontColor);
   line-height :1.825rem ;
 }
@@ -113,11 +122,15 @@ INTERFACES
   padding:0.75rem ;
 }
 .interface1-boost div h6,
-.native-content div h6{
+.native-content div h6,
+.design-desc h5,
+.interface1-description_header,
+.interface2-description_header{
   color :var(--primaryFontColor);
 }
 .interface1-boost div p,
-.native-content div p{
+.native-content div p,
+.design-desc p{
   font-size :0.8rem ;
 }
 /*interface 2*/
@@ -210,4 +223,27 @@ PRODUCT DESIGN
 .design img{
   width:100%;
   height :auto!important ;
+}
+.design-desc{
+  padding-left:2.5rem ;
+  padding-right:2.5rem; 
+}
+.design-desc p{
+  line-height :1.7;
+}
+
+ul {
+  list-style: none;
+  margin-left: 1.4rem!important ;
+}
+li {
+  padding-left: 0.5rem;
+}
+.fa-li i{
+  color:var(--deepBlue);
+  font-size :1.4rem ;
+  
+}
+li{
+  font-size :0.775rem!important ;
 }
