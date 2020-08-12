@@ -36,13 +36,17 @@ body{
 HERO SECTION 
 -----------*/
 .hero{
-  
+  background-image: url("images/e1.webp");
+  background-size: cover ;
+  background-repeat: no-repeat ;
+  background-position: center ;
+  object-fit: cover ;
 }
 .hero-header{
   color:var(--primaryFontColor);
   font-size:var(--mainFontSize);
   line-height :3rem;
-  margin-top: 6.5rem ;
+  margin-top: 3.5rem ;
   text-align :center ;
 }
 .hero-para{
@@ -129,7 +133,8 @@ h5{
 .design-desc h5,
 .interface1-description_header,
 .interface2-description_header,
-.help-grid div h6{
+.help-grid div h6,
+h6{
   color :var(--primaryFontColor);
 }
 .interface1-boost div p,
@@ -332,15 +337,64 @@ NEXT LEVEL
 }
 .next-images{
   display :grid ;
-  grid-template-columns :repeat(4, minmax(3rem, 25%));
+  grid-template-columns :repeat(4, minmax(3rem, auto));
   grid-gap :.3rem ;
   justify-content: center ;
 }
 .next-images img{
   border-radius :.3rem;
+  display :block!important ;
   height: auto;
   width :100%;
 }
 .next-images2{
-  align-self: end!important ;
+  margin-top :50%;
+}
+.next-images3{
+  margin-top :20%;
+}
+.next-images4{
+  margin-top: 70%;
+}
+.next h2 ~ p{
+  font-size :0.9rem ;
+}
+.next-rate{
+  display: grid ;
+  grid-template-columns :repeat(3, minmax(6rem, auto));
+  grid-gap :0.5rem ;
+  padding :0;
+}
+.next-rate div{
+  align-items: center ;
+  display :flex ;
+  flex-direction:row; 
+  
+}
+.next-span{
+  background :#cadefe ;
+  border-radius :100%;
+  display :block ;
+  font-size :0.85rem ;
+  height :1.3rem ;
+  text-align :center ;
+  width :1.3rem;
+}
+/**********
+  FOOTER 
+**********/
+footer{
+  background :#fefefe;
+  padding-left: 1rem ;
+  padding-right: 1rem ;
+}
+a{
+  color:var(--secondaryFontColor);
+  font-size:0.95rem ;
+  opacity :0.6;
+  text-decoration: none ;
+}
+a:hover{
+  color:#8620E3 ;
+  text-decoration: none ;
 }
