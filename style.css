@@ -326,7 +326,21 @@ THREE CARDS
 /**********
 NEXT LEVEL 
 **********/
+.next{
+  padding-left :2rem ;
+  padding-right: 2rem ;
+}
 .next-images{
   display :grid ;
-  
+  grid-template-columns :repeat(4, minmax(3rem, 25%));
+  grid-gap :.3rem ;
+  justify-content: center ;
+}
+.next-images img{
+  border-radius :.3rem;
+  height: auto;
+  width :100%;
+}
+.next-images2{
+  align-self: end!important ;
 }
