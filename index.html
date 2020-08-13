@@ -9,20 +9,29 @@
 </head>
 
 <body class="container-fluid ">
-  <a class="row" href="#"><img class="logo img-fluid col-6 col-md-3 pl-4 pt-5 " src="images/logo.JPG" alt="Heavyweight logo " /></a>
+  
   <!----------
   hero section
   ------------>
-  <section class="row hero">
-    <img src="" alt="" class="hero-logo col-12 text-left">
-    <h1 class="hero-header font-weight-bold">Is design growing<br> your product? </h1>
-    <h2 class="hero-para d-block">Create an interface that drives value by teaming up with our studio to rethink and design it.</h2>
+  <section class="row hero ">
+    <a class="logo col-12  pl-4 pt-5 d-block " href="#"><img class="img-fluid"  src="images/logo.JPG" alt="Heavyweight logo " /></a>
+    <h1 class="hero-header font-weight-bold col-12 mx-auto d-block ">Is design growing<br> your product? </h1>
+    <h2 class="col-12 mx-auto hero-para d-block">Create an interface that drives value by teaming up with our studio to rethink and design it.</h2>
     <!--mobile input-->
-    <input type="email" class="hero-input d-block form-control form-control-lg" placeholder="Your email address ">
-    <button class="hero-btn shadow-lg btn font-weight-bold text-white btn-lg d-block">
+    <input type="email" class="col-12 hero-input d-block form-control form-control-lg" placeholder="Your email address "><br>
+    <button class="col-12 mx-auto hero-btn shadow-lg btn font-weight-bold text-white btn-lg d-block">
       Get in touch <span class="hero-arrow"><i class="fas fa-arrow-right"></i></span>
     </button>
-    <div class="hero-sponsors_mobile col-12 mx-auto d-flex flex-row justify-content-center ">
+    <!--tab input-->
+    <div class="input-group  hero-input_div shadow ">
+      <input type="text" class="hero-input_tab pr-4 form-control border-0" placeholder="Your email address" id="demo" name="email">
+      <div class="input-group-append shadow-lg">
+        <span class="input-group-text ">Get in touch<span class="hero-arrow"><i class="fas fa-arrow-right"></i></span></span>
+      </div>
+    </div>
+    <!--tab clients-->
+    <p class="col-12 text-left hero-client">Clients backed by</p>
+    <div class="hero-sponsors_mobile col-12 col-md-8  d-flex flex-row justify-content-center ">
       <img class="img-fluid col-4" src="images/yc.svg" alt="y combinator" />
       <img class="img-fluid col-4" src="images/heineken.svg" alt="y combinator" />
       <img class="img-fluid col-4" src="images/elsevier.svg" alt="y combinator" />
@@ -31,7 +40,7 @@
   <!----------
   INTERFACE 1 
   ----------->
-  <section class="interfaces">
+  <section class="interfaces row">
     <img src="images/interface1.svg" alt="analytics" class="interface1-img">
     <div class="interface1-description ">
       <h5 class="interface1-description_header  font-weight-bold">Great interfaces set your business up for growth</h5>
@@ -59,8 +68,8 @@
   <!----------
   INTERFACE2
   ------------>
-  <section class="interfaces">
-    <img src="images/Try.webp" alt="analytics" class="interface1-img">
+  <section class="interfaces row">
+    <img src="images/Try.webp" alt="analytics" id="interface2-img" class="interface1-img">
     <div class="interface2-description ">
       <h5 class="interface2-description_header  font-weight-bold">We design great user interfaces that empower people and drive value</h5>
       <p class="interface2-description_para">We know what makes interfaces great: seamless journeys. Our team merges expertise in CX, UX, and UI design to craft seamless processes and products. Even when users interact with your product across devices, applications, and (real-world) touchpoints. That’s how we empower people and drive value.</p>
@@ -79,37 +88,49 @@
   <!----------------
   NATIVE MOBILE APPS
   ----------------->
-  <section class="native">
+  <section class="native row">
     <div class="native-content">
-      <i class="fas fa-mobile-alt fa-2x"></i>
-      <div>
-        <h6 class="font-weight-bold">Native mobile apps</h6>
-        <p>Beautiful native iOS & Android apps that deliver a polished user experience.</p>
+      <div class="native-content-div">
+        <i class="fas fa-mobile-alt fa-2x d-block"></i>
+        <div>
+          <h6 class="font-weight-bold">Native mobile apps</h6>
+          <p>Beautiful native iOS & Android apps that deliver a polished user experience.</p>
+        </div>
       </div>
-      <i class="fas fa-cloud fa-2x"></i>
-      <div>
-        <h6 class="font-weight-bold">SaaS applications</h6>
-        <p>Feature-driven applications in the cloud that are optimised for self-service.</p>
+      <div class="native-content-div">
+        <i class="fas fa-cloud fa-2x"></i>
+        <div>
+          <h6 class="font-weight-bold">SaaS applications</h6>
+          <p>Feature-driven applications in the cloud that are optimised for self-service.</p>
+        </div>
       </div>
-      <i class="fas fa-chart-pie fa-2x"></i>
-      <div>
-        <h6 class="font-weight-bold">Enterprise software</h6>
-        <p>Complex and robust software solutions that feel bespoke and intuitive.</p>
+      <div class="native-content-div">
+        <i class="fas fa-chart-pie fa-2x"></i>
+        <div>
+          <h6 class="font-weight-bold">Enterprise software</h6>
+          <p>Complex and robust software solutions that feel bespoke and intuitive.</p>
+        </div>
       </div>
-      <i class="fas fa-laptop fa-2x" id="hide"></i>
-      <div>
-        <h6 class="font-weight-bold" id="hide">Digital platforms</h6>
-        <p id="hide">Snappy digital platforms that balance content, commerce, and functionality.</p>
+      <div class="native-content-div"id ="hide">
+        <i class="fas fa-laptop fa-2x"></i>
+        <div>
+          <h6 class="font-weight-bold">Digital platforms</h6>
+          <p >Snappy digital platforms that balance content, commerce, and functionality.</p>
+        </div>
       </div>
-      <i class="fas fa-pencil-alt fa-2x" id="hide"></i>
-      <div>
-        <h6 class="font-weight-bold" id="hide">Design systems</h6>
-        <p id="hide">Future-proof your product with a design system that scales with your product.</p>
+      <div class="native-content-div" id="hide">
+        <i class="fas fa-pencil-alt fa-2x"></i>
+        <div>
+          <h6 class="font-weight-bold">Design systems</h6>
+          <p >Future-proof your product with a design system that scales with your product.</p>
+        </div>
       </div>
-      <i class="far fa-comment-alt fa-2x" id="hide"></i>
-      <div>
-        <h6 class="font-weight-bold" id="hide">Design audits</h6>
-        <p id ="hide">A quick review or in-depth analysis of your product. Let's optimise!</p>
+      <div class="native-content-div" id="hide">
+        <i class="far fa-comment-alt fa-2x" ></i>
+        <div>
+          <h6 class="font-weight-bold">Design audits</h6>
+          <p >A quick review or in-depth analysis of your product. Let's optimise!</p>
+        </div>
       </div>
     </div>
   </section>
