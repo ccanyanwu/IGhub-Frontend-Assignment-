@@ -227,7 +227,6 @@ h6{
 PRODUCT DESIGN 
 **************/
 .design{
-  
   padding: 3rem 0;
 }
 .design img{
@@ -570,6 +569,9 @@ MEDIA QUERIES
   .info div{
     max-width: 85%;
   }
+  .info img{
+    border-radius :0.5rem ;
+  }
   .info div p ~ p{
     font-size: 1.5rem;
     line-height: 2.25rem;
@@ -647,79 +649,61 @@ MEDIA QUERIES
     background-image: url("images/e1.webp");
   }
   .hero-header{
-    font-size: 4rem;
+    display: block !important;
+    font-size: 3rem;
+    line-height: 3.5rem;
     text-align: left !important;
+    margin-left: calc(100vw - 95vw) !important;
+    max-width: 40vw !important;
   }
   .hero-para{
-    font-size: 1.25rem;
-    line-height: 2.25rem;
-    padding: 1rem 9rem;
+    margin-left: -4vw !important;
+    max-width: 100vw !important;
+    padding-right: 56vw;
+    text-align: left;
   }
   #hide-t{
     display: none !important;
   }
   .hero-input_div{
-    background: #fff;
-    border-radius: .5rem;
+    border: 1px solid #e1e6f1;
+    border-radius: .75rem;
     margin: 2rem auto;
-    max-width: 60%;
+    max-width: 37%;
+    margin-bottom: 9rem;
+    margin-left: 6vw !important;
   }
-  .hero-input_div,
-  .hero-input_tab{
-    border-radius: .5rem;
-    height: 4.75rem;
+  
+  #interfaces{
+  background-image: url("images/interface-design-lap.svg");
+  background-size: cover ;
+  background-repeat: no-repeat ;
+  background-position: center ;
+  object-fit: cover ;
   }
-  .input-group{
-    margin-bottom: 7rem;
+  #interface1-img,
+  #interface2-img{
+    display: none;
   }
-  .input-group-append{
-    border-radius: .5rem !important;
-    height: 4rem;
-    margin-top: 0.25rem !important;
-    min-width: 40% !important;
+  .interface1-description{
+    margin-left: auto;
+    width: 40%;
   }
-
-  .input-group-text{
-    background: var(--deepBlue);
-    border-radius: .5rem !important;
-    color:#fff;
-    min-width: 98% !important;
-  }
-  .hero-client{
-    padding-left: 5rem;
-  }
-  .hero-sponsors_mobile{
-    padding-left: 4rem;
-    margin-bottom: 4rem;
-  }
-
-  .interfaces{
-    background: #fff;
-    padding-top: 3rem;
-  }
-  .interface1-img{
-    display: block;
-    width: 60%;
-  }
-  .interface1-description,
+  
   .interface2-description{
-    padding: 0 5rem 0 1.75rem;
-    width: 80%;
+    margin-right: 35vw;
+    width: 50%;
   }
-  .interface1-description_header,
   .interface2-description_header, 
   .design-desc h5{
     font-size: 2rem;
     line-height: 2.5rem;
     margin-bottom: 2rem;
   }
-  .interface1-description_para,
-  .interface2-description_para,
-  .interface2-bubble p{
-    font-size: 1rem;
-    line-height: 1.75rem;
-    margin-bottom: 2rem;
-    width: 89%;
+  .interface2-description_para{
+    font-size: 1.125rem;
+    line-height: 2rem;
+    width: 76%;
   }
   .interface1-boost{
     grid-template-columns: 1fr 5fr; 
@@ -730,59 +714,67 @@ MEDIA QUERIES
     line-height: 1.5rem;
   }
 
+  #interfaces2{
+    background-image: url("images/rrr.webp");
+    background-size: cover ;
+    background-repeat: no-repeat ;
+    background-position: bottom ;
+    object-fit: cover ;
+  }
   .interface2-description_header{
     display: block;
     width: 75%;
   }
   .interface2-bubble{
-    width: 82%;
+    max-width: 72%;
   }
-  #interface2-founder{
-    grid-template-columns :1fr 5fr;
-    margin-top :-2.5rem !important ;
+  .interface2-bubble::after{
+    left:8%;
   }
-  #interface2-founder div h6,
-  #interface2-founder div p,
+  
   .design-desc p{
     font-size: 1rem;
     line-height: 1.75;
   } 
 
   .native-content{
-    display :grid ;
-    grid-template-columns :repeat(2, 1fr);
-    grid-gap: 0.5rem ;
-    justify-content :center;
-    padding: 2rem ;
-    padding-left: 2.8rem;
-  }
-  .native-content-div{
-    grid-template-columns: 1fr;
-    grid-row-gap: 1.7rem !important;
-    padding: 2rem;
+    grid-template-columns :repeat(3, 1fr);
+    padding: 3rem 6rem;
   }
 
+  .design{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    padding:5rem;
+    place-items: center;
+  }
+  .design img{
+    grid-column: 2/3;
+    padding-top: 10rem;
+  }
   .design-desc{
-    padding-left: 5rem;
-    min-width: 80%;
+    grid-column: 1/2;
+    max-width: 70% !important;
+    margin-top: -50vh !important;
   }
   .design-desc p{
-    padding-right: 7rem;
+    font-size: 1.125rem;
+    line-height: 2rem;
+    padding-right: 0rem;
   }
 .fa-ul li{
     font-size: 1rem;
   }
   #hero-input_div2{
-    min-width: 60vw !important;
+    margin-left: 0 !important;
+    min-width: 30vw !important;
   }
 
   .info{
-    background: transparent;
-    border:0px !important;
-    border-radius :0rem ;
-    box-shadow: none !important;
-    margin:2rem 0 ;
-    padding :0 5rem 0 2rem;
+   display: flex;
+   flex-direction: row-reverse;
+   justify-content: space-between;
   }
   .info div{
     max-width: 85%;
