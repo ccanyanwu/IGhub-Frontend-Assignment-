@@ -35,7 +35,7 @@ body{
 HERO SECTION 
 -----------*/
 .hero{
-  background-image: url("images/e1.webp");
+  background-image: url("images/hero-pic-mobile.svg");
   background-size: cover ;
   background-repeat: no-repeat ;
   background-position: center ;
@@ -333,6 +333,12 @@ THREE CARDS
 NEXT LEVEL 
 **********/
 .next{
+  background-image: url("images/cta-bg.svg");
+  background-size: cover ;
+  background-repeat: no-repeat ;
+  background-position: center ;
+  object-fit: cover ;
+  margin-top: 3rem;
   padding-left :2rem ;
   padding-right: 2rem ;
 }
@@ -341,6 +347,7 @@ NEXT LEVEL
   grid-template-columns :repeat(4, minmax(3rem, auto));
   grid-gap :.3rem ;
   justify-content: center ;
+  padding:3rem;
 }
 .next-images img{
   border-radius :.3rem;
@@ -431,17 +438,18 @@ MEDIA QUERIES
     line-height: 2.25rem;
     padding: 1rem 9rem;
   }
-  .hero-input,
-  .hero-btn{
+  #hide-t{
     display: none !important;
   }
   .hero-input_div{
     background: #fff;
+    border-radius: .5rem;
     margin: 2rem auto;
     max-width: 60%;
   }
   .hero-input_div,
   .hero-input_tab{
+    border-radius: .5rem;
     height: 4.75rem;
   }
   .input-group{
@@ -482,7 +490,8 @@ MEDIA QUERIES
     width: 80%;
   }
   .interface1-description_header,
-  .interface2-description_header{
+  .interface2-description_header, 
+  .design-desc h5{
     font-size: 2rem;
     line-height: 2.5rem;
     margin-bottom: 2rem;
@@ -516,7 +525,8 @@ MEDIA QUERIES
     margin-top :-2.5rem !important ;
   }
   #interface2-founder div h6,
-  #interface2-founder div p{
+  #interface2-founder div p,
+  .design-desc p{
     font-size: 1rem;
     line-height: 1.75;
   } 
@@ -527,10 +537,323 @@ MEDIA QUERIES
     grid-gap: 0.5rem ;
     justify-content :center;
     padding: 2rem ;
+    padding-left: 2.8rem;
   }
   .native-content-div{
     grid-template-columns: 1fr;
     grid-row-gap: 1.7rem !important;
     padding: 2rem;
+  }
+
+  .design-desc{
+    padding-left: 5rem;
+    min-width: 80%;
+  }
+  .design-desc p{
+    padding-right: 7rem;
+  }
+.fa-ul li{
+    font-size: 1rem;
+  }
+  #hero-input_div2{
+    min-width: 60vw !important;
+  }
+
+  .info{
+    background: transparent;
+    border:0px !important;
+    border-radius :0rem ;
+    box-shadow: none !important;
+    margin:2rem 0 ;
+    padding :0 5rem 0 2rem;
+  }
+  .info div{
+    max-width: 85%;
+  }
+  .info div p ~ p{
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    margin-bottom: 1.5rem;
+  }
+  .info-bubble:after{
+    left:8%;
+  }
+  .info div div{
+    margin-bottom: 1rem;
+  }
+  .info div div p,
+  #info-founder div h6,
+  #info-founder div p{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .help{
+    padding-left: 2.5rem;
+  }
+  .help h5{
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin-bottom: 3rem !important;
+  }
+  #help-main{
+    margin: 0 auto;
+    padding-right: 2rem;
+    min-width: 80vw;
+  }
+  .help-grid{
+    border: 1px solid #edf0f7;
+    box-shadow: 0 0.5rem 1.5rem #edf0f7;
+    grid-template-columns: 1fr 10fr;
+    margin: 0 0 .75rem 0;
+    padding: 1rem 1.5rem 0;
+    min-width: 80vw ;
+  }
+  .help-grid div h6,
+  .help-grid div p{
+    line-height: 1.5rem;
+  }
+  .help-grid div h6{
+    font-size: 1rem;
+  }
+  .help-grid div p{
+    font-size: .9375rem;
+  }
+
+  .next h2{
+    display: block;
+    font-size :3rem ;
+    line-height: 3.5rem;
+    margin: 1rem auto;
+    width: 75%;
+  }
+  .next h2 ~ p{
+    display: block;
+    font-size :1rem ;
+    line-height: 1.75rem;
+    width: 75%;
+    margin: 0 auto;
+  }
+  .next-clients{    
+    color: #9ca9c4;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    margin-bottom: 1rem;
+  }
+}
+
+/*LAPTOP SCREEN*/
+@media (min-width:75rem){
+  .hero{
+    background-image: url("images/e1.webp");
+  }
+  .hero-header{
+    font-size: 4rem;
+    text-align: left !important;
+  }
+  .hero-para{
+    font-size: 1.25rem;
+    line-height: 2.25rem;
+    padding: 1rem 9rem;
+  }
+  #hide-t{
+    display: none !important;
+  }
+  .hero-input_div{
+    background: #fff;
+    border-radius: .5rem;
+    margin: 2rem auto;
+    max-width: 60%;
+  }
+  .hero-input_div,
+  .hero-input_tab{
+    border-radius: .5rem;
+    height: 4.75rem;
+  }
+  .input-group{
+    margin-bottom: 7rem;
+  }
+  .input-group-append{
+    border-radius: .5rem !important;
+    height: 4rem;
+    margin-top: 0.25rem !important;
+    min-width: 40% !important;
+  }
+
+  .input-group-text{
+    background: var(--deepBlue);
+    border-radius: .5rem !important;
+    color:#fff;
+    min-width: 98% !important;
+  }
+  .hero-client{
+    padding-left: 5rem;
+  }
+  .hero-sponsors_mobile{
+    padding-left: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  .interfaces{
+    background: #fff;
+    padding-top: 3rem;
+  }
+  .interface1-img{
+    display: block;
+    width: 60%;
+  }
+  .interface1-description,
+  .interface2-description{
+    padding: 0 5rem 0 1.75rem;
+    width: 80%;
+  }
+  .interface1-description_header,
+  .interface2-description_header, 
+  .design-desc h5{
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  .interface1-description_para,
+  .interface2-description_para,
+  .interface2-bubble p{
+    font-size: 1rem;
+    line-height: 1.75rem;
+    margin-bottom: 2rem;
+    width: 89%;
+  }
+  .interface1-boost{
+    grid-template-columns: 1fr 5fr; 
+    width: 90%;
+  }
+  .interface1-boost div p{
+    font-size: 0.9375rem;
+    line-height: 1.5rem;
+  }
+
+  .interface2-description_header{
+    display: block;
+    width: 75%;
+  }
+  .interface2-bubble{
+    width: 82%;
+  }
+  #interface2-founder{
+    grid-template-columns :1fr 5fr;
+    margin-top :-2.5rem !important ;
+  }
+  #interface2-founder div h6,
+  #interface2-founder div p,
+  .design-desc p{
+    font-size: 1rem;
+    line-height: 1.75;
+  } 
+
+  .native-content{
+    display :grid ;
+    grid-template-columns :repeat(2, 1fr);
+    grid-gap: 0.5rem ;
+    justify-content :center;
+    padding: 2rem ;
+    padding-left: 2.8rem;
+  }
+  .native-content-div{
+    grid-template-columns: 1fr;
+    grid-row-gap: 1.7rem !important;
+    padding: 2rem;
+  }
+
+  .design-desc{
+    padding-left: 5rem;
+    min-width: 80%;
+  }
+  .design-desc p{
+    padding-right: 7rem;
+  }
+.fa-ul li{
+    font-size: 1rem;
+  }
+  #hero-input_div2{
+    min-width: 60vw !important;
+  }
+
+  .info{
+    background: transparent;
+    border:0px !important;
+    border-radius :0rem ;
+    box-shadow: none !important;
+    margin:2rem 0 ;
+    padding :0 5rem 0 2rem;
+  }
+  .info div{
+    max-width: 85%;
+  }
+  .info div p ~ p{
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    margin-bottom: 1.5rem;
+  }
+  .info-bubble:after{
+    left:8%;
+  }
+  .info div div{
+    margin-bottom: 1rem;
+  }
+  .info div div p,
+  #info-founder div h6,
+  #info-founder div p{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .help{
+    padding-left: 2.5rem;
+  }
+  .help h5{
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin-bottom: 3rem !important;
+  }
+  #help-main{
+    margin: 0 auto;
+    padding-right: 2rem;
+    min-width: 80vw;
+  }
+  .help-grid{
+    border: 1px solid #edf0f7;
+    box-shadow: 0 0.5rem 1.5rem #edf0f7;
+    grid-template-columns: 1fr 10fr;
+    margin: 0 0 .75rem 0;
+    padding: 1rem 1.5rem 0;
+    min-width: 80vw ;
+  }
+  .help-grid div h6,
+  .help-grid div p{
+    line-height: 1.5rem;
+  }
+  .help-grid div h6{
+    font-size: 1rem;
+  }
+  .help-grid div p{
+    font-size: .9375rem;
+  }
+
+  .next h2{
+    display: block;
+    font-size :3rem ;
+    line-height: 3.5rem;
+    margin: 1rem auto;
+    width: 75%;
+  }
+  .next h2 ~ p{
+    display: block;
+    font-size :1rem ;
+    line-height: 1.75rem;
+    width: 75%;
+    margin: 0 auto;
+  }
+  .next-clients{    
+    color: #9ca9c4;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    margin-bottom: 1rem;
   }
 }
