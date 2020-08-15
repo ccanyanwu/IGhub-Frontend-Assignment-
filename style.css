@@ -30,7 +30,11 @@ body{
   font-family:var(--headFontFamily);
   line-height: 1.5;
 }
-
+#hide-m,
+.hide-m,
+#hide-mc{
+  display:none !important;
+}
 /*----------
 HERO SECTION 
 -----------*/
@@ -40,6 +44,9 @@ HERO SECTION
   background-repeat: no-repeat ;
   background-position: center ;
   object-fit: cover ;
+}
+.logo img{
+  max-width: 9rem;
 }
 .hero-header{
   color:var(--primaryFontColor);
@@ -419,6 +426,13 @@ MEDIA QUERIES
   #hide{
     display:grid;
   }
+  .hide-m,
+  #hide-m{
+    display: flex !important;
+  }
+  #hide-mc{
+    display: contents !important;
+  }
   .logo img{
     display: block;
     max-height: 3rem;
@@ -680,6 +694,7 @@ MEDIA QUERIES
   background-repeat: no-repeat ;
   background-position: center ;
   object-fit: cover ;
+  padding-bottom: 7rem;
   }
   #interface1-img,
   #interface2-img{
@@ -855,28 +870,47 @@ MEDIA QUERIES
     grid-template-columns :repeat(3, minmax(6rem, auto));
     grid-gap :0.5rem ;
     justify-content: space-around;
-    padding:;
+    padding:2rem 10rem;
     min-width: 100%;
   }
   .plu{
     font-size: 1.5rem !important;
   }
   .plus{
-    font-size: 1.125rem;
+    font-size: 1.125rem!important;
   }
   .next-rate div{
     align-items: center ;
     display :flex ;
-    flex-direction:row; 
-    
+    flex-direction:row;
+  }
+  .next-rate div:nth-child(2){
+    border-left: 0.5px solid rgb(196, 196, 196);
+    padding-left: 7rem;
+    padding-right: 7rem;
+    border-right:  0.5px solid rgb(196, 196, 196);
   }
   .next-span{
-    background :#cadefe ;
-    border-radius :100%;
-    display :block ;
     font-size :0.85rem ;
-    height :1.3rem ;
-    text-align :center ;
-    width :1.3rem;
+    height :1.8rem ;
+    align-self: flex-start;
+    margin-top: 0.7rem;
+    padding-top: 0.25rem;
+    width :1.8rem;
+  }
+  .irates{
+    margin-left: auto !important;
+  }
+  .next-clients-images{
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    margin-left: 0rem !important;
+  }
+  .next-clients-images img{
+    width: 13rem;
+  }
+  footer{
+    padding-left: 8rem;
   }
 }

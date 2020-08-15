@@ -15,23 +15,23 @@
   ------------>
   <section class="row hero ">
     <a class="logo col-12  pl-4 pt-5 d-block " href="#"><img class="img-fluid"  src="images/logo.JPG" alt="Heavyweight logo " /></a>
-    <h1 class="hero-header font-weight-bold col-12 mx-auto d-block ">Is design growing<br> your product? </h1>
-    <h2 class="col-12 mx-auto hero-para d-block">Create an interface that drives value by teaming up with our studio to rethink and design it.</h2>
+    <h1 class="hero-header font-weight-bold col-10 mx-auto d-block ">Is design growing<br> your product? </h1>
+    <h2 class="col-10 mx-auto hero-para d-block">Create an interface that drives value by teaming up with our studio to rethink and design it.</h2>
     <!--mobile input-->
-    <input type="email" id="hide-t"  class="col-12 hero-input d-block form-control form-control-lg" placeholder="Your email address "><br>
-    <button  id="hide-t"  class="col-12 mx-auto hero-btn shadow-lg btn font-weight-bold text-white btn-lg d-block">
+    <input type="email" id="hide-t"  class="col-10 hero-input d-block form-control form-control-lg" placeholder="Your email address "><br>
+    <button  id="hide-t"  class="col-10 mx-auto hero-btn shadow-lg btn font-weight-bold text-white btn-lg d-block">
       Get in touch <span class="hero-arrow"><i class="fas fa-arrow-right"></i></span>
     </button>
     <!--tab input-->
-    <div class="input-group  hero-input_div shadow ">
+    <div class="input-group  hero-input_div shadow " id="hide-m">
       <input type="text" class="hero-input_tab pr-4 form-control border-0" placeholder="Your email address" id="demo" name="email">
       <div class="input-group-append shadow-lg">
         <span class="input-group-text ">Get in touch<span class="hero-arrow"><i class="fas fa-arrow-right"></i></span></span>
       </div>
     </div>
     <!--tab clients-->
-    <p class="col-12 text-left hero-client">Clients backed by</p>
-    <div class="hero-sponsors_mobile col-12 col-md-8 col-lg-5 d-flex flex-row justify-content-center ">
+    <p class="col-12 text-left hero-client"  id="hide-m">Clients backed by</p>
+    <div class="hero-sponsors_mobile col-12 col-md-8 col-lg-5 py-3 d-flex flex-row justify-content-center ">
       <img class="img-fluid col-4" src="images/yc.svg" alt="y combinator" />
       <img class="img-fluid col-4" src="images/heineken.svg" alt="y combinator" />
       <img class="img-fluid col-4" src="images/elsevier.svg" alt="y combinator" />
@@ -155,7 +155,7 @@
         Get in touch <span class="hero-arrow"><i class="fas fa-arrow-right"></i></span>
       </button>
       <!--tab input-->
-    <div class="input-group  hero-input_div shadow " id="hero-input_div2">
+    <div class="input-group  hero-input_div shadow hide-m" id="hero-input_div2">
       <input type="text" class="hero-input_tab pr-4 form-control border-0" placeholder="Your email address" id="demo" name="email">
       <div class="input-group-append shadow-lg">
         <span class="input-group-text ">Get in touch<span class="hero-arrow"><i class="fas fa-arrow-right"></i></span>
@@ -285,15 +285,15 @@
     <div class="next-rate col-12 mx-auto col-md-8 col-lg-4">
       <div class="mt-3">
         <span class="mr-2 next-span"><i class="fas fa-check" style="color:var(--deepBlue)"></i></span>
-        <p class="pt-2"><span class="font-weight-bold plu" style="color:var(--primaryFontColor)">135+</span><br><span class="plus" style="font-size:0.75rem">Projects</span></p>
+        <p class="pt-2"><span class="font-weight-bold plu" style="color:var(--primaryFontColor)">135+</span><br><span class="plus" style="font-size:0.75rem"><span id="hide">Successful</span> Projects</span></p>
       </div>
       <div class="mt-3">
         <span class="mr-2 next-span"><i class="fas fa-check" style="color:var(--deepBlue)"></i></span>
-        <p class="pt-2"><span class="font-weight-bold plu" style="color:var(--primaryFontColor)">15</span><br><span class="plus"style="font-size:0.75rem">Experience </span></p>
+        <p class="pt-2"><span class="font-weight-bold plu" style="color:var(--primaryFontColor)">15</span><br><span class="plus"style="font-size:0.75rem"><span id="hide">Design</span> Experience </span></p>
       </div>
       <div class="mt-3">
         <span class="mr-2 next-span"><i class="fas fa-check" style="color:var(--deepBlue)"></i></span>
-        <p class="pt-2"><span class="font-weight-bold plu" style="color:var(--primaryFontColor)">1 week</span><br><span class="plus"style="font-size:0.75rem">Until kick-off</span></p>
+        <p class="pt-2"><span class="font-weight-bold plu" style="color:var(--primaryFontColor)">1 week</span><br><span class="plus"style="font-size:0.75rem"><span id="hide">Time to</span><span id="hide-t"> Until</span> kick-off</span></p>
       </div>
     </div>
     <!--mobile input-->
@@ -302,15 +302,15 @@
       Let's get started <span class="hero-arrow"><i class="fas fa-arrow-right"></i></span>
     </button>
      <!--tab input-->
-     <div class="input-group  hero-input_div shadow ">
+     <div  class="input-group irates hero-input_div shadow " id="hide-m">
       <input type="text" class="hero-input_tab pr-4 form-control border-0" placeholder="Your email address" id="demo" name="email">
       <div class="input-group-append shadow-lg">
         <span class="input-group-text ">Let's get started<span class="hero-arrow"><i class="fas fa-arrow-right"></i></span></span>
       </div>
     </div>
     <!--CLIENTS MENTIONED-->
-    <p id="hide" class="next-clients d-block col-12 mt-n5">Clients mentioned in</p>
-    <div class="next-clients-images d-flex flex-row justify-content-between mx-auto" id="hide">
+    <p class="next-clients d-block col-12 mt-n5">Clients mentioned in</p>
+    <div class="next-clients-images d-flex flex-row justify-content-between mx-auto" id="hide-mc">
       <img class="img-fluid col-2" src="images/wired.svg" alt="wired">
       <img class="img-fluid col-2" src="images/forbes.svg" alt="wired">
       <img class="img-fluid col-2" src="images/tnw.svg" alt="wired">
