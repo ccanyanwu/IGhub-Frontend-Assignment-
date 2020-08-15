@@ -600,7 +600,7 @@ MEDIA QUERIES
   #help-main{
     margin: 0 auto;
     padding-right: 2rem;
-    min-width: 80vw;
+    max-width: 80vw;
   }
   .help-grid{
     border: 1px solid #edf0f7;
@@ -743,10 +743,12 @@ MEDIA QUERIES
   }
 
   .design{
+    border-bottom: 2px solid #555 !important;
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: 1fr 1fr;
-    padding:5rem;
+    margin-bottom: 0;
+    padding:5rem 5rem 0 5rem;
     place-items: center;
   }
   .design img{
@@ -772,80 +774,109 @@ MEDIA QUERIES
   }
 
   .info{
+   align-items: flex-start;
    display: flex;
    flex-direction: row-reverse;
    justify-content: space-between;
+   margin-top: 0;
+   padding: 0 8rem 3rem;
+   
+  }
+  .info img{
+
   }
   .info div{
-    max-width: 85%;
+    max-width: 33%;
+    margin-right: 0!important;
+    padding-right: 0!important;
   }
-  .info div p ~ p{
-    font-size: 1.5rem;
-    line-height: 2.25rem;
-    margin-bottom: 1.5rem;
+  #info{
+    margin-top: 4rem;
   }
-  .info-bubble:after{
-    left:8%;
+  .info-bubble{
+    min-width: 100%;
   }
-  .info div div{
-    margin-bottom: 1rem;
+  #info-founder{
+    min-width: 210%;
   }
-  .info div div p,
-  #info-founder div h6,
   #info-founder div p{
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
   }
+
   .help{
-    padding-left: 2.5rem;
+    padding: 2.5rem 8rem !important;
   }
   .help h5{
-    font-size: 2rem;
-    line-height: 2.5rem;
+    font-size: 2.25rem;
+    line-height: 2.75rem;
     margin-bottom: 3rem !important;
   }
   #help-main{
-    margin: 0 auto;
-    padding-right: 2rem;
-    min-width: 80vw;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    max-width: 80vw !important;
+    place-items: center;
   }
-  .help-grid{
-    border: 1px solid #edf0f7;
-    box-shadow: 0 0.5rem 1.5rem #edf0f7;
-    grid-template-columns: 1fr 10fr;
-    margin: 0 0 .75rem 0;
-    padding: 1rem 1.5rem 0;
-    min-width: 80vw ;
-  }
-  .help-grid div h6,
-  .help-grid div p{
-    line-height: 1.5rem;
-  }
-  .help-grid div h6{
-    font-size: 1rem;
-  }
-  .help-grid div p{
-    font-size: .9375rem;
+  div.help-grid{
+    border-radius: 0.75rem;
+    min-width: 40vw !important;
   }
 
-  .next h2{
-    display: block;
-    font-size :3rem ;
-    line-height: 3.5rem;
-    margin: 1rem auto;
-    width: 75%;
+  .next{
+    padding-left :7rem ;
+    padding-right: 7rem ;
   }
+  .next-images{
+    grid-gap :1rem ;
+  }
+  .next-images2{
+    margin-top :20%;
+  }
+  .next-images3{
+    margin-top :10%;
+  }
+  .next-images4{
+    margin-top: 20%;
+  }
+  .next h2,
   .next h2 ~ p{
     display: block;
-    font-size :1rem ;
-    line-height: 1.75rem;
-    width: 75%;
-    margin: 0 auto;
+    width: 60%;
   }
-  .next-clients{    
-    color: #9ca9c4;
+  .next h2 ~ p{
+    font-size :1.25rem ;
+    line-height: 2.25rem;
+    width: 40vw;
+  }
+  .next-rate{
+    display: grid ;
+    grid-template-columns :repeat(3, minmax(6rem, auto));
+    grid-gap :0.5rem ;
+    justify-content: space-around;
+    padding:;
+    min-width: 100%;
+  }
+  .plu{
+    font-size: 1.5rem !important;
+  }
+  .plus{
     font-size: 1.125rem;
-    line-height: 1.75rem;
-    margin-bottom: 1rem;
+  }
+  .next-rate div{
+    align-items: center ;
+    display :flex ;
+    flex-direction:row; 
+    
+  }
+  .next-span{
+    background :#cadefe ;
+    border-radius :100%;
+    display :block ;
+    font-size :0.85rem ;
+    height :1.3rem ;
+    text-align :center ;
+    width :1.3rem;
   }
 }
