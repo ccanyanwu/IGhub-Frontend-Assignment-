@@ -11,4 +11,6 @@ alert(x + y);
 //take in 2 integers and prints alerts their sum
  var firstInteger = prompt('What is your first integer?', 0);
  var secondInteger= prompt('and your second integer?', 0)
+ 
+ //alerts the sum of both integers 
  alert(`The sum of your integers is ${Number(firstInteger) + Number(secondInteger)}`);
