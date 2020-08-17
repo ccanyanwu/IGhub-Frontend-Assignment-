@@ -1,0 +1,12 @@
+body {
+  background: #A21248;
+  display :flex ;
+  justify-content :center ;
+  align-items: center ;
+  min-height :100vh;
+  overflow :hidden ;
+  color :#F3E15B;
+  font-size :2rem;
+  text-transform :uppercase ;
+  text-align :center ;
+}
