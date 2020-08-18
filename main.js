@@ -1,17 +1,15 @@
-//declare variables 
-var x = 5,
-    y = 6, 
-    z = x + y;
+
 
 //display the sum of the result as an alert on the webpage 
-alert(`The sum of 5 and 6 is ${z} `);
+alert(`LET'S GO WESTERN`);
 
+//declare variables and state formula 
+let c, f;
 //take in 2 integers and prints alerts their sum
- var firstInteger = prompt('What is your first integer?', 0);
- var secondInteger= prompt('and your second integer?', 0)
- 
- //alerts the sum of both integers 
- alert(`The sum of your integers ${firstInteger} and ${secondInteger} is ${Number(firstInteger) + Number(secondInteger)}`);
+ c = prompt('Enter your degrees in Celcius');
+ f = ((9/5) * c) + 32 ;
+ //alerts the the Fahrenheit equivalent
+ alert(`The equivalent of ${c} degree Celsius in Fahrenheit is ${f} degrees `);
 
-//print to the web page the sum of x and y
-document.write(`The sum of your integers ${firstInteger} and ${secondInteger} is ${Number(firstInteger) + Number(secondInteger)}`);
+//print to the web page the Fahrenheit equivalent of celcius degrees 
+document.write(`The equivalent of ${c} degree Celsius in Fahrenheit is ${f} degrees `);
