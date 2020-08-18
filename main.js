@@ -2,8 +2,6 @@
 var x = 5,
     y = 6, 
     z = x + y;
-//print to the web page the sum of x and y
-document.write(`The sum of 5 and 6 is ${z}`);
 
 //display the sum of the result as an alert on the webpage 
 alert(`The sum of 5 and 6 is ${z} `);
@@ -14,3 +12,6 @@ alert(`The sum of 5 and 6 is ${z} `);
  
  //alerts the sum of both integers 
  alert(`The sum of your integers ${firstInteger} and ${secondInteger} is ${Number(firstInteger) + Number(secondInteger)}`);
+
+//print to the web page the sum of x and y
+document.write(`The sum of your integers ${firstInteger} and ${secondInteger} is ${Number(firstInteger) + Number(secondInteger)}`);
