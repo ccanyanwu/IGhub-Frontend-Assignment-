@@ -136,6 +136,7 @@ input#submit{
 .status{
   border-radius :0.25rem ;
   height :3rem;
+  margin-top: 1rem ;
   text-align: center ;
   padding-top: 0.75rem ;
 }
