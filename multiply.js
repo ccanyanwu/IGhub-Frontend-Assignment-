@@ -16,8 +16,8 @@ function generateTable(){
       result;
   
   //condition to check for empty input or exceeded limit 
-  if (multiplier.value === '' || range.value === '' || Number(range.value) > 12) {
-    alert('Figures must be provided in both fields and range must not be more than 12');
+  if (multiplier.value === '' || range.value === '' || Number(range.value) < 0) {
+    alert('Figures must be provided in both fields and range must not be less than 0');
     
   } else {
     //loop through the range to generate individual result 
