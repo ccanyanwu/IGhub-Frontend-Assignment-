@@ -20,7 +20,7 @@ const form = document.querySelector('#form'),
      statusMessage("Registration hasn't commenced",'white', 'red');
    } 
    //condition to check for registration within open window
-   if (todaysDate > commenceDate && todaysDate < endDate) {
+   if (todaysDate >= commenceDate && todaysDate <= endDate) {
      statusMessage("Submitted successfully!",'black', 'green');
    }else if(todaysDate > endDate ) {
      statusMessage("Registration has ended",'white', 'red');
