@@ -2,7 +2,6 @@
 const multiplier = document.querySelector('#multiplier'),
       range = document.querySelector('#range'), 
       multiplyBtn = document.querySelector('#button'),
-      clear = document.querySelector('#clear'),
       article = document.querySelector('article');
 
 
@@ -37,8 +36,9 @@ function generateTable(){
 
 }
 
+
 //clear result 
-clear.addEventListener('click', function(){
+multiplier.addEventListener('keydown', function(){
   article.innerText = '';
   multiplyBtn.disabled = false;
 } )
