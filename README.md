@@ -1,2 +1,2 @@
-# IGhub-Frontend-Assignment-
-Details of all frontend participants displayed on a table 
+#MULTIPLICATION TABLE GENERATOR 
+##This web app simply takes in 2 inputs, one input is the multiplier and the other is the range of numbers to be multiplied. Individual results are displayed on the DOM 

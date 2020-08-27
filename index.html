@@ -5,75 +5,35 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>REGISTRATION FORM</title>
+  <title>MULTIPLICATION TABLE GENERATOR</title>
   <meta name="author" content="ccanyanwu">
-  <meta name="description" content="A SIMPLE JAVASCRIPT VALIDATED REGISTRATION FORM">
-  <meta name="keywords" content="REGISTRATION FORM">
+  <meta name="description" content="A simple web app that generates a multiplication table for 2 numbers fed into the input field">
+  <meta name="keywords" content="MULTIPLICATION TABLE GENERATOR">
   <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 
 <body>
-  <!--CENTERED DIV-->
-  <main class="container">
-    <h1 class="container_head">WELCOME</h1>
-    <p class="container_paragraph">IG-HUB Registration form</p>
-    <form id="form" action="#" method="get" accept-charset="utf-8" autocomplete="on">
+  <main>
+    <section class="inputs">
+      <div>
+        <p>Multiplier</p>
+        <input type="number" name="multiplier" id="multiplier" placeholder="1" />
+      </div>
+      <div>
+        <p>Range</p>
+        <input type="number" name="multiplication range " id="range" placeholder="1" />
+      </div>
+      <input type="button" name="button" id="button" value="generate multiplication table" />
+      <input type="button" name="clear" id="clear" value="clear result" />
+    </section>
+    <!--multiplication table -->
+    <article class="table">
       
-      
-      <!--input fields-->
-      <label for="email">Firstname</label>
-      <div class="form_input_container">
-        <i class="fa fa-user form_input_icon"></i>
-        <input id="firstname" class="form_input_field" type="text" placeholder="firstname" name="firstname" pattern="[a-zA-Z][a-zA-Z ]{2,}" required >
-      </div>
-      <label for="email">Lastname</label>
-      <div class="form_input_container">
-        <i class="fa fa-user fa-1x form_input_icon"></i>
-        <input id="lastname" class="form_input_field" type="text" placeholder="lastname" name="lastname" pattern="[a-zA-Z][a-zA-Z ]{2,}" required>
-      </div>
-      <label for="email">Mobile Number</label>
-      <div class="form_input_container">
-        <i class="fa fa-mobile fa-1x form_input_icon"></i>
-        <input id="mobile" class="form_input_field" type="number" placeholder="mobile number" name="password" required >
-      </div>
-      <label for="email">Date of Birth</label>
-      <div class="form_input_container">
-        <i class="fa fa-calendar fa-1x form_input_icon"></i>
-        <input id="date" class="form_input_field" type="date"  name="date of birth" required>
-      </div>
-      <label for="email">Nationality</label>
-      <div class="form_input_container">
-        <i class="fas fa-flag fa-1x form_input_icon"></i>
-        <input id="nationality" class="form_input_field" type="nationality" placeholder="nationality"  name="nationality" pattern="[a-zA-Z][a-zA-Z ]{2,}" required>
-      </div>
-      <label for="email">State of Origin</label>
-      <div class="form_input_container">
-        <i class="fas fa-flag form_input_icon"></i>
-        <input id="state" class="form_input_field" type="text" placeholder="state of origin" name="password" pattern="[a-zA-Z][a-zA-Z ]{2,}" required>
-      </div>
-      <label for="email">Email Address</label>
-      <div class="form_input_container">
-        <i class="fas fa-envelope fa-1x form_input_icon"></i>
-        <input id="email" class="form_input_field" type="email" placeholder="ogbuefi@gmail.com" name="email" required>
-      </div>
-      <label for="password">PASSWORD</label>
-      <div class="form_input_container">
-        <i class="fa fa-unlock-alt fa-1x form_input_icon"></i>
-        <input id="password" class="form_input_field" type="text" placeholder="a@12rt]" name="password" minlength="6" required>
-      </div>
-      <!--terms and conditions section-->
-      <span class="form_input_terms">
-        <input type="checkbox" name="terms" id="terms" value="" required /> I agree to the <a href="" class="form_input_terms-link">terms and conditions</a>
-      </span>
-      <!--status message-->
-      <div class="status hide"></div>
-      <!--button -->
-      <input type="submit" name="submit" id="submit" value="REGISTER" />
-    </form>
+    </article>
   </main>
   <!--scripts -->
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-  <script src="form.js" type="text/javascript" charset="utf-8"></script>
+  <script src="multiply.js" type="text/javascript" charset="utf-8"></script>
 </body>
 
 </html>
