@@ -22,7 +22,7 @@ body{
 
 /*main container of the form*/
 main.container{
-  min-width: 20rem;
+  min-width:22rem;
   background-color: #f2f2f4;
   padding: 2rem ;
   border-radius: 0.75rem ;
@@ -141,9 +141,9 @@ input#submit{
   padding-top: 0.75rem ;
 }
 /**********MEDIA QUERIES**********/
-@media all and (min-width:560px){
+@media (min-width:560px){
   main.container{
-    width:27rem;
+    width:27rem ;
     border-radius :1rem;
     height:auto;
   }
