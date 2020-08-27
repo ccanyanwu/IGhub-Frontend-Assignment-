@@ -27,10 +27,12 @@ function generateTable(){
       p = document.createElement("p");
       p.innerText = `${multiplier.value} X ${i} = ${result}` ;
       article.appendChild(p);
+      
     }
     //clears the input field 
     multiplier.value = '';
     range.value = '';
+    multiplyBtn.disabled = true;
   }
 
 }
@@ -38,6 +40,7 @@ function generateTable(){
 //clear result 
 clear.addEventListener('click', function(){
   article.innerText = '';
+  multiplyBtn.disabled = false;
 } )
       
  
