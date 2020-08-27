@@ -17,7 +17,7 @@ function generateTable(){
   
   //condition to check for empty input
   if (multiplier.value === '' || range.value === '' || Number(range.value) > 100) {
-    alert('Figures must be provided in both fields');
+    alert('Figures must be provided in both fields and range must not be more than 100');
     
   } else {
     //loop through the range to generate individual result 
