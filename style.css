@@ -59,11 +59,15 @@ input[type="button"]{
   margin-top :2rem ;
   outline :none ;
   text-align :center ;
+  text-shadow: 1px 1px 8px #333 ;
   width :100%;
 }
 input[type="button"]:hover{
   box-shadow: inset 5px 5px 17px #067300,  -5px -5px 17px #067300;
   background: #067300;
+}
+input[type="button"]:value{
+  color:red;
 }
 .table{
   text-align:center ;

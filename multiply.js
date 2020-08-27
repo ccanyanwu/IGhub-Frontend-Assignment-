@@ -23,9 +23,6 @@ function generateTable(){
     //loop through the range to generate individual result 
     for (let i = 1 ; i <= UIrange; i++) {
       result = Number(multiplier.value) * i;
-      //p = document.createElement("p");
-      //p.innerText = `${multiplier.value} X ${i} = ${result}` ;
-      //article.appendChild(p);
       tr = document.createElement("tr");
       tr.classList = 'roww';
       tr.innerHTML = `<td>${multiplier.value} X ${i}</td>
@@ -47,9 +44,9 @@ function generateTable(){
 multiplier.addEventListener('keydown', function(){
   table.innerText = '';
   table.innerHTML = `<thead>
-          <th>MULTIPLICATION </th>
-          <th>RESULT </th>
-        </thead>`
+                      <th>MULTIPLICATION </th>
+                      <th>RESULT </th>
+                     </thead>`
   multiplyBtn.disabled = false;
 } )
       
