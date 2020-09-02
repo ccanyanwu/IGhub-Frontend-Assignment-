@@ -5,7 +5,7 @@ const form = document.querySelector('#form'),
       btn = document.querySelector('#submit');
       
  //add a submit event listener to the dom
- document.addEventListener('DOMContentLoaded', validateNumber);
+ document.addEventListener('DOMContentLoaded', setTimeout(validateNumber, 3000) );
  
  //validate number function 
  function validateNumber(){
