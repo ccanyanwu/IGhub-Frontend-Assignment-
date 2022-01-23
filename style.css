@@ -10,6 +10,7 @@ body{
   align-items: center;
   background: #26262B ;
   display: flex;
+  flex-direction: column;
   font-family: 'Lato', sans-serif;
   justify-content: center;
   min-height: 100vh;
@@ -34,19 +35,23 @@ main{
 }
 .display{
   border-botom: 2px solid #e5e5e5 ;
-  box-sadow:  50px 50px 50px #353535,  -50px -50px 50px #757575;
+  box-shdow:  50px 50px 50px #353535,  -50px -50px 50px #757575;
   font-size :1.5rem ;
   grid-column: 1/5;
   grid-row: 1/2;
-  
-  padding: 3rem 1rem 0.2rem 0.2rem;
-  text-align: right ;
-  box-shadow: inset 5px 5px 0px #3b3b3b, inset -5px -5px 0px #3b3b3b!important ;
+  padding: 0.2rem 0.2rem;
+  box-shdow: inset 5px 5px 0px #3b3b3b, inset -5px -5px 0px #3b3b3b!important ;
   vertical-align: bottom!important ;
 }
 .first,
 .second{
-  overflow :scroll ;
+  oveflow :scroll ;
+}
+.first{
+  height: 50%;
+  overflow-y: scroll; 
+  text-align: left;
+  white-space: nowrap;
 }
 main :not(:last-child){
   background :#444;
