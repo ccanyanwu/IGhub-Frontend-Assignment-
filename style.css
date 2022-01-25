@@ -34,24 +34,29 @@ main{
   width :20rem;
 }
 .display{
-  border-botom: 2px solid #e5e5e5 ;
-  box-shdow:  50px 50px 50px #353535,  -50px -50px 50px #757575;
+  background: #828584 !important;
+  color: #000;
   font-size :1.5rem ;
   grid-column: 1/5;
   grid-row: 1/2;
   padding: 0.2rem 0.2rem;
-  box-shdow: inset 5px 5px 0px #3b3b3b, inset -5px -5px 0px #3b3b3b!important ;
+  box-shadow: inset 5px 5px 0px #3b3b3b, inset -5px -5px 0px #3b3b3b!important ;
   vertical-align: bottom!important ;
 }
-.first,
-.second{
-  oveflow :scroll ;
-}
-.first{
+.first::-webkit-scrollbar, .second::-webkit-scrollbar {display: none;}
+.first, .second{
+  background: #828584 !important;
+  box-shadow: none !important;
   height: 50%;
-  overflow-y: scroll; 
+  padding: 0 .25rem;
+  overflow-x: scroll; 
   text-align: left;
   white-space: nowrap;
+  width: 100% !important;
+}
+.second{
+  padding-top: 0.89rem !important;
+  text-align: right;
 }
 main :not(:last-child){
   background :#444;
@@ -59,7 +64,7 @@ main :not(:last-child){
   box-shadow:inset  5px 5px 10px #666666,inset -5px -5px 10px #222222;
   outline: none ;
 }
-main :last-child{
+[data-action="calculate"]{
   background: #DA6E16;
   border: 0;
   box-shadow:  5px 5px 10px #666666, -5px -5px 10px #222222;
