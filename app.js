@@ -8,7 +8,10 @@ const numbers = document.querySelectorAll(".number"),
   resultDisplay = document.querySelector(".second");
 
 //clear display
-clear.addEventListener("click", () => (operationDisplay.value = ""));
+clear.addEventListener("click", () => {
+  operationDisplay.value = ""
+  resultDisplay.textContent = 0;
+});
 
 //get symbols
 const getOperator = (operator) => {
