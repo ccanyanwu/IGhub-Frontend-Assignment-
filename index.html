@@ -1,343 +1,85 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Heavyweight - Intuitive Interfaces for Tech</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css" title="landing page" type="text/css" />
+
+<html>
+<head>
+<meta charset="UTF-8"> 
+<title>Chessboard using Pure CSS and HTML</title>
+<link rel="stylesheet" href="style.css" type="text/css">
 </head>
-
-<body class="container-fluid ">
-  
-  <!----------
-  hero section
-  ------------>
-  <section class="row hero ">
-    <a class="logo col-12  pl-4 pt-5 d-block " href="#"><img class="img-fluid"  src="images/logo.JPG" alt="Heavyweight logo " /></a>
-    <h1 class="hero-header font-weight-bold col-10 mx-auto d-block ">Is design growing<br> your product? </h1>
-    <h2 class="col-10 mx-auto hero-para d-block">Create an interface that drives value by teaming up with our studio to rethink and design it.</h2>
-    <!--mobile input-->
-    <input type="email" id="hide-t"  class="col-10 hero-input d-block form-control form-control-lg" placeholder="Your email address "><br>
-    <button  id="hide-t"  class="col-10 mx-auto hero-btn shadow-lg btn font-weight-bold text-white btn-lg d-block">
-      Get in touch <span class="hero-arrow"><i class="fas fa-arrow-right"></i></span>
-    </button>
-    <!--tab input-->
-    <div class="input-group  hero-input_div shadow " id="hide-m">
-      <input type="text" class="hero-input_tab pr-4 form-control border-0" placeholder="Your email address" id="demo" name="email">
-      <div class="input-group-append shadow-lg">
-        <span class="input-group-text ">Get in touch<span class="hero-arrow"><i class="fas fa-arrow-right"></i></span></span>
-      </div>
-    </div>
-    <!--tab clients-->
-    <p class="col-12 text-left hero-client"  id="hide-m">Clients backed by</p>
-    <div class="hero-sponsors_mobile col-12 col-md-8 col-lg-5 py-3 d-flex flex-row justify-content-center ">
-      <img class="img-fluid col-4" src="images/yc.svg" alt="y combinator" />
-      <img class="img-fluid col-4" src="images/heineken.svg" alt="y combinator" />
-      <img class="img-fluid col-4" src="images/elsevier.svg" alt="y combinator" />
-    </div>
-  </section>
-  <!----------
-  INTERFACE 1 
-  ----------->
-  <section id="interfaces" class="interfaces row">
-    <img src="images/interface1.svg" alt="analytics" id="interface1-img" class="interface1-img">
-    <div class="interface1-description ">
-      <h5 class="interface1-description_header  font-weight-bold">Great interfaces set your business up for growth</h5>
-      <p class="interface1-description_para">The numbers are in. Digital products with great user experience far outperform those without. That is why successful tech startups are investing in top-notch user interfaces. Here’s why you should too.</p>
-      <!--boost productivity-->
-      <div class="interface1-boost">
-        <img class="img-fluid" src="images/boost-productivity (1).svg" alt="boost productivity" />
-        <div>
-          <h6 class="font-weight-bold ">Boost productivity </h6>
-          <p>Make your product more valuable to your users by boosting their productivity through optimised UX.</p>
-        </div>
-        <img class="img-fluid" src="images/increase-confidence (1).svg" alt="increase confidence " />
-        <div>
-          <h6 class="font-weight-bold ">Increase confidence</h6>
-          <p>Seamless UX and sleek UI increases customers' confidence in your application's ability as a whole.</p>
-        </div>
-        <img class="img-fluid" src="images/scale-your-product (1).svg" alt="scale your product " />
-        <div>
-          <h6 class="font-weight-bold ">Scale your product</h6>
-          <p>Rapidly scale up your product without sacrificing quality by implementing a design system.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!----------
-  INTERFACE2
-  ------------>
-  <section id="interfaces2" class="interfaces row">
-    <img src="images/Try.webp" alt="analytics" id="interface2-img" class="interface1-img">
-    <div class="interface2-description ">
-      <h5 class="interface2-description_header  font-weight-bold">We design great user interfaces that empower people and drive value</h5>
-      <p class="interface2-description_para">We know what makes interfaces great: seamless journeys. Our team merges expertise in CX, UX, and UI design to craft seamless processes and products. Even when users interact with your product across devices, applications, and (real-world) touchpoints. That’s how we empower people and drive value.</p>
-      <!--bubbly triangle-->
-      <div class=" interface2-bubble">
-        <p>Making complex applications seemingly simple is what we do best</p>
-      </div>
-      <div id="interface2-founder" class="interface1-boost">
-        <img class="img-fluid" src="images/robin.webp" alt="boost productivity" />
-        <div>
-          <h6 class="font-weight-bold ">Robin Humphreys</h6>
-          <p>Co-founder</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!----------------
-  NATIVE MOBILE APPS
-  ----------------->
-  <section class="native row">
-    <div class="native-content">
-      <div class="native-content-div">
-        <i class="fas fa-mobile-alt fa-2x d-block"></i>
-        <div>
-          <h6 class="font-weight-bold">Native mobile apps</h6>
-          <p>Beautiful native iOS & Android apps that deliver a polished user experience.</p>
-        </div>
-      </div>
-      <div class="native-content-div">
-        <i class="fas fa-cloud fa-2x"></i>
-        <div>
-          <h6 class="font-weight-bold">SaaS applications</h6>
-          <p>Feature-driven applications in the cloud that are optimised for self-service.</p>
-        </div>
-      </div>
-      <div class="native-content-div">
-        <i class="fas fa-chart-pie fa-2x"></i>
-        <div>
-          <h6 class="font-weight-bold">Enterprise software</h6>
-          <p>Complex and robust software solutions that feel bespoke and intuitive.</p>
-        </div>
-      </div>
-      <div class="native-content-div"id ="hide">
-        <i class="fas fa-laptop fa-2x"></i>
-        <div>
-          <h6 class="font-weight-bold">Digital platforms</h6>
-          <p >Snappy digital platforms that balance content, commerce, and functionality.</p>
-        </div>
-      </div>
-      <div class="native-content-div" id="hide">
-        <i class="fas fa-pencil-alt fa-2x"></i>
-        <div>
-          <h6 class="font-weight-bold">Design systems</h6>
-          <p >Future-proof your product with a design system that scales with your product.</p>
-        </div>
-      </div>
-      <div class="native-content-div" id="hide">
-        <i class="far fa-comment-alt fa-2x" ></i>
-        <div>
-          <h6 class="font-weight-bold">Design audits</h6>
-          <p >A quick review or in-depth analysis of your product. Let's optimise!</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!------------
-  PRODUCT DESIGN 
-  ------------->
-  <section class="row design" style="background: linear-gradient(rgba(247, 249, 252, .9), rgba(247, 249, 252, .5), rgba(252, 249, 247, 0));">
-    <img class="img-fluid"  src="images/product-design-tablet_b100fa59478a6654828636f9850bae3e.webp" alt="product and web design" />
-    <div class="col-12 mt-3  col-md-7  design-desc">
-      <h5 class="font-weight-bold">Let’s team up and design something remarkable</h5>
-      <p class="pt-2">Our agile process supercharges your product design. We've optimised it for collaboration over the course of 130+ projects. Think of us as part of the team. Our projects move fast and involve rapid-prototyping and user testing. Expect new designs every few days. Join us for workshops and sessions at our space in Amsterdam or from anywhere by video.</p>
-
-      <ul class="fa-ul">
-        <li class="font-weight-bold mb-2"><span class="fa-li"><i class="fas fa-check-circle "></i></span >Speed-up your product map</li>
-        <li class="font-weight-bold mb-2"><span class="fa-li"><i class="fas fa-check-circle "></i></span >Flexible workflow & fast communication</li>
-        <li class="font-weight-bold "><span class="fa-li"><i class="fas fa-check-circle "></i></span >Remote or in-person sessions</li>
-      </ul>
-      <!--mobile input-->
-      <input type="email" id="hide-t" class="design-input d-block form-control form-control-lg mt-4" placeholder="Your email address ">
-      <button id="hide-t"  class="design-btn shadow-lg btn font-weight-bold text-white btn-lg d-block">
-        Get in touch <span class="hero-arrow"><i class="fas fa-arrow-right"></i></span>
-      </button>
-      <!--tab input-->
-    <div class="input-group  hero-input_div shadow hide-m" id="hero-input_div2">
-      <input type="text" class="hero-input_tab pr-4 form-control border-0" placeholder="Your email address" id="demo" name="email">
-      <div class="input-group-append shadow-lg">
-        <span class="input-group-text ">Get in touch<span class="hero-arrow"><i class="fas fa-arrow-right"></i></span>
-      </div>
-    </div>
-    </div>
-  </section>
-  <!----------
-  THREE CARDS 
-  ------------>
-  <article class="info shadow-lg row" id="info1">
-    <img class="img-fluid " src="images/info1.webp" alt="operating pc" />
-    <div id="info">
-      <p class="work text-muted">Work <span class="text-muted "> - 01</span></p>
-      <p class="font-weight-bold" style="color:var(--primaryFontColor) ">Helped get stakeholder buy-in, for an EdTech platform through a new user experience and visual refresh, in 6 weeks</p>
-      <!--bubbly triangle -->
-      <div class=" info-bubble">
-        <p>I would 100% recommend Heavyweight to anyone looking for a team to help with UX & UI. They uniquely were able to understand what we needed for our project - the degree of complexity required, meeting deadlines, and [...] budget.</p>
-      </div>
-      <div id="info-founder" class="d-flex flex-row justify-content-start px-0">
-        <img class="img-fluid " src="images/sam.jpg" alt="boost productivity" />
-        <div>
-          <h6 class="font-weight-bold ">Sam Green</h6>
-          <p>Co-founder & CEO of Turinglab</p>
-        </div>
-      </div>
-    </div>
-  </article>
-  <article class="info shadow-lg " id="info1">
-    <img class="img-fluid " src="images/hardware.webp" alt="operating pc" />
-    <div id="info">
-      <p class="work text-muted">Work <span class="text-muted "> - 02</span></p>
-      <p class="font-weight-bold" style="color:var(--primaryFontColor) ">Made cats talk, for an innovate hardware startup by translating ideas into a sleek & fun app design</p>
-      <!--bubbly triangle -->
-      <div class=" info-bubble">
-        <p>Can't wait to work with Heavyweight Again. The perfect balance between deciphering complexity and simple execution</p>
-      </div>
-      <div id="info-founder" class="d-flex flex-row justify-content-start px-0">
-        <img class="img-fluid " src="images/ali.jpg" alt="boost productivity" />
-        <div>
-          <h6 class="font-weight-bold ">Ali Ganjavian</h6>
-          <p>Co-founder of Studio Banana </p>
-        </div>
-      </div>
-    </div id="info">
-  </article>
-  <article class="info shadow-lg " id="info1">
-    <img class="img-fluid " src="images/digital.webp" alt="operating pc" />
-    <div id="info">
-      <p class="work text-muted">Work <span class="text-muted "> - 03</span></p>
-      <p class="font-weight-bold" style="color:var(--primaryFontColor) "> Designed a seamless journey across digital and real-world touch-points for Heineken, in 6 weeks </p>
-      <!--bubbly triangle -->
-      <div class=" info-bubble">
-        <p>We've had a great experience working with Heavyweight. They elevate UI/UX quality while keeping in mind strategic objectives. I would highly recommend working with them. </p>
-      </div>
-      <div id="info-founder" class="d-flex flex-row justify-content-start px-0">
-        <img class="img-fluid " src="images/jeroen.jpg" alt="boost productivity" />
-        <div>
-          <h6 class="font-weight-bold ">Jeroen Ruigrok</h6>
-          <p>Innovation manager at Heineken </p>
-        </div>
-      </div>
-    </div id="info">
-  </article>
-  <!----------
-     HELP
-  ---------->
-  <section class="row help bg-white pt-4">
-    <h5 class="font-weight-bold col-12 mb-3">Ways we can help </h5>
-    <main id="help-main">
-      <div class="col-12 col-md-6 help-grid">
-        <img class="img-fluid pt-2" src="images/wayfinding.svg" alt="wave" />
-        <div>
-          <h6 class="font-weight-bold">My product is hard to use </h6>
-          <p >Let's flatten the learning curve </p>
-        </div>
-      </div>
-      <div class="col-12 col-md-6  help-grid">
-        <img class="img-fluid pt-2" src="images/minimum-viable-product.svg" alt="wave" />
-        <div>
-          <h6 class="font-weight-bold">My MVP lacks polish</h6>
-          <p >Let's make it look and work amazing. </p>
-        </div>
-      </div>
-      <div class="col-12 col-md-6  help-grid">
-        <img class="img-fluid pt-2" src="images/productivity.svg" alt="wave" />
-        <div>
-          <h6 class="font-weight-bold">My users' productivity is low</h6>
-          <p >Let's get rid of repetitive task. </p>
-        </div>
-      </div>
-      <div class="col-12 col-md-6   help-grid">
-        <img class="img-fluid pt-2" src="images/design-debt.svg" alt="wave" />
-        <div>
-          <h6 class="font-weight-bold">My product has design debt </h6>
-          <p >Let's rethink and create a design system </p>
-        </div>
-      </div>
-      <div class="col-12 col-md-6   help-grid">
-        <img class="img-fluid pt-2" src="images/app-site.svg" alt="wave" />
-        <div>
-          <h6 class="font-weight-bold">My app and site don't get along </h6>
-          <p >Let's make your user journey sing</p>
-        </div>
-      </div>
-      <div class="col-12 col-md-6   help-grid">
-        <img class="img-fluid pt-2" src="images/feature-creep.svg" alt="wave" />
-        <div>
-          <h6 class="font-weight-bold">My product has feature creep</h6>
-          <p >Let's kill your darlings</p>
-        </div>
-      </div>
-      </main>
-  </section>
-  <!----------
-  NEXT LEVEL
-  ---------->
-  <section class="row next py-5">
-    <div class="next-images">
-      <img class="img-fluid next-images1" src="images/amsterdam.webp" alt="Amsterdam design" />
-      <img class="img-fluid next-images2" src="images/design-workshop.webp" alt="Amsterdam design" />
-      <img class="img-fluid next-images3" src="images/studio-amsterdam.webp" alt="Amsterdam design" />
-      <img class="img-fluid next-images4" src="images/sprint-session.webp" alt="Amsterdam design" />
-    </div>
-    <h2 class=" font-weight-bold text-center mt-5"style="color :var(--primaryFontColor)">Let’s take your digital experience to the next level</h2>
-    <p class="mt-3 text-center">With over fifteen years of experience and many successful projects completed, we know how to help you design the best version of your product yet. We don’t bite. Let’s get started.</p>
-    <div class="next-rate col-12 mx-auto col-md-8 col-lg-4">
-      <div class="mt-3">
-        <span class="mr-2 next-span"><i class="fas fa-check" style="color:var(--deepBlue)"></i></span>
-        <p class="pt-2"><span class="font-weight-bold plu" style="color:var(--primaryFontColor)">135+</span><br><span class="plus" style="font-size:0.75rem"><span id="hide">Successful</span> Projects</span></p>
-      </div>
-      <div class="mt-3">
-        <span class="mr-2 next-span"><i class="fas fa-check" style="color:var(--deepBlue)"></i></span>
-        <p class="pt-2"><span class="font-weight-bold plu" style="color:var(--primaryFontColor)">15</span><br><span class="plus"style="font-size:0.75rem"><span id="hide">Design</span> Experience </span></p>
-      </div>
-      <div class="mt-3">
-        <span class="mr-2 next-span"><i class="fas fa-check" style="color:var(--deepBlue)"></i></span>
-        <p class="pt-2"><span class="font-weight-bold plu" style="color:var(--primaryFontColor)">1 week</span><br><span class="plus"style="font-size:0.75rem"><span id="hide">Time to</span><span id="hide-t"> Until</span> kick-off</span></p>
-      </div>
-    </div>
-    <!--mobile input-->
-    <input type="email" id="hide-t" class="design-input d-block form-control form-control-lg mt-4" placeholder="Your email address ">
-    <button id="hide-t" class="design-btn shadow-lg btn font-weight-bold text-white btn-lg d-block">
-      Let's get started <span class="hero-arrow"><i class="fas fa-arrow-right"></i></span>
-    </button>
-     <!--tab input-->
-     <div  class="input-group irates hero-input_div shadow " id="hide-m">
-      <input type="text" class="hero-input_tab pr-4 form-control border-0" placeholder="Your email address" id="demo" name="email">
-      <div class="input-group-append shadow-lg">
-        <span class="input-group-text ">Let's get started<span class="hero-arrow"><i class="fas fa-arrow-right"></i></span></span>
-      </div>
-    </div>
-    <!--CLIENTS MENTIONED-->
-    <p class="next-clients d-block col-12 mt-n5">Clients mentioned in</p>
-    <div class="next-clients-images d-flex flex-row justify-content-between mx-auto" id="hide-mc">
-      <img class="img-fluid col-2" src="images/wired.svg" alt="wired">
-      <img class="img-fluid col-2" src="images/forbes.svg" alt="wired">
-      <img class="img-fluid col-2" src="images/tnw.svg" alt="wired">
-      <img class="img-fluid col-2" src="images/guardian.svg" alt="wired">
-      <img class="img-fluid col-2" src="images/bloomberg.svg" alt="wired">
-    </div>
-  </section>
-  <!----------
-     FOOTER 
-  ---------->
-  <footer class="row py-5">
-    <div class="col-12 col-lg-4 my-3">
-      <h6 class="font-weight-bold">Heavyweight</h6>
-      <a class="pt-2 d-block "  href="#">Nieuwezijds Voorburgwal 334-3</a>
-      <a class="pt-2 d-block "  href="#">Bekijk Nederlandse website</a>
-    </div>
-    <div class="col-12 col-lg-3 my-3">
-      <h6 class="font-weight-bold">Contact</h6>
-      <a class="pt-2 d-block "  href="#">hello@heavyweight.nl</a>
-      <a class="pt-2 d-block "  href="#" style="letter-spacing: 3px">+31621819890</a>
-    </div>
-    <div class="col-12 col-lg-2 my-3">
-      <h6 class="font-weight-bold">Socials </h6>
-      <a class="pt-2 d-block "  href="#">Dribble</a>
-      <a class="pt-2 d-block "  href="#">Medium</a>
-    </div>
-  </footer>
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<body>
+  <h1>CHESS IN SLUMS <sup>@Tunde_OD</sup> </h1>
+<div class="chessboard">
+<!-- 1st -->
+<div class="white">&#9820;</div>
+<div class="black">&#9822;</div>
+<div class="white">&#9821;</div>
+<div class="black">&#9819;</div>
+<div class="white">&#9818;</div>
+<div class="black">&#9821;</div>
+<div class="white">&#9822;</div>
+<div class="black">&#9820;</div>
+<!-- 2nd -->
+<div class="black">&#9821;</div>
+<div class="white">&#9821;</div>
+<div class="black">&#9821;</div>
+<div class="white">&#9821;</div>
+<div class="black">&#9821;</div>
+<div class="white">&#9821;</div>
+<div class="black">&#9821;</div>
+<div class="white">&#9821;</div>
+<!-- 3th -->
+<div class="white"></div>
+<div class="black"></div>
+<div class="white"></div>
+<div class="black"></div>
+<div class="white"></div>
+<div class="black"></div>
+<div class="white"></div>
+<div class="black"></div>
+<!-- 4st -->
+<div class="black"></div>
+<div class="white"></div>
+<div class="black"></div>
+<div class="white"></div>
+<div class="black"></div>
+<div class="white"></div>
+<div class="black"></div>
+<div class="white"></div>
+<!-- 5th -->
+<div class="white"></div>
+<div class="black"></div>
+<div class="white"></div>
+<div class="black"></div>
+<div class="white"></div>
+<div class="black"></div>
+<div class="white"></div>
+<div class="black"></div>
+<!-- 6th -->
+<div class="black"></div>
+<div class="white"></div>
+<div class="black"></div>
+<div class="white"></div>
+<div class="black"></div>
+<div class="white"></div>
+<div class="black"></div>
+<div class="white"></div>
+<!-- 7th -->
+<div class="white">&#9817;</div>
+<div class="black">&#9817;</div>
+<div class="white">&#9817;</div>
+<div class="black">&#9817;</div>
+<div class="white">&#9817;</div>
+<div class="black">&#9817;</div>
+<div class="white">&#9817;</div>
+<div class="black">&#9817;</div>
+<!-- 8th -->
+<div class="black">&#9814;</div>
+<div class="white">&#9816;</div>
+<div class="black">&#9815;</div>
+<div class="white">&#9813;</div>
+<div class="black">&#9812;</div>
+<div class="white">&#9815;</div>
+<div class="black">&#9816;</div>
+<div class="white">&#9814;</div>
+</div>
 </body>
 </html>
