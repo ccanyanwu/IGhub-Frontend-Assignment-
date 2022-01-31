@@ -1,102 +1,323 @@
-/*custom fonts imported */
-@font-face {
-  font-family: 'bold-Font';
-  src: url("./static/digital.ttf")
+body {
+  background-image: linear-gradient(
+    180deg,
+    #2f6ed3 5%,
+    #5095e4 20%,
+    #5095e4 60%,
+    #2f6ed3 95%
+  );
 }
-@font-face{
-  font-family :mediumFont;
-  src: url("./static/FiraCode-Medium.ttf")
-}
-/*basic css reset for all elements */
-*{
+
+ul {
+  list-style: none;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+}
+#ball1 {
+  position: absolute;
+  left: 27vw;
+  top: 30vh;
+  z-index: 5;
+}
+#ball2 {
+  position: absolute;
+  right: 23vw;
+  top: 60%;
+  z-index: 15;
+}
+#ball3 {
+  position: absolute;
+  left: 50vw;
+  top: 1%;
+  z-index: 5;
+}
+#ball4 {
+  position: absolute;
+  left: 26vw;
+  top: 68%;
+  z-index: 5;
+}
+#clock {
+  font-size: 1em;
+  position: relative;
+  z-index: 9;
 }
 
-body{
-  align-items: center;
-  background: #26262B ;
-  display: flex;
-  flex-direction: column;
-  font-family: 'bold-font', sans-serif !important;
-  justify-content: center;
-  min-height: 100vh;
-  scroll-behavior: smooth ;
-} 
-
-/*********
-main content 
-**********/
-main{
-  background: #444;
-  border-radius :0.5rem ;
-  color :#fff ;
-  display:grid;
-  grid-gap: 0.25rem;
-  grid-template-columns :repeat(4, 1fr);
-  grid-template-rows:repeat(6, 1fr);
-  margin: auto;
-  padding: 1rem ;
-  height :37rem ;
-  width :20rem;
-}
-.display{
-  background: #828584 !important;
-  color: #000;
-  font-family: 'bold-font' !important;
-  font-size :1.5rem ;
-  grid-column: 1/5;
-  grid-row: 1/2;
-  padding: 0.2rem 0.2rem;
-  box-shadow: inset 5px 5px 0px #3b3b3b, inset -5px -5px 0px #3b3b3b!important ;
-  vertical-align: bottom!important ;
-}
-.first::-webkit-scrollbar, .second::-webkit-scrollbar {display: none;}
-.first, .second{
-  background: #828584 !important;
-  box-shadow: none !important;
-  height: 50%;
-  padding: 0 .25rem;
-  overflow-x: scroll; 
-  text-align: left;
-  white-space: nowrap;
-  width: 100% !important;
-}
-.second{
-  font-family: mediumFont !important;
-  padding-top: 0.89rem !important;
-  text-align: right;
-}
-main :not(:last-child){
-  background :#444;
-  border: 0;
-  box-shadow:inset  5px 5px 10px #666666,inset -5px -5px 10px #222222;
-  outline: none ;
-}
-[data-action="calculate"]{
-  background: #DA6E16;
-  border: 0;
-  box-shadow:  5px 5px 10px #666666, -5px -5px 10px #222222;
-  color: #fff ;
-  outline: none ;
-}
-#result:hover{
-  background :#fff ;
-  color: #DA6E16;
-}
-input{
-  font-size :2rem ;
-  font-weight: bolder ;
-}
-.clear{
-  grid-column: 1/4;
-  grid-row: 2/3;
+#clock .frame-face {
+  position: relative;
+  width: 30em;
+  height: 30em;
+  margin: 2em auto;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-main input:hover{
-  box-shadow:  5px 5px 10px #666666, -5px -5px 10px #222222;
+#watch .frame-face:before {
+  content: "";
+  width: 29.4em;
+  height: 29.4em;
+  border-radius: 14.7em;
+  position: absolute;
+  top: 0.3em;
+  left: 0.3em;
+  border-radius: 23px;
+  background: #f2f2f2;
+  box-shadow: 5px 5px 7px #d0d0d0, -5px -5px 7px #ffffff;
 }
-.operators{
-  color: #f2f2f2;
+#watch .frame-face:after {
+  content: "";
+  width: 28em;
+  height: 28em;
+  border-radius: 14.2em;
+  position: absolute;
+  top: 0.9em;
+  left: 0.9em;
+  border-radius: 23px;
+  background: #f2f2f2;
+  box-shadow: 5px 5px 7px #d0d0d0, -5px -5px 7px #ffffff;
+}
+#watch .minute-marks li {
+  display: block;
+  width: 0.2em;
+  height: 0.6em;
+  background: #929394;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -0.4em 0 0 -0.1em;
+  border-radius: 23px;
+  background: #f2f2f2;
+  box-shadow: 5px 5px 7px #d0d0d0, -5px -5px 7px #ffffff;
+}
+
+#clock .digits {
+  width: 30em;
+  height: 30em;
+  border-radius: 15em;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -15em;
+}
+#clock .digits li {
+  font-size: 1.6em;
+  display: block;
+  width: 1.6em;
+  height: 1.6em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  line-height: 1.6em;
+  text-align: center;
+  margin: -0.8em 0 0 -0.8em;
+  font-weight: bold;
+}
+#clock .digits li:nth-child(1) {
+  transform: translate(3.9em, -6.9em);
+}
+#clock .digits li:nth-child(2) {
+  transform: translate(6.9em, -4em);
+}
+#clock .digits li:nth-child(3) {
+  transform: translate(8em, 0);
+}
+#clock .digits li:nth-child(4) {
+  transform: translate(6.8em, 4em);
+}
+#clock .digits li:nth-child(5) {
+  transform: translate(3.9em, 6.9em);
+}
+#clock .digits li:nth-child(6) {
+  transform: translate(0, 8em);
+}
+#clock .digits li:nth-child(7) {
+  transform: translate(-3.9em, 6.9em);
+}
+#clock .digits li:nth-child(8) {
+  transform: translate(-6.8em, 4em);
+}
+#clock .digits li:nth-child(9) {
+  transform: translate(-8em, 0);
+}
+#clock .digits li:nth-child(10) {
+  transform: translate(-6.9em, -4em);
+}
+#clock .digits li:nth-child(11) {
+  transform: translate(-3.9em, -6.9em);
+}
+#clock .digits li:nth-child(12) {
+  transform: translate(0, -8em);
+}
+#clock .digits:before {
+  content: "";
+  width: 1.6em;
+  height: 1.6em;
+  border-radius: 0.8em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -0.8em 0 0 -0.8em;
+  background: #121314;
+}
+#clock .digits:after {
+  content: "";
+  width: 4em;
+  height: 4em;
+  border-radius: 2.2em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -2.1em 0 0 -2.1em;
+  border-radius: 23px;
+  
+}
+@keyframes hours {
+  to {
+    transform: rotate(335deg);
+  }
+}
+#clock .hours-hand {
+  width: 0.8em;
+  height: 7em;
+  border-radius: 0 0 0.9em 0.9em;
+  background: #232425;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  margin: 0 0 -0.8em -0.4em;
+  box-shadow: #232425 0 0 2px;
+  transform-origin: 0.4em 6.2em;
+  transform: rotate(-25deg);
+  animation: hours 43200s linear 0s infinite;
+}
+#clock .hours-hand:before {
+  content: "";
+  background: inherit;
+  width: 1.8em;
+  height: 0.8em;
+  border-radius: 0 0 0.8em 0.8em;
+  box-shadow: #232425 0 0 1px;
+  position: absolute;
+  top: -0.7em;
+  left: -0.5em;
+}
+#clock .hours-hand:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border: 0.9em solid #232425;
+  border-width: 0 0.9em 2.4em 0.9em;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  position: absolute;
+  top: -3.1em;
+  left: -0.5em;
+}
+@keyframes minutes {
+  to {
+    transform: rotate(422deg);
+  }
+}
+#clock .minutes-hand {
+  width: 0.8em;
+  height: 12.5em;
+  border-radius: 0.5em;
+  background: #343536;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  margin: 0 0 -1.5em -0.4em;
+  box-shadow: #343536 0 0 2px;
+  transform-origin: 0.4em 11em;
+  transform: rotate(62deg);
+  animation: minutes 3600s linear 0s infinite;
+}
+@keyframes seconds {
+  to {
+    transform: rotate(480deg);
+  }
+}
+#clock .seconds-hand {
+  width: 0.2em;
+  height: 14em;
+  border-radius: 0.1em 0.1em 0 0/10em 10em 0 0;
+  background: #c00;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  margin: 0 0 -2em -0.1em;
+  box-shadow: rgba(0, 0, 0, 0.8) 0 0 0.2em;
+  transform-origin: 0.1em 12em;
+  transform: rotate(120deg);
+  animation: seconds 60s steps(60, end) 0s infinite;
+}
+#clock .seconds-hand:after {
+  content: "";
+  width: 1.4em;
+  height: 1.4em;
+  border-radius: 0.7em;
+  background: inherit;
+  position: absolute;
+  left: -0.65em;
+  bottom: 1.35em;
+}
+#clock .seconds-hand:before {
+  content: "";
+  width: 0.8em;
+  height: 3em;
+  border-radius: 0.2em 0.2em 0.4em 0.4em/0.2em 0.2em 2em 2em;
+  box-shadow: rgba(0, 0, 0, 0.8) 0 0 0.2em;
+  background: inherit;
+  position: absolute;
+  left: -0.35em;
+  bottom: -3em;
+}
+#clock .digital-wrap {
+  width: 9em;
+  height: 3em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 3em 0 0 -4.5em;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+#clock .digital-wrap ul {
+  float: left;
+  width: 2.85em;
+  height: 3em;
+  border-right: 0.1em solid #000;
+  color: #ddd;
+  font-family: Consolas, monaco, monospace;
+}
+#clock .digital-wrap ul:last-child {
+  border: none;
+}
+#clock .digital-wrap li {
+  font-size: 1.5em;
+  line-height: 2;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  left: 1px;
+}
+#clock .digit-minutes li {
+  animation: dsm 3600s steps(60, end) 0s infinite;
+}
+#clock .digit-seconds li {
+  animation: dsm 60s steps(60, end) 0s infinite;
+}
+@keyframes dsm {
+  to {
+    transform: translateY(-120em);
+  }
 }
