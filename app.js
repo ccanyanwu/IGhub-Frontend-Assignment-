@@ -1,6 +1,7 @@
 //select items from DOM
 const numbers = document.querySelectorAll(".number"),
   clear = document.querySelector(".clear"),
+  deleteBtn = document.querySelector('.delete'), 
   decimal = document.querySelector("#symbol"),
   operators = document.querySelectorAll(".operators"),
   calculate = document.querySelector("#result"),
@@ -12,6 +13,10 @@ clear.addEventListener("click", () => {
   operationDisplay.value = ""
   resultDisplay.textContent = 0;
 });
+
+//delete 1 item 
+deleteBtn.addEventListener('click', () => operationDisplay.value = operationDisplay.value.slice(0, - 1)
+)
 
 //get symbols
 const getOperator = (operator) => {
@@ -59,9 +64,15 @@ operators.forEach((operator) =>
 
 //calculate & display result
 calculate.addEventListener("click", (e) => {
-  const result = eval(operationDisplay.value);
+  try {
+    const result = eval(operationDisplay.value);
 
+  if(result){
   //check if result is a float or interger
-  resultDisplay.textContent =
-    Number(result) === result && result % 1 !== 0 ? result.toFixed(2) : result;
-});
+    return resultDisplay.textContent =
+      Number(result) === result && result % 1 !== 0 ? result.toFixed(2) : result;
+   }
+  } catch (error) {
+    resultDisplay.textContent = error.message
+    setTimeout(() => resultDisplay.textContent = 0, 3000)
+}});
