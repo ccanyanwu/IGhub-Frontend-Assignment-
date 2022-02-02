@@ -1,107 +1,22 @@
-/*custom fonts imported */
-@font-face {
-  font-family: 'bold-Font';
-  src: url("./static/digital.ttf")
-}
-@font-face{
-  font-family: 'medium-Font';
-  src: url("./static/FiraCode-Regular.ttf")
-}
-/*basic css reset for all elements */
 *{
+  box-sizing: border-box ;
   margin: 0;
   padding: 0;
-  box-sizing: border-box; font-family: medium-Font;
 }
 
 body{
-  align-items: center;
-  background: #26262B ;
-  display: flex;
-  flex-direction: column;
-  font-family: bold-Font;
-  justify-content: center;
-  min-height: 100vh;
-  scroll-behavior: smooth ;
-} 
-
-/*********
-main content 
-**********/
-main{
-  background: #444;
-  border-radius :0.5rem ;
-  color :#fff ;
-  display:grid;
-  grid-gap: 0.25rem;
-  grid-template-columns :repeat(4, 1fr);
-  grid-template-rows:repeat(6, 1fr);
-  margin: auto;
-  padding: 1rem ;
-  height :37rem ;
-  width :20rem;
-}
-.display{
-  background: #828584 !important;
-  color: #000;
-  font-size :1.5rem ;
-  grid-column: 1/5;
-  grid-row: 1/2;
-  padding: 0.2rem 0.2rem;
-  box-shadow: inset 5px 5px 0px #3b3b3b, inset -5px -5px 0px #3b3b3b!important ;
-}
-.first::-webkit-scrollbar, .second::-webkit-scrollbar {display: none;}
-.first, .second{
-  background: #828584 !important;
-  box-shadow: none !important;
-  height: 50%;
-  padding: 0 .25rem;
-  overflow-x: scroll; 
-  text-align: left;
-  white-space: nowrap;
-  width: 100% !important;
-}
-.first{
-  font-size: 1.3rem;
-}
-.second{
-  font-family: bold-Font !important;
-  padding-top: 0.89rem !important;
-  text-align: right;
-}
-main :not(:last-child){
-  background :#444;
-  border: 0;
-  box-shadow:inset  5px 5px 10px #666666,inset -5px -5px 10px #222222;
-  outline: none ;
-}
-[data-action="calculate"]{
-  background: #DA6E16;
-  border: 0;
-  box-shadow:  5px 5px 10px #666666, -5px -5px 10px #222222;
-  color: #fff ;
-  outline: none ;
-}
-#result:hover{
-  background :#fff ;
-  color: #DA6E16;
-}
-input{
-  font-size :2rem ;
-  font-weight: bolder ;
-}
-.clear{
-  grid-column: 1/3;
-  grid-row: 2/3;
-}
-.delete{
-  grid-column: 3/4;
-  grid-row: 2/3;
+  min-height: 100vh ;
+  display: grid;
+  place-items: center ;
 }
 
-main input:hover{
-  box-shadow:  5px 5px 10px #666666, -5px -5px 10px #222222;
+form{
+  width: 20rem;
+  background : #02507F ;
+  padding: 2rem ;
 }
-.operators{
-  color: #f2f2f2;
+#one{
+  width: 80%;
+  margin : 1rem auto ;
+  display :block;
 }
