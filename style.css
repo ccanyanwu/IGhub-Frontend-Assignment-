@@ -1,45 +1,145 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-*, *::before, *::after{
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
 body {
+  align-items: center;
   display: flex;
-  font-family: 'Poppins', sans-serif;
-  justify-content: center ;
-  min-height: 100vh ;
-  background: #f6b53b
-}
-.nft{
-  background-size: cover ;
-  background-image: url("./Nft.jpg");
-  background-position: center ;
-  background-repeat: no-repeat ;
-  height: 400px;
-  object-fit: contain;
-  width: 95vw;
-  border-radius:100% 0% 70% 70% / 0% 100% 70% 70% ;
-}
-h1{
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+  min-height: 100vh;
   background: #f6b53b;
-  border-radius: 0.3rem ;
-  font-weight: 900 ;
-  height: 3rem ;
-  margin:2rem auto;
-  padding: 0.5rem 0 ;
+}
+a,
+a:visited {
+  color: #f6b53b;
+  text-decoration: none;
+}
+
+main {
+  height: 90vh;
+  perspective: 1000px;
+  width: 95vw;
+}
+
+article {
+  height: 100%;
+  position: relative;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  width: 100%;
+}
+main:hover article {
+  transform: rotateY(180deg);
+}
+
+.back,
+.front {
+  backface-visibility: hidden;
+  background: #f2f2f2;
+  min-height: 90vh;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+}
+.back {
+  border-radius: 0.7rem;
+}
+
+.nft,
+form {
+  width: 95vw;
+}
+/* nft */
+.nft {
+  height: 400px;
+  background: #f6b53b url("./Nft.jpg") no-repeat bottom;
+  background-size: cover;
+  object-fit: contain;
+  border-radius: 15px 15px 200px 200px;
+}
+h1 {
+  background: #f6b53b;
+  border-radius: 0.3rem;
+  font-weight: 900;
+  height: 3rem;
+  margin: 0 auto;
+  padding: 0.5rem 0;
   text-align: center;
+  text-shadow: -1px 1px 2px #333;
+
   width: 60%;
 }
-  .c11{
-     background-image:url('https://ritzherald.com/wp-content/uploads/2021/11/Tainsei-NFT-Collection-Japanese-Art-meets-Ethereum-900x425.jpg');
-     background-size:300px 400px;
-     background-repeat: no-repeat;
-     background-color:white;
-     width:300px;
-     height:400px;
-     display:inline-block;
-     position:absolute;
-     z-index:4;
-     border-radius:15px 15px 200px 200px;
-  }
+div.sign {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3rem;
+}
+div.sign a {
+  color: #f6b53b;
+  font-size: larger;
+  font-weight: 800;
+  text-shadow: -1px 1px 2px #333;
+  text-transform: uppercase;
+}
+
+/* Form */
+form {
+  background: #f2f2f2;
+  border-radius: 0.5rem;
+  padding: 3rem 2rem 2rem;
+  transform: rotateY(180deg);
+}
+h2 {
+  color: #f6b53b;
+  font-weight: 900;
+  margin-bottom: 3rem;
+  text-align: center;
+  text-shadow: -3px 3px 2px #333;
+}
+input {
+  background-color: #e4e4e4;
+  border: 0;
+  border-radius: 0.3rem;
+  box-shadow: -3px -3px 8px #777;
+  display: block;
+  height: 3rem;
+  margin: 1.3rem auto;
+  outline: none;
+  padding-left: 1rem;
+  width: 100%;
+}
+input::placeholder {
+  font-size: small;
+  font-weight: 700;
+}
+input:focus {
+  border: 1px solid #f6b53b;
+  border-radius: 0.3rem;
+}
+button[type="submit"] {
+  background: #f6b53b;
+  border: 0;
+  border-radius: 0.3rem;
+  box-shadow: -3px -3px 8px #777;
+  font-size: large;
+  font-weight: 700;
+  height: 3rem;
+  margin-top: 1.75rem;
+  padding: 0.5rem 0;
+  text-align: center;
+  text-shadow: -1px 1px 2px #555;
+  width: 100%;
+}
+p.sign-in {
+  font-size: medium;
+  margin-top: 2rem;
+  text-align: center;
+  text-shadow: -1px -1px 2px #777;
+}

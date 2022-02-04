@@ -1,22 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>NFT LOGIN</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <!--NFTs login-->
-  <section>
-  <section class="nft">
-    <h1>NFT LOGIN</h1>
-  </section>
-   <div class="sign">
-     <p>sign in</p>
-     <p>sign up</p>
-   </div>
-  </section>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>NFT LOGIN</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--NFTs login-->
+    <main>
+      <article>
+      <section class="back">
+        <div class="nft">
+          <h1>NFT LOGIN</h1>
+        </div>
+        <div class="sign">
+          <a href="">sign in</a>
+          <a href="">sign up</a>
+        </div>
+      </section>
+      <!-- Form -->
+      <form class="front">
+        <h2 class="form-header">SIGN UP</h2>
+        <input
+          type="text"
+          name="username"
+          id="username"
+          placeholder="Username*"
+        />
+        <input type="text" name="email" id="email" placeholder="Email*" />
+        <input
+          type="text"
+          name="password"
+          id="password"
+          placeholder="Password*"
+        />
+        <button type="submit">Register</button>
+        <p class="sign-in">Already have an account? <a href="">sign in</a></p>
+      </form>
+      </article>
+    </main>
+    <script src="main.js"></script>
+  </body>
 </html>
