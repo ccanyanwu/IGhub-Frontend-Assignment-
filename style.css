@@ -1,22 +1,45 @@
-*{
-  box-sizing: border-box ;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*, *::before, *::after{
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
-body{
+body {
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+  justify-content: center ;
   min-height: 100vh ;
-  display: grid;
-  place-items: center ;
+  background: #f6b53b
 }
-
-form{
-  width: 20rem;
-  background : #02507F ;
-  padding: 2rem ;
+.nft{
+  background-size: cover ;
+  background-image: url("./Nft.jpg");
+  background-position: center ;
+  background-repeat: no-repeat ;
+  height: 400px;
+  object-fit: contain;
+  width: 95vw;
+  border-radius:100% 0% 70% 70% / 0% 100% 70% 70% ;
 }
-#one{
-  width: 80%;
-  margin : 1rem auto ;
-  display :block;
+h1{
+  background: #f6b53b;
+  border-radius: 0.3rem ;
+  font-weight: 900 ;
+  height: 3rem ;
+  margin:2rem auto;
+  padding: 0.5rem 0 ;
+  text-align: center;
+  width: 60%;
 }
+  .c11{
+     background-image:url('https://ritzherald.com/wp-content/uploads/2021/11/Tainsei-NFT-Collection-Japanese-Art-meets-Ethereum-900x425.jpg');
+     background-size:300px 400px;
+     background-repeat: no-repeat;
+     background-color:white;
+     width:300px;
+     height:400px;
+     display:inline-block;
+     position:absolute;
+     z-index:4;
+     border-radius:15px 15px 200px 200px;
+  }

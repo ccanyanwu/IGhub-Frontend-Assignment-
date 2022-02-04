@@ -1,6 +1,8 @@
-//Click handler on the document
-document.addEventListener("click", e => { console.log("Document handler"); }); 
-// Click handler on the paragraph
-document.getElementById("para").addEventListener("click", e => { console.log("Paragraph handler"); }); 
-// Click handler on the button
-document.getElementById("propa").addEventListener("click", e => { console.log("Button handler"); });
+//select elements from the DOM
+const button = document.querySelector('button'),
+      template = document.querySelector('template');
+      
+button.addEventListener('click', () => {
+  temp = template.content.cloneNode(true);
+  document.body.insertBefore(temp, button)
+});
