@@ -12,21 +12,350 @@
     ></script>
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="show.css" />
   </head>
   <body>
     <!-- Navbar -->
-    <nav>
+    <nav class="flex">
       <a href="">
         <img src="./images/ballcalllogo.JPG" alt="" />
       </a>
-      <div>
-        <div>
-          <i class="fas fa-search"></i>
-          <input type="text" name="search" id="search" placeholder="SEARCH" />
+      <div class="flex">
+        <div class="bg-secondary">
+          <i class="fas fa-search text-white"></i>
+          <input
+            type="text"
+            name="search"
+            id="search"
+            class="text-white"
+            placeholder="SEARCH"
+          />
         </div>
-        <p><span>LOGIN</span><span>HELP</span></p>
+        <p class="text-yellow"><span>LOGIN</span><span>HELP</span></p>
       </div>
     </nav>
+    <!-- hero section -->
+    <section class="hero ">
+      <ol class="carousel__viewport">
+        <li id="carousel__slide1" tabindex="0" class="carousel__slide">
+          <div class="carousel__snapper">
+            <a href="#carousel__slide5" class="carousel__prev"
+              >Go to last slide</a
+            >
+            <a href="#carousel__slide2" class="carousel__next"
+              >Go to next slide</a
+            >
+          </div>
+        </li>
+        <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+          <div class="carousel__snapper"></div>
+          <a href="#carousel__slide1" class="carousel__prev"
+            >Go to previous slide</a
+          >
+          <a href="#carousel__slide3" class="carousel__next"
+            >Go to next slide</a
+          >
+        </li>
+        <li id="carousel__slide3" tabindex="0" class="carousel__slide">
+          <div class="carousel__snapper"></div>
+          <a href="#carousel__slide2" class="carousel__prev"
+            >Go to previous slide</a
+          >
+          <a href="#carousel__slide4" class="carousel__next"
+            >Go to next slide</a
+          >
+        </li>
+        <li id="carousel__slide4" tabindex="0" class="carousel__slide">
+          <div class="carousel__snapper"></div>
+          <a href="#carousel__slide3" class="carousel__prev"
+            >Go to previous slide</a
+          >
+          <a href="#carousel__slide5" class="carousel__next"
+            >Go to next slide</a
+          >
+        </li>
+        <li id="carousel__slide5" tabindex="0" class="carousel__slide">
+          <div class="carousel__snapper"></div>
+          <a href="#carousel__slide4" class="carousel__prev"
+            >Go to previous slide</a
+          >
+          <a href="#carousel__slide1" class="carousel__next"
+            >Go to last slide</a
+          >
+        </li>
+      </ol>
+    </section>
+    <!-- main -->
+    <main class="grid">
+      <!-- aside -->
+      <aside>
+        <h2 class="text-yellow">EXCLUSIVE</h2>
+        <a href="" class="d-block text-white text-capitalize">consectetur</a>
+        <a href="" class="d-block text-white text-capitalize">explicabo</a>
+        <a href="" class="d-block text-white text-capitalize">Hic</a>
+        <a href="" class="d-block text-white text-capitalize">elit</a>
+        <a href="" class="d-block text-white text-capitalize mb">adipisicing</a>
+
+        <h2 class="text-yellow">NEWS</h2>
+        <a href="" class="d-block text-white text-capitalize">adipisicing</a>
+        <a href="" class="d-block text-white text-capitalize">eligendi</a>
+        <a href="" class="d-block text-white text-capitalize">delectus</a>
+        <a href="" class="d-block text-white text-capitalize">voluptate</a>
+        <a href="" class="d-block text-white text-capitalize mb">dicta</a>
+
+        <h2 class="text-yellow">PROJECTS</h2>
+        <a href="" class="d-block text-white text-capitalize">amet</a>
+        <a href="" class="d-block text-white text-capitalize">eaque</a>
+        <a href="" class="d-block text-white text-capitalize">minus</a>
+        <a href="" class="d-block text-white text-capitalize">ratione</a>
+        <a href="" class="d-block text-white text-capitalize mb">Earum</a>
+
+        <h2 class="text-yellow">DOCUMENTS</h2>
+        <a href="" class="d-block text-white text-capitalize">Reprehenderit</a>
+        <a href="" class="d-block text-white text-capitalize">perferendis</a>
+        <a href="" class="d-block text-white text-capitalize">autem</a>
+        <a href="" class="d-block text-white text-capitalize">repudiandae</a>
+        <a href="" class="d-block text-white text-capitalize mb">veritatis</a>
+
+        <h2 class="text-yellow">VIDEOS</h2>
+        <a href="" class="d-block text-white text-capitalize">possimus</a>
+        <a href="" class="d-block text-white text-capitalize">corrupti</a>
+        <a href="" class="d-block text-white text-capitalize">facilis</a>
+        <a href="" class="d-block text-white text-capitalize">itaque</a>
+        <a href="" class="d-block text-white text-capitalize mb">quibusdam</a>
+      </aside>
+
+      <!-- articles -->
+      <article class="article">
+        <!-- exlusive -->
+        <section class="exclusive grid mb">
+          <div>
+            <h2 class="text-yellow text-upper">EXCLUSIVE</h2>
+          </div>
+          <div>
+            <p class="text-white">Monday 29, September 2022</p>
+            <h2 class="text-yellow">Ancelloti Sacked</h2>
+            <p class="text-white text-justify">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Praesentium et provident eius fugit esse, vitae hic, aspernatur
+              dolorem, ea suscipit maiores? Temporibus soluta reprehenderit quae
+              inventore esse ab dolore itaque facilis non. Nihil, est.
+            </p>
+            <a href="" class="text-yellow text-center">Read More ></a>
+          </div>
+        </section>
+        <!-- Latest News -->
+        <h2 class="text-yellow latest-header mb">LATEST NEWS</h2>
+        <section class="grid latest-articles mb">
+          <div>
+            <p class="text-white">Monday 29, September 2022</p>
+            <h3 class="text-yellow">
+              The tactical change at PSG that has activated Messi
+            </h3>
+            <img
+              src="https://phantom-marca.unidadeditorial.es/bfdbfb3f027b5a02b5e143ccaf391db5/resize/660/f/webp/assets/multimedia/imagenes/2022/02/08/16443093703854.jpg"
+              alt="Messi "
+            />
+            <p class="text-white text-justify">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem
+              quasi ratione repudiandae? Nisi accusantium magnam sed vel
+              mollitia?
+            </p>
+          </div>
+
+          <div>
+            <p class="text-white">Monday 29, September 2022</p>
+            <h3 class="text-yellow">
+              Aguero: I have a chip in my heart, it notifies the doctor
+            </h3>
+            <img
+              src="https://phantom-marca.unidadeditorial.es/46d6206798c460160f7d4baa8b7029f7/resize/660/f/webp/assets/multimedia/imagenes/2022/02/07/16442523831219.jpg"
+              alt="Aguero"
+            />
+            <p class="text-white text-justify">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus vitae libero illo possimus est quas facilis ratione.
+            </p>
+          </div>
+
+          <div>
+            <p class="text-white">Monday 29, September 2022</p>
+            <h3 class="text-yellow">
+              Lampard: I don't care what car Dele Alli drives
+            </h3>
+            <img
+              src="https://i.guim.co.uk/img/media/294ced5e699ad8155543e5fcee1b8ee396228226/0_0_2500_1500/master/2500.jpg?width=465&quality=45&auto=format&fit=max&dpr=2&s=52186d87b4a2a6dec5dd9f23eee4807b"
+              alt="Lampard and Dele Alli"
+            />
+            <p class="text-white text-justify">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus vitae libero illo possimus est quas facilis ratione.
+            </p>
+          </div>
+
+          <div>
+            <p class="text-white">Monday 29, September 2022</p>
+            <h3 class="text-yellow">
+              Mane and Salah star in AFCON 2021 Best XI
+            </h3>
+            <img
+              src="https://phantom-marca.unidadeditorial.es/a63a6d809e74964371e227361bf6ffab/crop/0x94/2046x1242/resize/660/f/webp/assets/multimedia/imagenes/2022/02/07/16442647705411.jpg"
+              alt="Mane"
+            />
+            <p class="text-white text-justify">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus vitae libero illo possimus est quas facilis ratione
+              Lorem ipsum dolor sit amet .
+            </p>
+          </div>
+        </section>
+        <!-- Employees -->
+        <div class="employees grid">
+          <h2 class="text-yellow text-upper bg-secondary text-center">
+            Players you follow
+          </h2>
+          <h2 class="text-yellow text-upper text-center">all players</h2>
+          <h2 class="text-yellow text-upper text-center">search players</h2>
+        </div>
+        <!-- employees gallery -->
+        <div class="gallery flex">
+          <span class="left text-yellow">&#10092;</span>
+          <span class="right text-yellow">&#10093;</span>
+          <img
+            src="https://barcelonabestblog.files.wordpress.com/2013/03/504-view-full-size-more-my-hero-ronaldinho.jpg"
+            alt="Ronaldinho"
+          />
+          <img
+            src="https://i.pinimg.com/originals/cb/55/90/cb5590bcca9becc9b0f8e98f3998bdb9.png"
+            alt="Messi"
+          /><img
+            src="https://lthumb.lisimg.com/538/11610538.jpg?width=280&sharpen=true"
+            alt="Neymar"
+          /><img
+            src="https://www.imago-images.com/bild/sp/1002961017/s.jpg"
+            alt="Mbappe"
+          /><img
+            src="https://i.pinimg.com/236x/c8/8d/d1/c88dd15c9ad41356952707a12920be69--bayern-fc-robert-lewandowski.jpg"
+            alt="Lewandoski"
+          /><img
+            src="https://assets.manutd.com/AssetPicker/images/0/0/4/210/315968/Thumbnail-Profile-Lukaku51505320234826_small.jpg"
+            alt="lukaku"
+          />
+          <img
+            src="https://i.pinimg.com/originals/60/ba/c2/60bac2944320fe22856b7cbe450d6ce7.jpg"
+            alt="Ronaldo Cristiano"
+          />
+        </div>
+      </article>
+
+      <!-- right section -->
+      <section class="features">
+        <!-- Featured Projects -->
+        <h2 class="text-yellow latest-header mb text-upper">
+          featured projects <a href="" class="text-yellow">view all</a>
+        </h2>
+        <article class="projects grid">
+          <img src="https://kuulpeeps.com/wp-content/uploads/2020/08/kylian-mbapp%C3%A9.jpg" alt="Mbappe" />
+          <div>
+            <h3 class="text-capitalize text-yellow">Project Mbappe</h3>
+            <p class="text-white text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem harum amet .</p>
+          </div>
+
+          <img src="https://www.fcbarcelona.com/photo-resources/2019/11/01/59125a83-2e9e-418e-a688-f695159b16f6/LA-MASIA.jpg?width=1200&height=525" alt="La MAsia " />
+          <div>
+            <h3 class="text-capitalize text-yellow">La Masia</h3>
+            <p class="text-white text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem harum amet .</p>
+          </div>
+
+          <img src="https://images.adsttc.com/media/images/5b59/face/f197/cc61/3100/0283/large_jpg/qatar_foundation_stadium05.jpg?1532623561" alt="Qatar 2022" />
+          <div>
+            <h3 class="text-capitalize text-yellow">Qatar 2022</h3>
+            <p class="text-white text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem harum amet .</p>
+          </div>
+        </article>
+        <span class="loading flex text-white">
+          <i class="fas fa-circle"></i>
+          <i class="fas fa-circle"></i>
+          <i class="fas fa-circle"></i>
+          <i class="fas fa-circle"></i>
+          <i class="fas fa-circle"></i>
+        </span>
+
+         <!-- Newest Documents -->
+        <h2 class="text-yellow latest-header mb text-upper">
+          newest documents <a href="" class="text-yellow">view all</a>
+        </h2>
+        <article class="documents grid">
+          <div class="text-white">
+            <img src="https://cdn.corporatefinanceinstitute.com/assets/source-documents-1024x682.jpeg" alt="document">
+            <h4 class="text-center">Doc 1</h4>
+          </div>
+
+          <div class="text-white">
+            <img src="https://www.corpnet.com/wp-content/uploads/2019/09/Legal-Document.jpg" alt="document">
+            <h4 class="text-center">Doc 2</h4>
+          </div>
+
+          <div class="text-white">
+            <img src="https://printeger.eu/wp-content/uploads/2016/03/iStock_000028512836_Full_MIT-cOPYRIGHT.jpg" alt="document">
+            <h4 class="text-center">Doc 3</h4>
+          </div>
+
+          <div class="text-white">
+            <img src="https://www.nyscnews.com/wp-content/uploads/2018/11/showimage.jpg" alt="document">
+            <h4 class="text-center">Doc 4</h4>
+          </div>
+
+          <div class="text-white">
+            <img src="https://cdn.corporatefinanceinstitute.com/assets/source-documents-1024x682.jpeg" alt="document">
+            <h4 class="text-center">Doc 1</h4>
+          </div>
+
+          <div class="text-white">
+            <img src="https://www.corpnet.com/wp-content/uploads/2019/09/Legal-Document.jpg" alt="document">
+            <h4 class="text-center">Doc 2</h4>
+          </div>
+
+          <div class="text-white">
+            <img src="https://printeger.eu/wp-content/uploads/2016/03/iStock_000028512836_Full_MIT-cOPYRIGHT.jpg" alt="document">
+            <h4 class="text-center">Doc 3</h4>
+          </div>
+
+          <div class="text-white">
+            <img src="https://www.nyscnews.com/wp-content/uploads/2018/11/showimage.jpg" alt="document">
+            <h4 class="text-center">Doc 4</h4>
+          </div>
+
+          <div class="text-white">
+            <img src="https://cdn.corporatefinanceinstitute.com/assets/source-documents-1024x682.jpeg" alt="document">
+            <h4 class="text-center">Doc 1</h4>
+          </div>
+
+          <div class="text-white">
+            <img src="https://www.corpnet.com/wp-content/uploads/2019/09/Legal-Document.jpg" alt="document">
+            <h4 class="text-center">Doc 2</h4>
+          </div>
+
+          <div class="text-white">
+            <img src="https://printeger.eu/wp-content/uploads/2016/03/iStock_000028512836_Full_MIT-cOPYRIGHT.jpg" alt="document">
+            <h4 class="text-center">Doc 3</h4>
+          </div>
+
+          <div class="text-white">
+            <img src="https://www.nyscnews.com/wp-content/uploads/2018/11/showimage.jpg" alt="document">
+            <h4 class="text-center">Doc 4</h4>
+          </div>
+
+          
+        </article>
+        
+        <!-- Featured Videos -->
+        <!-- Newest Documents -->
+        <h2 class="text-yellow latest-header mb text-upper videos">Featured videos <a href="" class="text-yellow">view all</a>
+        </h2>
+        
+      </section>
+    </main>
     <script src="main.js"></script>
   </body>
 </html>
