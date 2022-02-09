@@ -1,0 +1,48 @@
+article.documents {
+  gap: 1rem;
+  grid: 1fr / repeat(4, 1fr);
+}
+article.documents > div{
+  cursor: pointer;
+}
+article.documents > div :first-child{
+  background-size: cover;
+  height: 7rem;
+  width: 6rem;
+}
+.doc1{
+  background: url('https://cdn.corporatefinanceinstitute.com/assets/source-documents-1024x682.jpeg') center center no-repeat;
+}
+.doc2{
+  background: url('https://www.corpnet.com/wp-content/uploads/2019/09/Legal-Document.jpg') center center no-repeat;
+}.doc3{
+  background: url('https://printeger.eu/wp-content/uploads/2016/03/iStock_000028512836_Full_MIT-cOPYRIGHT.jpg') center center no-repeat;
+}.doc4{
+  background: url('https://www.nyscnews.com/wp-content/uploads/2018/11/showimage.jpg') center center no-repeat;
+}
+.doc5{
+  background: url('https://www.coe.int/documents/2528928/9061756/DigitalDocuments-400px/8f9a28ce-dba3-4ae9-98e6-7eea31a3a7b7?t=1452860101000') center center no-repeat;
+}
+.doc6{
+  background: url('https://assets-global.website-files.com/5aa7081220a301f2a3644f3b/607a11e6fa43680eb515a338_historical-documents-blog-image-compressed.jpg') center center no-repeat;
+}.doc7{
+  background: url('https://www.coe.int/documents/11755378/12470425/resources-documents.jpg/f3f23010-2037-4050-9d81-e74a5eb450a4?t=1441979379000') center center no-repeat;
+}.doc8{
+  background: url('https://www.standardalliancelogistics.com/img/services/3.jpg') center center no-repeat;
+}.doc9{
+  background: url('https://ax.docentric.com/wp-content/uploads/2019/07/ConfigurableBusinessDocuments_01.png') center center no-repeat;
+}.doc10{
+  background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSglm9BFFuwvGs3vAejf6uWjcecvjZpYBosfA&usqp=CAU') center center no-repeat;
+}.doc11{
+  background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_Xb1K2hTGTAySqR3ibiJSUim9Lej8OirePA&usqp=CAU') center center no-repeat;
+}
+.doc12{
+  background: url('https://media.istockphoto.com/photos/large-stack-of-files-documents-paperwork-on-desk-picture-id904268154?b=1&k=20&m=904268154&s=170667a&w=0&h=t2quoMqYghR0SPzodO4J6xNx5RsF5QL9knID-ZSKYjk=') center center no-repeat;
+}
+
+/* media query */
+@media all and (max-width:48rem){
+  article.documents > div > div + h4{
+    text-align: left;
+  }
+}

@@ -45,12 +45,11 @@
 }
 
 :root {
-  --background: #21325e;
-  --secondary: #3e497a;
-  --yellow: #f1d00a;
-  --white: #f0f0f0;
+  --background: #0F0E0E;
+  --secondary: #393E46;
+  --yellow: #a58263;
+  --white: #EEEEEE ;
 }
-
 *,
 *::before,
 *::after {
@@ -88,7 +87,7 @@ a:visited {
 }
 /* utility classes */
 .bg-secondary {
-  background: var(--secondary);
+  background: var(--secondary) !important;
 }
 .d-block {
   display: block;
@@ -158,19 +157,19 @@ ol, li {
   counter-increment: item;
 }
 .slide1{
-  background: linear-gradient(to bottom, rgba(236, 237, 245, 0.52), rgba(62, 49, 87, 0.73)), url("https://eu-images.contentstack.com/v3/assets/bltcc7a7ffd2fbf71f5/bltcf763cc020744a9e/62025a0b80778c74ce4ee110/GettyImages-1356696005.jpg?auto=webp&format=pjpg&quality=60&width=1024") center center no-repeat;
+  background: linear-gradient(to right,rgba(0,0,0,0.6), rgba(0,0,0,0.4)), url("https://eu-images.contentstack.com/v3/assets/bltcc7a7ffd2fbf71f5/bltcf763cc020744a9e/62025a0b80778c74ce4ee110/GettyImages-1356696005.jpg?auto=webp&format=pjpg&quality=60&width=1024") center center no-repeat;
 }
 .slide2{
-  background: linear-gradient(to bottom, rgba(236, 237, 245, 0.52), rgba(62, 49, 87, 0.73)),url("https://eu-images.contentstack.com/v3/assets/bltcc7a7ffd2fbf71f5/blt238a306883c8c089/61fda5f5eebb0e0ccedd03f9/mad_ron_fa_cup.jpg?auto=webp&format=pjpg&quality=80&width=760") center center no-repeat;
+  background: linear-gradient(to right,rgba(0,0,0,0.6), rgba(0,0,0,0.4)),url("https://eu-images.contentstack.com/v3/assets/bltcc7a7ffd2fbf71f5/blt238a306883c8c089/61fda5f5eebb0e0ccedd03f9/mad_ron_fa_cup.jpg?auto=webp&format=pjpg&quality=80&width=760") center center no-repeat;
 }
 .slide3{
-  background: linear-gradient(to bottom, rgba(236, 237, 245, 0.52), rgba(62, 49, 87, 0.73)),url("https://eu-images.contentstack.com/v3/assets/bltcc7a7ffd2fbf71f5/blt6a0655d4d9c7862d/620036e74d9a100e33578782/salah.png?auto=webp&format=pjpg&quality=80&width=760") center center no-repeat;
+  background:linear-gradient(to right,rgba(0,0,0,0.6), rgba(0,0,0,0.4)),url("https://eu-images.contentstack.com/v3/assets/bltcc7a7ffd2fbf71f5/blt6a0655d4d9c7862d/620036e74d9a100e33578782/salah.png?auto=webp&format=pjpg&quality=80&width=760") center center no-repeat;
 }
 .slide4{
-  background: linear-gradient(to bottom, rgba(236, 237, 245, 0.52), rgba(62, 49, 87, 0.73)),url("https://eu-images.contentstack.com/v3/assets/bltcc7a7ffd2fbf71f5/blt10586eff822743e6/6202e9a8d5d1e417d05ca4bf/Bruno_Fernandes_Manchester_United_2021-22.jpg?auto=webp&format=pjpg&quality=60&width=1024") center center no-repeat;
+  background: linear-gradient(to right,rgba(0,0,0,0.6), rgba(0,0,0,0.4)),url("https://eu-images.contentstack.com/v3/assets/bltcc7a7ffd2fbf71f5/blt10586eff822743e6/6202e9a8d5d1e417d05ca4bf/Bruno_Fernandes_Manchester_United_2021-22.jpg?auto=webp&format=pjpg&quality=60&width=1024") center center no-repeat;
 }
 .slide5{
-  background: linear-gradient(to bottom, rgba(236, 237, 245, 0.52), rgba(62, 49, 87, 0.73)),url("https://eu-images.contentstack.com/v3/assets/bltcc7a7ffd2fbf71f5/bltf4ea72ad2cb4b569/61ee3f46ab6f99051e9a0551/Hakim_Ziyech_of_Chelsea_and_Morocco.jpg?auto=webp&format=pjpg&quality=80&width=760") center center no-repeat;
+  background: linear-gradient(to right,rgba(0,0,0,0.6), rgba(0,0,0,0.4)),url("https://eu-images.contentstack.com/v3/assets/bltcc7a7ffd2fbf71f5/bltf4ea72ad2cb4b569/61ee3f46ab6f99051e9a0551/Hakim_Ziyech_of_Chelsea_and_Morocco.jpg?auto=webp&format=pjpg&quality=80&width=760") center center no-repeat;
 }
 .slide1, .slide2, .slide3, .slide4, .slide5{
   background-size: cover;
@@ -295,4 +294,24 @@ ol, li {
 }
 .carousel::after {
   content: "\00276D";
+}
+
+/* media query */
+/* big tablets */
+@media all and (max-width:75rem){
+  .carousel__slide > h1 {
+    font-size: 1.8rem;
+    margin-top: 8rem;
+  }
+}
+
+/* tablets */
+@media all and (max-width:48rem){
+  .carousel__slide > h1 {
+    font-size: 1.4rem;
+    margin-top: 6rem;
+  }
+  .carousel__slide > p{
+  display: none;
+}
 }

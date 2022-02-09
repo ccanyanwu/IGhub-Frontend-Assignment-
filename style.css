@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-:root {
+/* :root {
   --background: #21325e;
   --secondary: #3e497a;
   --yellow: #f1d00a;
   --white: #f0f0f0;
-}
+} */
 
 *,
 *::before,
@@ -71,11 +71,11 @@ span.loading {
   margin: 2rem auto;
   width: 26%;
 }
-span.loading :first-child{
-  border: .5px solid var(--white);
+span.loading :first-child {
+  border: 0.5px solid var(--white);
   border-radius: 100%;
   color: transparent;
-  font-size: .65rem;
+  font-size: 0.65rem;
 }
 
 /* Navbar */
@@ -84,11 +84,7 @@ nav {
   justify-content: space-between;
   width: 100%;
 }
-nav > a > img {
-  border-radius: 1%;
-  height: 5rem;
-  width: 5rem;
-}
+
 nav > a + div {
   justify-self: flex-end;
 }
@@ -121,17 +117,6 @@ nav > div > p :first-child {
 nav > div > p :last-child {
   padding-left: 0.75rem;
 }
-
-/* Hero section */
-/* .hero {
-  background: url("https://eu-images.contentstack.com/v3/assets/bltcc7a7ffd2fbf71f5/bltcf763cc020744a9e/62025a0b80778c74ce4ee110/GettyImages-1356696005.jpg?auto=webp&format=pjpg&quality=60&width=1024") center center no-repeat;
-  background-size: cover;
-  height: 60vh;
-  margin: 3rem 0;
-  object-fit: contain;
-  width: 100%;
-} */
-
 /* main */
 main {
   gap: 2rem;
@@ -161,7 +146,7 @@ section.exclusive div:first-child {
 }
 section.exclusive div:first-child h2 {
   font-size: 1rem;
-  background-color: var(--secondary);
+  background-color: var(--yellow);
   clip-path: polygon(0 1%, 65% 0, 48% 100%, 0% 100%);
   width: 75%;
   padding: 0.5rem 3rem 0.5rem 0.5rem;
@@ -177,20 +162,22 @@ section.exclusive div:last-child :last-child {
 }
 
 h2.latest-header {
-  border: 1px solid var(--white);
+  background: var(--yellow);
   font-size: 1.4rem;
-  padding: .5rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
 }
 section.latest-articles {
-  gap: 2rem;
+  column-gap: 2rem;
   grid: 1fr 1fr / 1fr 1fr;
+  row-gap: 3rem;
 }
 section.latest-articles > div > p:first-child {
-  font-weight: 600;
+  font-weight: 300;
 }
 
 section.latest-articles > div > h3 {
-  margin: 0.5rem 0;
+  margin: 0.25rem 0;
 }
 section.latest-articles > div > p:last-child {
   font-size: small;
@@ -202,7 +189,7 @@ section.latest-articles > div > img {
 
 div.employees {
   background: var(--white);
-  border: 1px solid var(--white);
+  borer: 1px solid var(--white);
   font-size: 0.5rem;
   column-gap: 1px;
   cursor: pointer;
@@ -215,13 +202,17 @@ div.employees > h2 {
 div.employees :not(:first-child) {
   background: var(--background);
 }
-span.right, span.left{
+div.employees h2:first-child {
+  background: var(--yellow);
+}
+span.right,
+span.left {
   font-size: 3rem;
   position: absolute;
   top: auto;
 }
-span.right{
-  right: 35.5vw;
+span.right {
+  right: 37vw;
 }
 div.gallery {
   overflow-x: scroll !important;
@@ -232,28 +223,28 @@ div.gallery > img {
   width: 10rem;
 }
 div.gallery::-webkit-scrollbar {
-  height: .1em;
+  height: 0.1em;
 }
- 
+
 div.gallery::-webkit-scrollbar-track {
   box-shadow: inset 0 0 6px var(--yellow);
 }
- 
+
 div.gallery::-webkit-scrollbar-thumb {
   background-color: var(--white);
   outline: 1px solid var(--yellow);
 }
 
 /* Features */
-h2.latest-header > a{
+h2.latest-header > a {
   display: inline-block;
   font-size: medium;
   font-weight: 500;
   margin-left: 5rem;
   text-decoration: underline;
 }
-article.projects{
-  column-gap: 1rem ;
+article.projects {
+  column-gap: 1rem;
   grid: repeat(3, 1fr) / 1fr 4fr;
   row-gap: 2rem;
 }
@@ -261,65 +252,170 @@ article.projects > img {
   height: 5rem;
   width: 9rem;
 }
-article.projects > div > p{
+article.projects > div > p {
   font-size: smaller;
 }
 
-article.documents{
-  gap: 2rem;
-  grid: repeat(3, 1fr) / repeat(4, 1fr);
-}
-article.documents > div{
-  cursor: pointer;
-  width: 5rem;
-}
-article.documents > div > img{
-  max-height: 80%;
-  object-fit: contain;
-  max-width: 100%;
-}
-article.documents > div > h4{
-  font-size: small;
-}
-
-h2.videos{
+h2.videos {
   margin-top: 3rem;
 }
-h2.videos > a{
+h2.videos > a {
   margin-left: 7.5rem;
 }
-.ten{
+.ten {
   position: relative;
   width: 100%;
 }
-video{
-  border: 0 1px 1px 1px;
-  border-color: var(--white);
-  border-style: solid;
+video {
   margin-top: -2.5rem;
   position: relative;
   width: 100%;
 }
-.ten::before{
-  background: linear-gradient(to bottom, rgba(236, 237, 245, 0.52), rgba(62, 49, 87, 0.73)) center center no-repeat !important;
+.ten::before {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.52),
+      rgba(0, 0, 0, 0.63)
+    )
+    center center no-repeat !important;
   background-size: cover;
-  content: '';
-  font-family: "FontAwesome";
-  top: -.15rem;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  position: absolute;z-index: 99;
-}
-.ten::before{
   content: attr(data-background-icon);
   font-family: "FontAwesome";
   color: var(--white);
   font-size: 3rem;
   cursor: pointer;
-  width: 100%;
-  height: 100%;
   display: grid;
   place-items: center;
-  z-index: 998;
+  width: 100%;
+  height: 100%;
+  top: -0.15rem;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 99;
+}
+
+/* Footer */
+footer {
+  margin: 3rem -2.5rem -3rem;
+  padding: 2rem 2rem 0.5rem;
+}
+
+footer > .grid {
+  gap: 2rem;
+  grid: 1fr / 1fr 2fr 1fr;
+}
+footer img {
+  justify-self: center;
+}
+.multilinks {
+  align-self: center;
+  justify-self: center;
+}
+.multilinks a {
+  color: var(--background) !important;
+  cursor: pointer;
+  font-size: small;
+  font-weight: 700;
+}
+.multilinks a:not(:last-child) {
+  border-right: 1px solid var(--white);
+  padding-right: 0.5rem;
+}
+.socials {
+  align-self: center;
+}
+.fab {
+  cursor: pointer;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.51rem;
+  text-align: center;
+}
+footer p:last-child {
+  font-size: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+/* media query */
+/* large ipads */
+@media screen and (max-width: 75rem) {
+  
+  main {
+    grid: 1fr / 6fr 4fr;
+  }
+  aside.side {
+    display: none;
+  }
+  span.right {
+    right: 48vw;
+  }
+}
+/* ipads */
+@media screen and (max-width: 65rem) {
+  article.documents {
+    gap: 1rem;
+    grid: repeat(3, 1fr) / repeat(3, 1fr);
+  }
+  aside.side {
+    display: none;
+  }
+  span.right {
+    right: 43vw;
+  }
+  h2.latest-header {
+    font-size: 1rem;
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 48rem) {
+  main {
+    grid: 1fr / 1fr;
+  }
+  article.documents {
+    column-gap: 0;
+    grid: 1fr / repeat(4, 1fr);
+  }
+  span.right {
+    right: 5vw;
+  }
+   h2.latest-header  > a{
+    padding-left: 20rem;
+  }
+  .multilinks{
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start !important;
+  }
+  .multilinks a{border-right: 0 !important;}
+}
+
+/* smallest screen */
+@media all and (max-width: 24rem){
+  nav{flex-direction: column;}
+  section.exclusive, section.latest-articles, article.projects {
+  grid: 1fr 1fr / 1fr;
+}
+main{
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+}
+section.exclusive div:first-child {
+  background: url("https://atalayar.com/sites/default/files/styles/foto_/public/noticias/carlo-ancelotti-banquillo.jpg?itok=as_eOPPz")
+    center top no-repeat;
+}
+h2.latest-header  > a{
+    padding-left: 9rem;
+  }
+article.documents {
+    grid: 1fr / 1fr;
+    place-items: center;
+  }
+
+  footer > .grid {
+  gap: 2rem;
+  grid: 1fr / 1fr;
+}
 }
