@@ -50,6 +50,7 @@
   --yellow: #a58263;
   --white: #eeeeee;
 }
+
 *,
 *::before,
 *::after {
@@ -80,6 +81,7 @@ body {
   min-height: 100vh;
   padding: 3rem 2.5rem;
 }
+
 a,
 a:visited {
   color: var(--white);
@@ -219,6 +221,7 @@ li {
   height: 100%;
   scroll-snap-align: center;
 }
+
 @media (hover: hover) {
   .carousel__snapper {
     animation-name: tonext, snap;
@@ -231,11 +234,13 @@ li {
     animation-name: tostart, snap;
   }
 }
+
 @media (prefers-reduced-motion: reduce) {
   .carousel__snapper {
     animation-name: none;
   }
 }
+
 .carousel:hover .carousel__snapper,
 .carousel:focus-within .carousel__snapper {
   animation-name: none;
@@ -334,14 +339,14 @@ li {
 
 /* smallest screen sizes */
 @media all and (max-width: 24rem) {
-  body{
+  body {
     margin: 0 !important;
-    padding: 0 !important;}
+    padding: 0 !important;
+  }
   section.hero {
     margin: 3rem auto;
   }
-  .carousel__viewport {
-  }
+
   .carousel__slide:before {
     transform: translate3d(-50%, -50%, 70px);
   }
@@ -354,25 +359,24 @@ li {
     text-align: center;
     width: 90%;
   }
-.carousel::before,
-.carousel__prev {
-  left: -1rem;
-  top: -45%;
-}
-.carousel::after,
-.carousel__next {
-  right: -1rem;
-  top: -45%;
-}
-.carousel::before,
-.carousel::after {
-  font-size: 1.5rem;
-}
-.carousel::before {
-  content: "\00276C";
-}
-.carousel::after {
-  content: "\00276D";
-}
- 
+  .carousel::before,
+  .carousel__prev {
+    left: -1rem;
+    top: -45%;
+  }
+  .carousel::after,
+  .carousel__next {
+    right: -1rem;
+    top: -45%;
+  }
+  .carousel::before,
+  .carousel::after {
+    font-size: 1.5rem;
+  }
+  .carousel::before {
+    content: "\00276C";
+  }
+  .carousel::after {
+    content: "\00276D";
+  }
 }

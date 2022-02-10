@@ -1,12 +1,7 @@
+/* Google fonts import */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-/* :root {
-  --background: #21325e;
-  --secondary: #3e497a;
-  --yellow: #f1d00a;
-  --white: #f0f0f0;
-} */
-
+/* css reset */
 *,
 *::before,
 *::after {
@@ -22,6 +17,7 @@ body {
   min-height: 100vh;
   padding: 3rem 2.5rem;
 }
+
 a,
 a:visited {
   color: var(--white);
@@ -64,6 +60,7 @@ a:visited {
 .text-white {
   color: var(--white);
 }
+
 /* loading */
 span.loading {
   font-size: smaller;
@@ -84,7 +81,9 @@ nav {
   justify-content: space-between;
   width: 100%;
 }
-
+nav > a > img {
+  filter: drop-shadow(2px 4px 4px var(--yellow));
+}
 nav > a + div {
   justify-self: flex-end;
 }
@@ -117,11 +116,13 @@ nav > div > p :first-child {
 nav > div > p :last-child {
   padding-left: 0.75rem;
 }
+
 /* main */
 main {
   gap: 2rem;
   grid: 1fr / 1.5fr 5fr 3.5fr;
 }
+
 aside.side {
   margin-right: 3rem;
 }
@@ -175,7 +176,6 @@ section.latest-articles {
 section.latest-articles > div > p:first-child {
   font-weight: 300;
 }
-
 section.latest-articles > div > h3 {
   margin: 0.25rem 0;
 }
@@ -224,11 +224,9 @@ div.gallery > img {
 div.gallery::-webkit-scrollbar {
   height: 0.1em;
 }
-
 div.gallery::-webkit-scrollbar-track {
   box-shadow: inset 0 0 6px var(--yellow);
 }
-
 div.gallery::-webkit-scrollbar-thumb {
   background-color: var(--white);
   outline: 1px solid var(--yellow);
@@ -300,12 +298,12 @@ footer {
   margin: 3rem -2.5rem -3rem;
   padding: 2rem 2rem 0.5rem;
 }
-
 footer > .grid {
   gap: 2rem;
   grid: 1fr / 1fr 2fr 1fr;
 }
 footer img {
+  filter: drop-shadow(2px 4px 4px var(--yellow));
   justify-self: center;
 }
 .multilinks {
@@ -315,11 +313,12 @@ footer img {
 .multilinks a {
   color: var(--background) !important;
   cursor: pointer;
+
   font-size: small;
   font-weight: 700;
 }
 .multilinks a:not(:last-child) {
-  border-right: 1px solid var(--white);
+  border-right: 1px solid var(--yellow);
   padding-right: 0.5rem;
 }
 .socials {
@@ -327,6 +326,7 @@ footer img {
 }
 .fab {
   cursor: pointer;
+  text-shadow: 2px 0px 2px var(--yellow);
   margin-right: 1rem;
   margin-bottom: 1rem;
   padding: 0.51rem;
@@ -343,25 +343,31 @@ footer p:last-child {
   main {
     grid: 1fr / 6fr 4fr;
   }
+
   aside.side {
     display: none;
   }
+
   span.right {
     right: 48vw;
   }
 }
+
 /* tablets */
 @media screen and (max-width: 65rem) {
   article.documents {
     gap: 1rem;
     grid: repeat(3, 1fr) / repeat(3, 1fr);
   }
+
   aside.side {
     display: none;
   }
+
   span.right {
     right: 43vw;
   }
+
   h2.latest-header {
     font-size: 1rem;
   }
@@ -372,21 +378,26 @@ footer p:last-child {
   main {
     grid: 1fr / 1fr;
   }
+
   article.documents {
     column-gap: 0;
     grid: 1fr / repeat(4, 1fr);
   }
+
   span.right {
     right: 5vw;
   }
+
   h2.latest-header > a {
     padding-left: 20rem;
   }
+
   .multilinks {
     display: flex;
     flex-direction: column;
     justify-items: flex-start !important;
   }
+
   .multilinks a {
     border-right: 0 !important;
   }
@@ -398,6 +409,7 @@ footer p:last-child {
     margin: 0 !important;
     padding: 0 !important;
   }
+
   nav {
     flex-direction: column;
   }
@@ -417,10 +429,12 @@ footer p:last-child {
   nav :nth-child(2) > div > input::placeholder {
     font-size: smaller;
   }
+
   section.exclusive,
   section.latest-articles {
     grid: 1fr 1fr / 1fr;
   }
+
   main {
     padding: 0 1rem;
     margin-left: 0 !important;
@@ -444,12 +458,18 @@ footer p:last-child {
   h2.latest-header > a {
     padding-left: 10rem;
   }
+
   .features :nth-child(6) > a {
     font-size: 0.65rem;
   }
+
   article.documents {
     grid: 1fr /1fr 1fr;
     place-items: center;
+  }
+  
+  .ten::before {
+    content: "";
   }
 
   footer {
