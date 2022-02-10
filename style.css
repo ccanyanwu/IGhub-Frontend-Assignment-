@@ -189,7 +189,6 @@ section.latest-articles > div > img {
 
 div.employees {
   background: var(--white);
-  borer: 1px solid var(--white);
   font-size: 0.5rem;
   column-gap: 1px;
   cursor: pointer;
@@ -339,7 +338,7 @@ footer p:last-child {
 }
 
 /* media query */
-/* large ipads */
+/* large tablets */
 @media screen and (max-width: 75rem) {
   
   main {
@@ -352,7 +351,7 @@ footer p:last-child {
     right: 48vw;
   }
 }
-/* ipads */
+/* tablets */
 @media screen and (max-width: 65rem) {
   article.documents {
     gap: 1rem;
@@ -394,14 +393,38 @@ footer p:last-child {
 
 /* smallest screen */
 @media all and (max-width: 24rem){
-  nav{flex-direction: column;}
+  body{
+    margin: 0 !important;
+    padding: 0 !important;}
+  nav{
+    flex-direction: column;
+  }
+  nav > :nth-child(2){
+    flex-direction: column-reverse;
+    align-items: center;
+
+  }
+  nav :nth-child(2) > div{
+  display: flex;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  padding-top: .5rem;
+}
+nav :nth-child(2) > div > input{
+  padding-bottom: .25rem;
+}
+nav :nth-child(2) > div > input::placeholder{
+  font-size: smaller;
+}
   section.exclusive, section.latest-articles, article.projects {
   grid: 1fr 1fr / 1fr;
 }
 main{
-  margin-left: -1.5rem;
-  margin-right: -1.5rem;
+  padding: 0 1rem;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
+
 section.exclusive div:first-child {
   background: url("https://atalayar.com/sites/default/files/styles/foto_/public/noticias/carlo-ancelotti-banquillo.jpg?itok=as_eOPPz")
     center top no-repeat;
@@ -414,6 +437,10 @@ article.documents {
     place-items: center;
   }
 
+  footer {
+  margin: 3rem 0rem -3rem !important;
+  padding: 2rem 2rem 0.5rem;
+}
   footer > .grid {
   gap: 2rem;
   grid: 1fr / 1fr;

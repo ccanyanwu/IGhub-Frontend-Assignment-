@@ -45,10 +45,10 @@
 }
 
 :root {
-  --background: #0F0E0E;
-  --secondary: #393E46;
+  --background: #0f0e0e;
+  --secondary: #393e46;
   --yellow: #a58263;
-  --white: #EEEEEE ;
+  --white: #eeeeee;
 }
 *,
 *::before,
@@ -124,11 +124,12 @@ a:visited {
 }
 
 /* Carousel */
-section.hero{
+section.hero {
   margin: 3rem 0 7rem 0 !important;
 }
-ol, li {
-  list-style: none !important; 
+ol,
+li {
+  list-style: none !important;
   margin: 0;
   padding: 0;
 }
@@ -156,22 +157,36 @@ ol, li {
   width: 100%;
   counter-increment: item;
 }
-.slide1{
-  background: linear-gradient(to right,rgba(0,0,0,0.6), rgba(0,0,0,0.4)), url("https://eu-images.contentstack.com/v3/assets/bltcc7a7ffd2fbf71f5/bltcf763cc020744a9e/62025a0b80778c74ce4ee110/GettyImages-1356696005.jpg?auto=webp&format=pjpg&quality=60&width=1024") center center no-repeat;
+.slide1 {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),
+    url("https://eu-images.contentstack.com/v3/assets/bltcc7a7ffd2fbf71f5/bltcf763cc020744a9e/62025a0b80778c74ce4ee110/GettyImages-1356696005.jpg?auto=webp&format=pjpg&quality=60&width=1024")
+      center center no-repeat;
 }
-.slide2{
-  background: linear-gradient(to right,rgba(0,0,0,0.6), rgba(0,0,0,0.4)),url("https://eu-images.contentstack.com/v3/assets/bltcc7a7ffd2fbf71f5/blt238a306883c8c089/61fda5f5eebb0e0ccedd03f9/mad_ron_fa_cup.jpg?auto=webp&format=pjpg&quality=80&width=760") center center no-repeat;
+.slide2 {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),
+    url("https://eu-images.contentstack.com/v3/assets/bltcc7a7ffd2fbf71f5/blt238a306883c8c089/61fda5f5eebb0e0ccedd03f9/mad_ron_fa_cup.jpg?auto=webp&format=pjpg&quality=80&width=760")
+      center center no-repeat;
 }
-.slide3{
-  background:linear-gradient(to right,rgba(0,0,0,0.6), rgba(0,0,0,0.4)),url("https://eu-images.contentstack.com/v3/assets/bltcc7a7ffd2fbf71f5/blt6a0655d4d9c7862d/620036e74d9a100e33578782/salah.png?auto=webp&format=pjpg&quality=80&width=760") center center no-repeat;
+.slide3 {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),
+    url("https://eu-images.contentstack.com/v3/assets/bltcc7a7ffd2fbf71f5/blt6a0655d4d9c7862d/620036e74d9a100e33578782/salah.png?auto=webp&format=pjpg&quality=80&width=760")
+      center center no-repeat;
 }
-.slide4{
-  background: linear-gradient(to right,rgba(0,0,0,0.6), rgba(0,0,0,0.4)),url("https://eu-images.contentstack.com/v3/assets/bltcc7a7ffd2fbf71f5/blt10586eff822743e6/6202e9a8d5d1e417d05ca4bf/Bruno_Fernandes_Manchester_United_2021-22.jpg?auto=webp&format=pjpg&quality=60&width=1024") center center no-repeat;
+.slide4 {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),
+    url("https://eu-images.contentstack.com/v3/assets/bltcc7a7ffd2fbf71f5/blt10586eff822743e6/6202e9a8d5d1e417d05ca4bf/Bruno_Fernandes_Manchester_United_2021-22.jpg?auto=webp&format=pjpg&quality=60&width=1024")
+      center center no-repeat;
 }
-.slide5{
-  background: linear-gradient(to right,rgba(0,0,0,0.6), rgba(0,0,0,0.4)),url("https://eu-images.contentstack.com/v3/assets/bltcc7a7ffd2fbf71f5/bltf4ea72ad2cb4b569/61ee3f46ab6f99051e9a0551/Hakim_Ziyech_of_Chelsea_and_Morocco.jpg?auto=webp&format=pjpg&quality=80&width=760") center center no-repeat;
+.slide5 {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),
+    url("https://eu-images.contentstack.com/v3/assets/bltcc7a7ffd2fbf71f5/bltf4ea72ad2cb4b569/61ee3f46ab6f99051e9a0551/Hakim_Ziyech_of_Chelsea_and_Morocco.jpg?auto=webp&format=pjpg&quality=80&width=760")
+      center center no-repeat;
 }
-.slide1, .slide2, .slide3, .slide4, .slide5{
+.slide1,
+.slide2,
+.slide3,
+.slide4,
+.slide5 {
   background-size: cover;
   object-fit: contain;
 }
@@ -180,18 +195,19 @@ ol, li {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate3d(-50%,-40%,70px);
+  transform: translate3d(-50%, -40%, 70px);
   color: #fff;
   font-size: 2em;
 }
-.carousel__slide > h1{
+.carousel__slide > h1 {
   font-size: 2.2rem;
-  margin-top: 12rem ;
+  margin-top: 12rem;
 }
-.carousel__slide > p{
-  margin-top: 1rem ;
+.carousel__slide > p {
+  margin-top: 1rem;
 }
-.carousel__slide > p, .carousel__slide > h1{
+.carousel__slide > p,
+.carousel__slide > h1 {
   padding-left: 7rem;
   width: 70%;
 }
@@ -246,9 +262,9 @@ ol, li {
   font-size: 0;
   transition: transform 0.1s;
 }
-.carousel__navigation-list :first-child > a{
+.carousel__navigation-list :first-child > a {
   background-color: var(--background);
-  border: .2px solid var(--white);
+  border: 0.2px solid var(--white);
   height: 1rem;
   width: 1rem;
 }
@@ -278,7 +294,7 @@ ol, li {
 }
 .carousel::before,
 .carousel::after {
-  content: '';
+  content: "";
   z-index: 1;
   background-size: 1.5rem 1.5rem;
   background-repeat: no-repeat;
@@ -298,7 +314,7 @@ ol, li {
 
 /* media query */
 /* big tablets */
-@media all and (max-width:75rem){
+@media all and (max-width: 75rem) {
   .carousel__slide > h1 {
     font-size: 1.8rem;
     margin-top: 8rem;
@@ -306,12 +322,57 @@ ol, li {
 }
 
 /* tablets */
-@media all and (max-width:48rem){
+@media all and (max-width: 48rem) {
   .carousel__slide > h1 {
     font-size: 1.4rem;
     margin-top: 6rem;
   }
-  .carousel__slide > p{
-  display: none;
+  .carousel__slide > p {
+    display: none;
+  }
 }
+
+/* smallest screen sizes */
+@media all and (max-width: 24rem) {
+  body{
+    margin: 0 !important;
+    padding: 0 !important;}
+  section.hero {
+    margin: 3rem auto;
+  }
+  .carousel__viewport {
+  }
+  .carousel__slide:before {
+    transform: translate3d(-50%, -50%, 70px);
+  }
+
+  .carousel__slide > h1 {
+    display: block;
+    font-size: 0.75rem;
+    padding-left: 0;
+    margin: 2.4rem auto auto;
+    text-align: center;
+    width: 90%;
+  }
+.carousel::before,
+.carousel__prev {
+  left: -1rem;
+  top: -45%;
+}
+.carousel::after,
+.carousel__next {
+  right: -1rem;
+  top: -45%;
+}
+.carousel::before,
+.carousel::after {
+  font-size: 1.5rem;
+}
+.carousel::before {
+  content: "\00276C";
+}
+.carousel::after {
+  content: "\00276D";
+}
+ 
 }
